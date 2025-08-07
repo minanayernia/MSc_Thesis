@@ -1,0 +1,677 @@
+Topics with multiple distinct conclusions:
+
+Topic: 41
+  - We should ban fast food
+  - We should ban factory farming
+
+Topic: 15
+  - The European Union should implement a EU wide carbon tax
+  - Chinese products should be banned in India
+  - There should be a reform of EU trade and investment policy and a relaunch of global multilateralism
+  - We should adopt an austerity regime
+  - The EU should recognize Taiwan as an independent sovereign state
+  - We should end the use of economic sanctions
+
+Topic: 5
+  - Rapists should be tortured
+  - We should abolish the three-strikes laws
+  - Betting and gambling should be legalized in India
+  - We should end the use of economic sanctions
+  - We should abolish capital punishment
+
+Topic: 34
+  - Intensive livestock farming should disappear
+  - There should be a stronger partnership between the EU and the African Union
+  - The EU government should encourage people to eat less meat
+  - Food whose production has been subsidized with EU funds should not be allowed to be exported to developing countries.
+  - We should ban factory farming
+  - Rural areas should become more attractive for life and work
+  - We should subsidize journalism
+
+Topic: 3
+  - Climate neutrality can be achieved only by nuclear energy
+  - We need see nuclear energy as green energy
+  - Gas and nuclear power should be supported with money from European countries
+  - Artificial intelligence brings more harm than good
+  - We should subsidize space exploration
+  - We should ban private military companies
+  - We should fight for the abolition of nuclear weapons
+  - We need to invest in nuclear energy
+  - Solar and wind energies have harmful impacts on flying species, fauna and flora in general, and even insects
+
+Topic: 21
+  - We should prohibit school prayer
+  - We should ban the Church of Scientology
+
+Topic: 29
+  - We should abolish the three-strikes laws
+  - Triple Talaq should be abolished
+
+Topic: 14
+  - We should subsidize student loans
+  - We should adopt an austerity regime
+  - We should subsidize space exploration
+  - The EU should improve public management and anti-corruption mechanisms
+  - We should subsidize journalism
+
+Topic: 11
+  - Social media is making us less social
+  - We should abandon the use of school uniform
+  - We should adopt gender-neutral language
+  - Women are better managers than men
+  - We should adopt libertarianism
+  - The EU needs a wider definition of gender-based violence and an intersectional approach to end it
+  - The Commission should remove any mention of gender and other ideology from its research funds and calls.
+  - The EU must ensure continued progress toward gender equality, women’s rights, and reproductive freedom
+  - We should legalize prostitution
+  - The EU itself and its people should understand and accept there are a lot of Europeans outside the EU
+  - We should cancel pride parades
+
+Topic: 33
+  - Intensive livestock farming should disappear
+  - Firecrackers should be banned during Diwali, other festivals, and weddings
+  - India is becoming intolerant
+  - We need stricter and homogeneous environmental legislation across the EU
+  - Food whose production has been subsidized with EU funds should not be allowed to be exported to developing countries.
+  - We should ban factory farming
+  - We should ban whaling
+
+Topic: 20
+  - News channels are breaking rules to give Breaking news
+  - WikiLeaks is not a bane
+  - Censorship of movies is an outdated concept
+  - The EU needs a free but correct press
+  - We should subsidize journalism
+
+Topic: 24
+  - We should ban cosmetic surgery
+  - We should ban cosmetic surgery for minors
+
+Topic: 17
+  - We should legalize prostitution
+  - We should limit judicial activism
+
+Topic: 72
+  - There should be centers of excellence in science and education
+  - We should subsidize embryonic stem cell research
+
+Topic: 12
+  - We should ban algorithmic trading
+  - Doctors should be paid based on how many people they successfully treated
+  - There is a necessity for a European framework for the free movement of intensivists
+  - We should legalize organ trade
+  - We should ban human cloning
+  - Organ donation should be made compulsory
+  - We should ban whaling
+
+Topic: 8
+  - Toilet paper should be made of recycled paper only
+  - We should legalize cannabis
+  - We should ban alcohol in India
+  - We need to move towards drug reform, which will change our outdated drug policy.
+
+Topic: 44
+  - We should end the use of economic sanctions
+  - We should ban telemarketing
+  - We should adopt a zero-tolerance policy in schools
+
+Topic: 37
+  - Voting for European Parliament Elections should be mandatory
+  - We should introduce compulsory voting
+  - India should have 'One Nation - One Election' policy
+
+Topic: 81
+  - Rapists should be tortured
+  - We should abolish the three-strikes laws
+
+Topic: -1
+  - We should strengthen laws to fight against terrorism
+  - People from radical Muslim countries should be banned from entering the EU countries
+  - We need a better EU migration policy
+  - We should ban missionary work
+  - We should adopt an austerity regime
+  - We should ban cosmetic surgery
+  - The EU should prohibit, and end funding for activities that presuppose the destruction of human embryos, in particular in the areas of research, development aid, and public health
+  - We should abolish zoos
+  - We should adopt a zero-tolerance policy in schools
+  - We should have psychological counseling in educational institutions
+  - We should encourage people to take part in Fit India Movement
+  - All workers and unemployed should have access to social protection, including young people
+  - We should ban private military companies
+  - Alternative medicine should be more accepted
+  - Every human has the right to receive reliable information about the movement and distribution of public funds
+  - 5G services should be available across India
+  - Stray animals should be killed
+  - There should be a ban on Bandhs
+  - We should abolish the right to keep and bear arms
+  - We should legalize organ trade
+  - We should subsidize space exploration
+  - Beauty pageants should be banned
+  - We should adopt a multi-party system
+  - We can rely on Cryptocurrencies like Bitcoins
+  - We should adopt gender-neutral language
+  - We should ban the Church of Scientology
+  - Coronavirus protection should be advertised on TV and social media
+  - India should accept Rohingya refugees
+  - EU citizens should be allowed to direct vote for more decisions
+  - Cryptocurrencies should be legalized
+  - The EU needs more effective policies to combat online hate speech
+  - We should abolish safe spaces
+  - We should adopt libertarianism
+  - We should limit judicial activism
+  - The EU should develop a European Youth Platform for mental health
+  - WikiLeaks is not a bane
+  - Firecrackers should be banned during Diwali, other festivals, and weddings
+  - Everyone should have equal access to affordable and high-quality public services, including health
+  - We should legalize prostitution
+  - We should ban factory farming
+  - We should abolish intellectual property rights
+  - We should ban whaling
+  - The EU should enforce the obligation to respect the Rule of Law within its borders
+  - We should abolish the three-strikes laws
+  - The world does not need religion anymore
+  - We should ban algorithmic trading
+  - We should ban the use of child actors
+  - Frontex should regularly publish transparency reports
+  - We should legalize cannabis
+  - We should introduce compulsory voting
+  - We should ban targeted killing
+  - We should legalize sex selection
+  - The best way to save the world from climate change and protect the environment is to encourage everyone to start with themselves and look at what things they can do to help with this problem
+  - We should subsidize embryonic stem cell research
+  - The European Union's asylum system needs to implement its humanitarian principles
+  - We should subsidize Wikipedia
+  - We should ban human cloning
+  - We should cancel pride parades
+  - We should abolish capital punishment
+  - We should subsidize student loans
+  - The EU government should encourage people to eat less meat
+  - We should ban cosmetic surgery for minors
+  - Ideology should be aimed at popularizing the best human qualities and stopping everything that is directed against a human
+  - We should oppose collectivism
+  - We should fight for the abolition of nuclear weapons
+  - The European Union should implement a EU wide carbon tax
+  - Aadhaar should be made mandatory in India
+  - We need an inclusive and pluralistic European society
+  - We should subsidize journalism
+  - The EPPO’s jurisdiction should be extended to all member states
+  - Donald Trump's Presidency was a good thing
+  - We should stop the development of autonomous cars
+  - We should subsidize higher education institutions
+  - We should adopt atheism
+  - Experimenting on Animals is fair
+  - We should abolish the Olympic Games
+  - Triple Talaq should be abolished
+  - We should ban telemarketing
+  - Technology is rising Unemployment rates
+  - We need a Europe that respects life from conception is a humane Europe
+  - The EU should extend the model of Pooling & Sharing European military resources beyond air transport.
+  - Political parties should be brought under RTI (Right to Information) Act
+
+Topic: 1
+  - Biogas plants should be assessed on the basis of their efficiency
+  - We should abolish the Olympic Games
+  - We should subsidize hydrogen vehicles
+  - We should stop the development of autonomous cars
+  - Public transport in EU cities should be free
+  - Driverless cars should be allowed in India
+  - The EU should establish a Carbon Border Adjustment Mechanism (CBAM)
+  - We should fight for the abolition of nuclear weapons
+  - We should cancel pride parades
+  - Electric cars are not a solution to air pollution
+
+Topic: 7
+  - Uniforms should be mandatory in schools
+  - We should abandon the use of school uniform
+  - We should adopt a zero-tolerance policy in schools
+  - We should ban the use of child actors
+  - We should abolish safe spaces
+
+Topic: 18
+  - India should have 'One Nation - One Election' policy
+  - The president of the European Commission should be elected by the people of the EU
+  - We should adopt libertarianism
+  - We should adopt a multi-party system
+  - Council meetings should be open to the public and the press
+  - Political parties should be brought under RTI (Right to Information) Act
+
+Topic: 10
+  - We should adopt an austerity regime
+  - We should abolish the right to keep and bear arms
+  - The EU should recognize Taiwan as an independent sovereign state
+  - We should legalize prostitution
+  - Companies should fight moonlighting
+  - We should abolish intellectual property rights
+
+Topic: 27
+  - Europe should protect bees
+  - We should ban whaling
+
+Topic: 16
+  - We should end mandatory retirement
+  - Companies should fight moonlighting
+  - We should limit executive compensation
+  - We should adapt the viable pay incentive scheme
+  - We should subsidize journalism
+  - We should abolish intellectual property rights
+
+Topic: 32
+  - Aadhaar should be made mandatory in India
+  - We should ban cosmetic surgery
+  - Beauty pageants should be banned
+  - We should ban cosmetic surgery for minors
+
+Topic: 9
+  - Homeschooling should be encouraged in India
+  - We should adopt a zero-tolerance policy in schools
+  - We should ban the use of child actors
+  - We should encourage people to take part in Fit India Movement
+  - We should abolish safe spaces
+  - Nepotism exists in Bollywood
+  - We should legalize prostitution
+  - Kids' reality shows should be banned
+  - Censorship of movies is an outdated concept
+  - We should ban kids' reality shows
+
+Topic: 50
+  - Triple Talaq should be abolished
+  - We should ban missionary work
+  - Firecrackers should be banned during Diwali, other festivals, and weddings
+  - India is becoming intolerant
+  - We should subsidize embryonic stem cell research
+  - We should ban the Church of Scientology
+  - We should end the use of economic sanctions
+  - We should adopt atheism
+
+Topic: 2
+  - IT recruiters should consider skills instead of a degree in programming
+  - The EU should equalize the retirement age for all Europeans.
+  - We should end mandatory retirement
+  - We should ban telemarketing
+  - We should subsidize embryonic stem cell research
+  - The EU should implement a common pension fund
+  - All workers and unemployed should have access to social protection, including young people
+  - Companies should fight moonlighting
+  - We should abolish capital punishment
+  - We should ban whaling
+
+Topic: 6
+  - IT recruiters should consider skills instead of a degree in programming
+  - NEET exam should be banned
+  - College education should be free for everyone
+  - We should subsidize student loans
+  - We should subsidize Wikipedia
+  - We should subsidize higher education institutions
+  - We should subsidize journalism
+
+Topic: 4
+  - Rapists should be tortured
+  - Men are silent sufferers in this modern world
+  - The EU should adopt legislative measures aimed at increasing the percentage of women in the political sector
+  - We should adopt gender-neutral language
+  - Marital rape should be criminalized in India
+  - We should ban the use of child actors
+  - The Sabarimala verdict is progressive and not a threat to traditions
+  - Marital Rape should be criminalized in India
+  - We should legalize prostitution
+  - We should ban human cloning
+  - The EU should prohibit, and end funding for activities that presuppose the destruction of human embryos, in particular in the areas of research, development aid, and public health
+  - People with disabilities should be more represented
+  - We should legalize sex selection
+
+Topic: 19
+  - We need an inclusive and pluralistic European society
+  - We should oppose collectivism
+  - We should adopt gender-neutral language
+
+Topic: 42
+  - We should ban the Church of Scientology
+  - We should ban missionary work
+
+Topic: 26
+  - The current differing legal cultures of the Member States need to be developed into a common legal culture in Europe
+  - The Sabarimala verdict is progressive and not a threat to traditions
+  - We should limit judicial activism
+  - We should adopt a zero-tolerance policy in schools
+
+Topic: 36
+  - We need a common migration and asylum policy, based on respect for rights and equal treatment
+  - We should introduce compulsory voting
+  - The European Union needs to equip itself with the institutional and legal tools to resolve democratic conflicts on sovereignty within its own borders.
+
+Topic: 47
+  - Businesses should buy unused emissions by reforesting, restoration, or conservation of habitats sequestrating carbon
+  - We should abolish zoos
+
+Topic: 22
+  - We should ban the Church of Scientology
+  - The world does not need religion anymore
+  - We should adopt atheism
+  - We should ban missionary work
+
+Topic: 23
+  - There should be an enlargement of the European Union.
+  - We should subsidize space exploration
+
+Topic: 60
+  - Primary Health Care (PHC) is an indispensable good for equitable and high-quality care in Europe and beyond
+  - We should ban missionary work
+
+Topic: 77
+  - The EU needs a European research center
+  - We should ban missionary work
+  - India should have 'One Nation - One Election' policy
+  - We should ban telemarketing
+  - We should adopt an austerity regime
+  - We should abolish the right to keep and bear arms
+  - We should adopt libertarianism
+  - We should ban private military companies
+  - We should legalize cannabis
+  - We should introduce compulsory voting
+  - We should legalize prostitution
+  - We should ban factory farming
+  - We should abolish capital punishment
+  - We should adopt atheism
+  - We should ban alcohol in India
+
+Topic: 13
+  - We should prohibit school prayer
+  - We need family and child protection against political agendas until their adulthood
+  - We should abandon the use of school uniform
+  - We should adopt a zero-tolerance policy in schools
+  - We should have psychological counseling in educational institutions
+  - We should abolish the right to keep and bear arms
+  - Betting and gambling should be legalized in India
+  - All workers and unemployed should have access to social protection, including young people
+
+Topic: 45
+  - We should abolish the Olympic Games
+  - We need a plan for receiving asylum/migrants.
+
+Topic: 87
+  - We should ban fast food
+  - The EU government should encourage people to eat less meat
+
+Topic: 46
+  - Every young European should be asked to go live in another country for 1 year at least
+  - We should abolish zoos
+
+Topic: 88
+  - We should subsidize embryonic stem cell research
+  - We should legalize prostitution
+  - We should ban human cloning
+  - We should legalize cannabis
+  - We should legalize sex selection
+
+Topic: 49
+  - We need a European democratizing force to help countries with democracy.
+  - We should ban targeted killing
+
+Topic: 0
+  - The EU should conclude an agreement with the United Kingdom and create together a European pillar of NATO
+  - The EU needs tougher border protection
+  - Catalan should be an official language of the European Parliament
+  - The European Union should support and integrate immigrant people to ensure that they live with dignity and equality with all European citizens
+  - The EU should be a permanent member of the UN Security Council
+  - There should be no immigration from non-European or non-first-world countries.
+  - The EU should start accession negotiations with Russia
+  - Cohesion funds should be provided directly to cities and regions
+  - The EU should take responsibility for global environmental and climate policy
+  - Equal pay for equal work should apply as a principle in the country in which you work, regardless of where you come from
+  - The European Union should enforce the energy transition in its member states
+  - The 19 June plenary meeting of the European Conference should mark a first step in the direction of a stronger and more united EU in the world
+  - The European Union should visible on the facades of the embassies and consulates of European countries.
+  - European Union should help young people to train in refugee countries
+  - US-Mexico border wall is a good thing
+  - The president of the European Commission should be elected by the people of the EU
+  - The Western Balkans should join the EU immediately
+  - We need a better migration policy.
+  - EU countries should slightly reduce health insurance contributions for all citizens who do not use tobacco products
+  - We need a single immigration policy.
+  - Europe should have stronger borders
+  - The EU should prohibit, and end funding for activities that presuppose the destruction of human embryos, in particular in the areas of research, development aid, and public health
+  - We don't need immigration from non-European or non-first-world countries.
+  - Serbia should join the EU.
+  - The EU should enforce minority protection
+  - We need a common EU TV channel free of charge for people in all Member States
+  - The European Union needs to equip itself with the institutional and legal tools to resolve democratic conflicts on sovereignty within its own borders.
+  - All workers and unemployed should have access to social protection, including young people
+  - The European Union has no other choice than to reject all immigration, except for workers they need.
+  - The EU should support Ukraine.
+  - We need an integrated migration and border policy.
+  - The demographic decline should be stopped.
+  - There can be no real European democracy without the autonomous fiscal power of the EU.
+  - The European Parliament should be dissolved and replaced with a global government.
+  - The 9th of May (Europe Day) should be a national holiday
+  - There should be no illegal migration
+  - The EU should focus on pragmatism
+  - EU institutions should prioritize the struggle against all forms of racism, also anti-Muslim bigotry, and antisemitism
+  - Europe should change the world for the better for everyone.
+  - The EU should reduce its influence on its member states.
+  - We need an inclusive and pluralistic European society.
+  - Foreign Policy at the EU level should be based on an absolute majority, not unanimity
+  - The EU should strengthen its ties with Ukraine and prepare for EU membership of Ukraine.
+  - International cooperation with third countries in the field of migration should be developed
+  - Europe is getting older and should be open to more migration from Asia, and southeast Asia.
+  - The EU should strengthen its ties with Ukraine and prepare an EU membership of Ukraine.
+  - Council meetings should be open to the public and the press
+  - The EU should ensure a free, independent, and functioning judiciary in its Member States
+  - We need to develop partnership between the EU and the AU (African Union)
+  - The EU should engage in development cooperation with the global South.
+  - There should be a better post-Brexit European Alliance
+  - The EU should decide its role in a multipolar world
+  - Serious crimes should lead to rapid expulsion from the EU
+  - We need a revision of the current asylum policy in the European Union.
+  - The EU should recognize Taiwan as an independent sovereign state
+  - The EU needs strong advertising and recruitment strategies for students and qualified employees
+  - United in diversity should be a concept for reconciliation in the Western Balkans.
+  - We do not want illegal migration.
+  - We need to change the immigration policy to prevent illegal crossing
+  - We need a better EU migration policy.
+  - The EU should synchronize national elections
+  - Foreign Policy at the EU level should be based on absolute majority, not unanimity
+  - There is a lack of unity in European migration policies.
+  - Europe needs an energy partnership with Africa.
+  - The federal features of the European Treaties need to be strengthened.
+  - The EU should immediately end the refugee deal with Turkey.
+  - The EU should be involved in the creation of a media-funding framework
+  - There should be no illegal migration.
+  - The EU must take the lead for the Middle East.
+  - The EU needs a reorientation of migration and asylum policy
+  - Migrants should be housed in EU bureaucrats' neighborhoods
+  - The EU should strengthen its relationship with China.
+  - The EU must be confederal and not federal
+  - A coordination hub should be set up with representatives of institutions that can act to facilitate the integration of refugees
+  - Europe should stand together!
+  - There should be a stronger partnership between the EU and the African Union
+  - We should abolish safe spaces
+  - We do not need immigration from non-European or non-first-world countries.
+  - The EU needs a single market for news
+  - The EU should use promote institutions to improve the relationship between Eastern and Western Europe.
+  - There should be a president for the EU elected by the people.
+  - Imprisonment of foreign criminals should be carried out in their country
+  - Foreign Policy at the EU level should be based on an absolute majority, not unanimity.
+  - The President of the European Commission should be directly elected by direct universal suffrage
+  - There should be a single EU policy.
+  - There should be a new EU foreign policy.
+  - Norway and Iceland should be invited to the European Conference
+  - The EU should also guarantee territorial integrity against threats from Turkey and other Middle Eastern regional powers.
+  - The EU should improve public management and anti-corruption mechanisms
+  - The EU itself and its people should understand and accept there are a lot of Europeans outside the EU. EU does not equal to Europe
+  - The EU will dissolve within 10 years unless reformed
+  - The EU needs s common migration and asylum policy, based on respect for rights and equal treatment
+  - The EU needs a European research center
+  - The EU should enforce the obligation to respect the Rule of Law within its borders
+  - Food health and industry companies should be located within the EU
+  - Companies should pay for the environmental damage cause by their products
+  - Every young European should be asked to go live in another country for 1 year at least
+  - Europe should establish a common Army across Europe
+  - We need a stand-alone European army.
+  - We need to ensure improvements to the European Union's decision-making processes with increased transparency and accountability
+  - We do not need immigration from non-European or non-first-world countries
+  - The EU should strengthen development cooperation.
+  - People with disabilities should be more represented
+  - There should be a federal Constitution for a European Federation
+  - Europe should protect bees
+  - We need family and child protection against political agendas until their adulthood
+  - The EU should be a permanent member of the UN Security Council.
+  - The EU should have open borders with poor countries
+  - European citizens want quality of life and are not interested in world supremacy
+  - The EU needs human security approach to ensure peace.
+  - There should be a European Army.
+  - We need a common migration and asylum policy, based on respect for rights and equal treatment
+  - We should introduce compulsory voting
+  - We need an inclusive language for all citizens of the world: the Esperanto.
+  - There should be more unity and cooperation in Europe.
+  - Europe must help Ukraine
+  - The EU should focus more on ensuring the success of the internal market, and on improving its competitiveness
+  - There should be a small council of people from all over the world, and identify the problems of every country and solve them.
+  - There should be 6 concrete proposals for migrants on the Balkan route.
+  - The best way to save the world from climate change and protect the environment is to encourage everyone to start with themselves and look at what things they can do to help with this problem
+  - There should be a reform of EU trade and investment policy and a relaunch of global multilateralism.
+  - The EU should join NATO
+  - We need to strengthen the participation of citizens in the design and processes of the EU
+  - The European Union, as a Union of values, should limit its support to countries that do not want to adhere to European values and violate the rights of their citizens
+  - Immigrants should integrate through work
+  - The EU must use its weight as a united global player in trade policy and put an end to foreclosure
+  - There should be better EU relations with Russia
+  - The European Union's asylum system needs to implement its humanitarian principles
+  - The EU should strengthen the integration of Ukraine through intensified cooperation
+  - EU officials should be allowed to use the expression “Ladies and Gentlemen”
+  - The European Union should be harder towards irreparable migrants, those who do not value their lives in peace, security, and prosperity.
+  - We need an immediate cessation of all immigration.
+  - The European Union shall guarantee its territorial integrity against threats from Russia and shall seek to eliminate the influence of Russia in Central and Eastern Europe.
+  - The European Parliament should have more powers, so Europe can stand against other world powers.
+  - There should be an EU citizenship
+  - Migration should not be the solution.
+  - There should be a reform of EU trade and investment policy and a relaunch of global multilateralism
+  - British people who are residents in an EU country should have EU-wide rights
+  - Humanitarian organizations should be financially responsible in relation to illegal immigration.
+  - Businesses should buy unused emissions by reforesting, restoration, or conservation of habitats sequestrating carbon
+  - The European Union should hold a referendum to decide on immigration
+  - Public transport in EU cities should be free
+  - The fear of migration is a fear of the unknown and is exacerbated.
+  - The EU should put more pressure on the non-euro area member states to adopt the single currency
+  - There should be a stronger EU on the world scene
+  - We need stricter and homogeneous environmental legislation across the EU
+  - We need a combined education and migration policy for Africa and the Middle East.
+  - Germany should start paying reparations share for any damaged countries of Europe up to 100 years after its attack on international society
+  - We need a better distribution of refugees.
+  - The European Union should implement a EU wide carbon tax
+  - The EU should have common taxation and social policy
+  - The EU should adopt legislative measures aimed at increasing the percentage of women in the political sector
+  - The EU leadership must enter into strong agreements with the countries where immigrants come from, in order to retain them in their countries
+  - We need better ways of migration.
+  - We need legal ways of migration.
+  - We need to develop a partnership between the EU and the AU (African Union)
+  - We need an inclusive and pluralistic European society
+  - Europe should put a GreenTax on top of all imports from highly polluting countries
+  - Asylum seekers should only be able to file asylum applications from their home or neighboring country.
+  - The EPPO’s jurisdiction should be extended to all member states
+  - Social media is making us less social
+  - Immigrants should learn the language of their host country.
+  - Devices with batteries should be designed so that batteries can be replaced
+  - Donald Trump's Presidency was a good thing
+  - Permanent non-EU nationals who are living in the European Union should have more rights.
+  - The EU should play a major role in a multipolar world
+  - Migrants should not be used for political blackmail.
+  - We need a better distribution of refugees
+  - There should be no immigration from non-European or non-first-world countries
+  - Esperanto should be the common language for the European Union.
+  - Immigrants should receive help from the EU through integration programs
+  - We need Integrated migration and border policy.
+  - The EU should set up physical offices, where citizens can address their concerns about Europe
+  - We need to build up European Defence while remaining in NATO
+  - There should be a European Common Defence and Security Alliance
+  - We need integrated rail transport systems, agreements between various railway operators and a simple and accessible search engine
+  - Political institutions should make fundamental changes in the way they address climate change and environmental protection
+  - The EU should change its internal structure.
+  - The EU should extend the model of Pooling & Sharing European military resources beyond air transport.
+  - We do not want immigration from non-European or non-first-world countries
+  - The EU needs a more rational Green Policy
+  - There should be a common EU migration and asylum policy
+  - The EU should promote organizations that teach the national language via Esperanto
+  - The EU should integrate the armed forces of its member states
+  - Esperanto should replace English as the first foreign language in schools and universities
+
+Topic: 71
+  - We should ban missionary work
+  - NGO boats should have an government representative on board to make sure they aren't people trafficking
+
+Topic: 82
+  - The EU should adopt legislative measures aimed at increasing the percentage of women in the political sector
+  - We should subsidize student loans
+  - We should subsidize Wikipedia
+  - Pay-as-you-go public health insurance funds should only be used for the most serious illnesses
+  - We should adopt libertarianism
+  - We should ban cosmetic surgery for minors
+  - We should ban cosmetic surgery
+  - We should introduce compulsory voting
+  - We should oppose collectivism
+  - We should adopt atheism
+
+Topic: 86
+  - We should ban the use of child actors
+  - We should ban cosmetic surgery for minors
+
+Topic: 61
+  - We should subsidize journalism
+  - We should subsidize Wikipedia
+
+Topic: 52
+  - We should ban cosmetic surgery
+  - We should ban cosmetic surgery for minors
+
+Topic: 80
+  - We should ban fast food
+  - We should legalize organ trade
+  - We should ban cosmetic surgery for minors
+  - We need a Europe that respects life from conception is a humane Europe
+  - We should ban cosmetic surgery
+  - We should legalize cannabis
+  - We should legalize prostitution
+  - We should ban the Church of Scientology
+  - We should legalize sex selection
+
+Topic: 78
+  - We need a Europe that respects life from conception is a humane Europe
+  - We should subsidize embryonic stem cell research
+
+Topic: 89
+  - We should strengthen laws to fight against terrorism
+  - We should abolish capital punishment
+  - We should ban targeted killing
+  - We should adopt libertarianism
+
+Topic: 69
+  - 5G services should be available across India
+  - Social media is making us less social
+  - The EU needs more effective policies to combat online hate speech
+  - Devices with batteries should be designed so that batteries can be replaced
+  - EU needs an action plan against digital addiction
+  - Artificial intelligence brings more harm than good
+  - We need integrated rail transport systems, agreements between various railway operators and a simple and accessible search engine
+  - Technology is making us feel less human
+
+Topic: 85
+  - 5G services should be available across India
+  - We need a European Clinical Registries Platform
+  - India should store the data within the territorial boundaries of the country
+
+Topic: 84
+  - 5G services should be available across India
+  - We should forbid neo-banks
+  - We can rely on Cryptocurrencies like Bitcoins
+  - We should stop using cash
+
+Topic: 54
+  - India should accept Rohingya refugees
+  - We need Integrated migration and border policy.
+  - The European Union should support and integrate immigrant people to ensure that they live with dignity and equality with all European citizens
+  - The Commission should take care of the administration of camps where migrants and asylum seekers are kept.
+  - The EU should immediately end the refugee deal with Turkey.
+  - The European Union's asylum system needs to implement its humanitarian principles
+  - We do not need any immigration from non-European or non-first-world countries
+  - We need a better distribution of refugees
+  - All countries should take responsibility for accepting refugees
+
