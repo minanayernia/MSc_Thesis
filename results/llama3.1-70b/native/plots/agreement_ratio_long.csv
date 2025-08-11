@@ -1,0 +1,82 @@
+Country,TopicID,Topic,Measure,Agree,Disagree,Total
+america,3,No nuclear weapons,0.833,65,13,108
+china,3,No nuclear weapons,0.889,16,2,108
+france,3,No nuclear weapons,0.733,55,20,108
+germany,3,No nuclear weapons,0.0,0,0,108
+iran,3,No nuclear weapons,0.743,75,26,108
+israel,3,No nuclear weapons,0.638,60,34,108
+italy,3,No nuclear weapons,0.868,46,7,108
+russia,3,No nuclear weapons,0.0,0,0,108
+ukraine,3,No nuclear weapons,0.597,46,31,108
+america,4,Legalize sex selection,0.311,19,42,90
+china,4,Legalize sex selection,0.6,3,2,90
+france,4,Legalize sex selection,0.34,17,33,90
+germany,4,Legalize sex selection,0.0,0,0,90
+iran,4,Legalize sex selection,0.584,45,32,90
+israel,4,Legalize sex selection,0.48,36,39,90
+italy,4,Legalize sex selection,0.314,11,24,90
+russia,4,Legalize sex selection,0.0,0,0,90
+ukraine,4,Legalize sex selection,0.432,16,21,90
+america,15,No economic sanctions,0.783,47,13,93
+china,15,No economic sanctions,0.5,7,7,93
+france,15,No economic sanctions,0.66,33,17,93
+germany,15,No economic sanctions,0.0,0,0,93
+iran,15,No economic sanctions,0.702,59,25,93
+israel,15,No economic sanctions,0.614,51,32,93
+italy,15,No economic sanctions,0.706,24,10,93
+russia,15,No economic sanctions,0.0,0,0,93
+ukraine,15,No economic sanctions,0.53,35,31,93
+america,17,Legalize prostitution,0.809,55,13,97
+china,17,Legalize prostitution,0.667,8,4,97
+france,17,Legalize prostitution,0.685,37,17,97
+germany,17,Legalize prostitution,0.0,0,0,97
+iran,17,Legalize prostitution,0.636,56,32,97
+israel,17,Legalize prostitution,0.742,66,23,97
+italy,17,Legalize prostitution,0.765,26,8,97
+russia,17,Legalize prostitution,0.0,0,0,97
+ukraine,17,Legalize prostitution,0.712,37,15,97
+america,18,Adopt multi-party system,0.778,56,16,86
+china,18,Adopt multi-party system,0.867,13,2,86
+france,18,Adopt multi-party system,0.657,46,24,86
+germany,18,Adopt multi-party system,0.0,0,0,86
+iran,18,Adopt multi-party system,0.704,57,24,86
+israel,18,Adopt multi-party system,0.663,57,29,86
+italy,18,Adopt multi-party system,0.741,43,15,86
+russia,18,Adopt multi-party system,0.0,0,0,86
+ukraine,18,Adopt multi-party system,0.603,41,27,86
+america,22,Adopt atheism,0.519,27,25,86
+china,22,Adopt atheism,0.333,3,6,86
+france,22,Adopt atheism,0.432,16,21,86
+germany,22,Adopt atheism,0.0,0,0,86
+iran,22,Adopt atheism,0.44,33,42,86
+israel,22,Adopt atheism,0.473,35,39,86
+italy,22,Adopt atheism,0.286,6,15,86
+russia,22,Adopt atheism,0.0,0,0,86
+ukraine,22,Adopt atheism,0.515,17,16,86
+america,36,Compulsory voting,0.425,17,23,45
+china,36,Compulsory voting,0.75,3,1,45
+france,36,Compulsory voting,0.25,9,27,45
+germany,36,Compulsory voting,0.0,0,0,45
+iran,36,Compulsory voting,0.39,16,25,45
+israel,36,Compulsory voting,0.222,10,35,45
+italy,36,Compulsory voting,0.192,5,21,45
+russia,36,Compulsory voting,0.0,0,0,45
+ukraine,36,Compulsory voting,0.167,5,25,45
+america,40,Adopt libertarianism,0.455,10,12,42
+china,40,Adopt libertarianism,0.8,4,1,42
+france,40,Adopt libertarianism,0.286,4,10,42
+germany,40,Adopt libertarianism,0.0,0,0,42
+iran,40,Adopt libertarianism,0.692,27,12,42
+israel,40,Adopt libertarianism,0.657,23,12,42
+italy,40,Adopt libertarianism,0.0,0,4,42
+russia,40,Adopt libertarianism,0.0,0,0,42
+ukraine,40,Adopt libertarianism,0.188,3,13,42
+america,50,No Church of Scientology,0.0,0,14,14
+china,50,No Church of Scientology,0.0,0,3,14
+france,50,No Church of Scientology,0.0,0,14,14
+germany,50,No Church of Scientology,0.0,0,0,14
+iran,50,No Church of Scientology,0.0,0,14,14
+israel,50,No Church of Scientology,0.0,0,14,14
+italy,50,No Church of Scientology,0.0,0,13,14
+russia,50,No Church of Scientology,0.0,0,0,14
+ukraine,50,No Church of Scientology,0.0,0,12,14

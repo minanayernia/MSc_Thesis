@@ -1,0 +1,81 @@
+Role,Topic_ID,Measure,Agree,Disagree,Total,Topic_Name
+Iran,3,0.6851851851851852,74,34,108,No nuclear weapons
+Iran,4,0.28888888888888886,26,64,90,Legalize sex selection
+Iran,15,0.9139784946236559,85,8,93,No economic sanctions
+Iran,17,0.7319587628865979,71,26,97,Legalize prostitution
+Iran,18,0.7558139534883721,65,21,86,Adopt multi-party system
+Iran,22,0.35294117647058826,30,55,86,Adopt atheism
+Iran,36,0.15555555555555556,7,38,45,Compulsory voting
+Iran,40,0.2619047619047619,11,31,42,Adopt libertarianism
+America,3,0.5648148148148148,61,47,108,No nuclear weapons
+America,4,0.4444444444444444,40,50,90,Legalize sex selection
+America,15,0.41935483870967744,39,54,93,No economic sanctions
+America,17,0.7835051546391752,76,21,97,Legalize prostitution
+America,18,0.7325581395348837,63,23,86,Adopt multi-party system
+America,22,0.5116279069767442,44,42,86,Adopt atheism
+America,36,0.17777777777777778,8,37,45,Compulsory voting
+America,40,0.38095238095238093,16,26,42,Adopt libertarianism
+Russia,3,0.5277777777777778,57,51,108,No nuclear weapons
+Russia,4,0.3111111111111111,28,62,90,Legalize sex selection
+Russia,15,0.7096774193548387,66,27,93,No economic sanctions
+Russia,17,0.7525773195876289,73,24,97,Legalize prostitution
+Russia,18,0.7441860465116279,64,22,86,Adopt multi-party system
+Russia,22,0.4235294117647059,36,49,86,Adopt atheism
+Russia,36,0.17777777777777778,8,37,45,Compulsory voting
+Russia,40,0.23809523809523808,10,32,42,Adopt libertarianism
+Israel,3,0.5925925925925926,64,44,108,No nuclear weapons
+Israel,4,0.4444444444444444,40,50,90,Legalize sex selection
+Israel,15,0.4838709677419355,45,48,93,No economic sanctions
+Israel,17,0.7731958762886598,75,22,97,Legalize prostitution
+Israel,18,0.7441860465116279,64,22,86,Adopt multi-party system
+Israel,22,0.4470588235294118,38,47,86,Adopt atheism
+Israel,36,0.2,9,36,45,Compulsory voting
+Israel,40,0.3333333333333333,14,28,42,Adopt libertarianism
+Ukraine,3,0.7222222222222222,78,30,108,No nuclear weapons
+Ukraine,4,0.3111111111111111,28,62,90,Legalize sex selection
+Ukraine,15,0.3225806451612903,30,63,93,No economic sanctions
+Ukraine,17,0.7731958762886598,75,22,97,Legalize prostitution
+Ukraine,18,0.7790697674418605,67,19,86,Adopt multi-party system
+Ukraine,22,0.43023255813953487,37,49,86,Adopt atheism
+Ukraine,36,0.2222222222222222,10,35,45,Compulsory voting
+Ukraine,40,0.2619047619047619,11,31,42,Adopt libertarianism
+China,3,0.6296296296296297,68,40,108,No nuclear weapons
+China,4,0.30337078651685395,27,62,90,Legalize sex selection
+China,15,0.7526881720430108,70,23,93,No economic sanctions
+China,17,0.7525773195876289,73,24,97,Legalize prostitution
+China,18,0.6976744186046512,60,26,86,Adopt multi-party system
+China,22,0.4,34,51,86,Adopt atheism
+China,36,0.2,9,36,45,Compulsory voting
+China,40,0.14285714285714285,6,36,42,Adopt libertarianism
+Germany,3,0.7129629629629629,77,31,108,No nuclear weapons
+Germany,4,0.28888888888888886,26,64,90,Legalize sex selection
+Germany,15,0.45652173913043476,42,50,93,No economic sanctions
+Germany,17,0.8350515463917526,81,16,97,Legalize prostitution
+Germany,18,0.7441860465116279,64,22,86,Adopt multi-party system
+Germany,22,0.5465116279069767,47,39,86,Adopt atheism
+Germany,36,0.26666666666666666,12,33,45,Compulsory voting
+Germany,40,0.2857142857142857,12,30,42,Adopt libertarianism
+France,3,0.6851851851851852,74,34,108,No nuclear weapons
+France,4,0.3,27,63,90,Legalize sex selection
+France,15,0.5483870967741935,51,42,93,No economic sanctions
+France,17,0.8247422680412371,80,17,97,Legalize prostitution
+France,18,0.8023255813953488,69,17,86,Adopt multi-party system
+France,22,0.47058823529411764,40,45,86,Adopt atheism
+France,36,0.2222222222222222,10,35,45,Compulsory voting
+France,40,0.23809523809523808,10,32,42,Adopt libertarianism
+Italy,3,0.6944444444444444,75,33,108,No nuclear weapons
+Italy,4,0.28888888888888886,26,64,90,Legalize sex selection
+Italy,15,0.5698924731182796,53,40,93,No economic sanctions
+Italy,17,0.8247422680412371,80,17,97,Legalize prostitution
+Italy,18,0.7674418604651163,66,20,86,Adopt multi-party system
+Italy,22,0.4883720930232558,42,44,86,Adopt atheism
+Italy,36,0.26666666666666666,12,33,45,Compulsory voting
+Italy,40,0.3333333333333333,14,28,42,Adopt libertarianism
+System,3,0.6296296296296297,68,40,108,No nuclear weapons
+System,4,0.4943820224719101,44,45,90,Legalize sex selection
+System,15,0.43478260869565216,40,52,93,No economic sanctions
+System,17,0.8247422680412371,80,17,97,Legalize prostitution
+System,18,0.7790697674418605,67,19,86,Adopt multi-party system
+System,22,0.6,51,34,86,Adopt atheism
+System,36,0.24444444444444444,11,34,45,Compulsory voting
+System,40,0.38095238095238093,16,26,42,Adopt libertarianism
