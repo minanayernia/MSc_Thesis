@@ -260,7 +260,7 @@ TRANSLATION_MAP = {
 | Adopt libertarianism      | 0.405   | 0.857 | 0.310  | 0.500   | 0.786 | 0.381  | 0.595 | 0.667  | 0.738   |
 
 <p>
-<img src="results/gpt-4o-mini/native/plots/agreement_ratio_Adopt_atheism.png" wideth="400">
+<img src="results/gpt-4o-mini/native/plots/agreement_ratio_Adopt_atheism.png" width="400">
 <img src="results/gpt-4o-mini/native/plots/agreement_ratio_Adopt_libertarianism.png" width="400">
 <img src="results/gpt-4o-mini/native/plots/agreement_ratio_Adopt_multi_party_system.png" width="400">
 <img src="results/gpt-4o-mini/native/plots/agreement_ratio_Legalize_prostitution.png" width="400">
