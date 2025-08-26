@@ -1,0 +1,183 @@
+Topic,Stance,Count,Percent
+-1,in favor of,177,53.31
+-1,against,155,46.69
+0,in favor of,314,67.97
+0,against,148,32.03
+1,in favor of,76,58.02
+1,against,55,41.98
+2,in favor of,64,53.78
+2,against,55,46.22
+3,in favor of,57,48.72
+3,against,60,51.28
+4,in favor of,54,47.37
+4,against,60,52.63
+5,in favor of,65,58.04
+5,against,47,41.96
+6,in favor of,75,68.18
+6,against,35,31.82
+7,in favor of,52,47.27
+7,against,58,52.73
+8,in favor of,59,54.63
+8,against,49,45.37
+9,in favor of,59,55.66
+9,against,47,44.34
+10,in favor of,49,47.12
+10,against,55,52.88
+11,in favor of,59,57.84
+11,against,43,42.16
+12,in favor of,60,58.82
+12,against,42,41.18
+13,in favor of,60,59.41
+13,against,41,40.59
+14,in favor of,51,51.0
+14,against,49,49.0
+15,in favor of,50,50.0
+15,against,50,50.0
+16,in favor of,52,52.53
+16,against,47,47.47
+17,in favor of,49,50.0
+17,against,49,50.0
+18,in favor of,53,54.08
+18,against,45,45.92
+19,in favor of,51,52.58
+19,against,46,47.42
+20,in favor of,55,57.89
+20,against,40,42.11
+21,in favor of,44,46.32
+21,against,51,53.68
+22,in favor of,51,57.3
+22,against,38,42.7
+23,in favor of,42,48.84
+23,against,44,51.16
+24,in favor of,50,61.73
+24,against,31,38.27
+25,in favor of,28,37.84
+25,against,46,62.16
+26,in favor of,31,47.69
+26,against,34,52.31
+27,in favor of,46,70.77
+27,against,19,29.23
+28,in favor of,27,41.54
+28,against,38,58.46
+29,in favor of,44,68.75
+29,against,20,31.25
+30,in favor of,23,35.94
+30,against,41,64.06
+31,in favor of,24,38.71
+31,against,38,61.29
+32,in favor of,33,55.0
+32,against,27,45.0
+33,in favor of,40,74.07
+33,against,14,25.93
+34,in favor of,9,17.31
+34,against,43,82.69
+35,in favor of,24,46.15
+35,against,28,53.85
+36,in favor of,6,12.77
+36,against,41,87.23
+37,in favor of,40,85.11
+37,against,7,14.89
+38,in favor of,22,50.0
+38,against,22,50.0
+39,in favor of,30,71.43
+39,against,12,28.57
+40,in favor of,16,38.1
+40,against,26,61.9
+41,in favor of,22,53.66
+41,against,19,46.34
+42,in favor of,36,94.74
+42,against,2,5.26
+43,in favor of,25,65.79
+43,against,13,34.21
+44,in favor of,32,84.21
+44,against,6,15.79
+45,in favor of,8,21.62
+45,against,29,78.38
+46,in favor of,30,83.33
+46,against,6,16.67
+47,in favor of,1,2.86
+47,against,34,97.14
+48,in favor of,23,69.7
+48,against,10,30.3
+49,in favor of,5,15.15
+49,against,28,84.85
+50,in favor of,3,9.09
+50,against,30,90.91
+51,in favor of,29,87.88
+51,against,4,12.12
+52,in favor of,14,43.75
+52,against,18,56.25
+53,in favor of,27,87.1
+53,against,4,12.9
+54,in favor of,16,51.61
+54,against,15,48.39
+55,in favor of,8,26.67
+55,against,22,73.33
+56,in favor of,2,6.67
+56,against,28,93.33
+57,in favor of,18,60.0
+57,against,12,40.0
+58,in favor of,29,100.0
+58,against,0,0.0
+59,in favor of,4,14.29
+59,against,24,85.71
+60,in favor of,2,7.14
+60,against,26,92.86
+61,in favor of,22,81.48
+61,against,5,18.52
+62,in favor of,20,74.07
+62,against,7,25.93
+63,in favor of,0,0.0
+63,against,27,100.0
+64,in favor of,12,44.44
+64,against,15,55.56
+65,in favor of,13,50.0
+65,against,13,50.0
+66,in favor of,15,57.69
+66,against,11,42.31
+67,in favor of,14,56.0
+67,against,11,44.0
+68,in favor of,16,64.0
+68,against,9,36.0
+69,in favor of,16,69.57
+69,against,7,30.43
+70,in favor of,22,95.65
+70,against,1,4.35
+71,in favor of,12,54.55
+71,against,10,45.45
+72,in favor of,13,59.09
+72,against,9,40.91
+73,in favor of,7,33.33
+73,against,14,66.67
+74,in favor of,13,61.9
+74,against,8,38.1
+75,in favor of,20,95.24
+75,against,1,4.76
+76,in favor of,10,52.63
+76,against,9,47.37
+77,in favor of,11,61.11
+77,against,7,38.89
+78,in favor of,1,5.88
+78,against,16,94.12
+79,in favor of,0,0.0
+79,against,15,100.0
+80,in favor of,7,46.67
+80,against,8,53.33
+81,in favor of,4,26.67
+81,against,11,73.33
+82,in favor of,3,21.43
+82,against,11,78.57
+83,in favor of,9,64.29
+83,against,5,35.71
+84,in favor of,7,50.0
+84,against,7,50.0
+85,in favor of,8,61.54
+85,against,5,38.46
+86,in favor of,9,69.23
+86,against,4,30.77
+87,in favor of,0,0.0
+87,against,11,100.0
+88,in favor of,5,45.45
+88,against,6,54.55
+89,in favor of,4,40.0
+89,against,6,60.0
