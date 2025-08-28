@@ -1,230 +1,3 @@
-% \documentclass{article}
-% \usepackage{graphicx}
-% \usepackage{float}
-
-% \begin{document}
-
-% \subsubsection{Topic: Nuclear Weapons}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_nuclear_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_nuclear_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_nuclear_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_nuclear_native}
-%     \end{minipage}
-% \end{figure}
-
-
-% \paragraph{Interpretation.}
-% The overall agreement ratios for the statement “We should fight for the abolition of nuclear weapons” are higher in the role-based completions than in the native-language ones. This suggests that assigning a country-specific role increases the model's tendency to agree with the statement, compared to simply translating the prompt into that country’s native language.
-
-% Despite this shift in magnitude, the relative ordering of several countries remains consistent across both settings. Germany, Italy, Iran, and France appear in the top half in both charts, preserving a general structure of high agreement.
-
-% However, some countries experience notable reordering. Ukraine ranks 4th in the native prompts (0.63), but jumps to 1st in the role-based setting (0.75), showing the largest upward shift. Russia drops slightly in rank, and China remains mid-tier but shows slightly more variation. Israel remains toward the lower end in both charts but improves slightly in role-based prompts. America also shows a minor increase but maintains a similar position.
-
-% The assistant role (“System”) appears in the role-based plot with a moderate agreement ratio (~0.63), which aligns it near the middle of the scale and provides a neutral baseline.
-
-% This pattern indicates that while language-based prompting captures some stance, explicitly assigning a national identity to the model has a stronger and more consistent influence on its output across this topic.
-
-
-% \subsubsection{Topic: Sex Selection}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_sex_selection_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_sex_selection_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_sex_selection_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_sex_selection_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% In this topic, the agreement ratios in the native-language completions are generally higher than in the role-based ones, indicating that the model is slightly more permissive when prompted in the local language compared to when explicitly assigned a country role.
-
-% In the native-language responses, the top three countries showing the highest agreement were Ukraine (0.61), Russia (0.59), and Germany (0.54), followed by Iran, Israel, and China, all hovering just below 0.50. The lowest agreement came from France (0.29), America (0.36), and Italy (0.41).
-
-% In contrast, the role-based completions show a noticeable drop in agreement across the board. The highest agreement is from the System (0.49), followed by America (0.44), Israel (0.44), and Ukraine (0.31). Most other countries — including France, Iran, Germany, and Italy — cluster around 0.30. Italy ranks the lowest in both settings, while America and Israel shift significantly upward in the role-based setting.
-
-% This inverse trend (lower overall agreement in role-based prompts) stands in contrast to previous topic, suggesting that topic sensitivity can modulate how much the model aligns with or diverges from its assistant persona. The relative reordering is also more pronounced here, with Ukraine dropping from 1st to 4th, and countries like France and Germany shifting downward in the role-based version.
-
-
-% \subsubsection{Topic: Economic Sanctions}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_sanctions_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_sanctions_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_sanctions_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_sanctions_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% Agreement ratios are overall higher in role-based prompts than native ones. In both settings, Iran ranks highest (0.91 role-based vs. 0.68 native), while Ukraine consistently ranks lowest.
-
-% Notable shifts include China and Italy rising in agreement under role-based prompting, while France and America drop. The assistant role ("System") sits near the lower-middle (0.43), lower than most country roles, suggesting that explicit role framing increases agreement for this topic.
-
-% The general ordering diverges more than in previous topics, indicating that prompt type influences the model's stance more strongly here.
-
-
-
-% \subsubsection{Topic: Legalizing Prostitution}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Prostitution_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_prostitution_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Prostitution_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_prostitution_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% In this topic, role-based completions yield more uniformly high agreement scores than native-language prompts. While native completions show high agreement overall, the values vary more — with Ukraine, Germany, China, and Italy leading (above 0.85), and Israel at the bottom (0.61).
-
-% In contrast, role-based completions are more tightly clustered, with all countries between 0.74 and 0.85. Germany ranks highest again (0.85), followed closely by the assistant role (0.83), France, and Italy. Ukraine drops from 1st (native) to mid-range (role-based), and Israel moves up.
-
-% This pattern suggests that assigning a country role leads to more consistent model behavior, reducing variation and producing uniformly supportive responses toward legalizing prostitution.
-
-% \subsubsection{Topic: Multi-party System}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Multi-party_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_Multi-party_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Multi-party_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_Multi-party_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% For this topic, role-based completions show a consistently high level of agreement across all countries, ranging roughly from 0.70 to 0.81, with France and Ukraine leading. The assistant (System) position is also among the highest, showing little deviation.
-
-% In the native-language completions, however, the agreement levels vary more. Italy and Germany show the strongest agreement (above 0.85), while Israel ranks lowest (around 0.55). France notably drops in ranking compared to the role-based setting.
-
-% This contrast suggests that native-language prompts introduce more variability in agreement, while country roles tend to stabilize the model's stance across this democratic governance topic.
-
-% \subsubsection{Topic: Atheism}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_atheism_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement__atheism_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_atheism_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_atheism_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% On this topic, both prompting strategies yield moderate agreement levels across countries, but the trends reveal distinct patterns. In the role-based completions, the assistant role ("System") shows the highest support (0.60), followed by Germany (0.54) and America (0.51). Iran appears at the bottom with a notably lower measure of 0.35, showing a wide spread in values across roles.
-
-% In the native-language completions, the agreement scores are more compressed and slightly lower overall, ranging roughly between 0.40 and 0.50. Germany, America, and Russia top the chart again with values near 0.50. China and France rank at the bottom, but the difference between highest and lowest is less pronounced than in the role-based responses.
-
-% Overall, the role-based completions exhibit greater variation, while native-language completions are more uniform in agreement. Germany and America consistently rank among the most supportive across both settings, while countries like Iran and China show relatively lower agreement in both, though with shifts in exact rank.
-
-% \subsubsection{Topic: Compulsory voting}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_voting_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_voting_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_voting_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_voting_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% This topic shows a notably different pattern compared to previous ones. Native-language prompts result in higher agreement ratios overall. Countries like China, Ukraine, and America exhibit the strongest agreement (above 0.40), followed closely by France and Russia. In contrast, the role-based completions are considerably lower and more compressed, with no country exceeding a 0.27 measure.
-
-% Interestingly, Germany and Italy rise to the top in role-based prompts despite ranking mid or low in native completions. Conversely, China, which leads in the native setting, drops significantly in role-based completions.
-
-% This shift suggests that when the model is assigned a country role, its responses to this topic become less favorable and more uniform, indicating a possible sensitivity to political framing. The assistant's value in the role-based chart (~0.24) is close to the upper bound of the overall group, reinforcing the impression that role-based completions tend to dampen strong agreement on this issue.
-
-% \subsubsection{Topic: Libertarianism}
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Libertarianism_role.png}
-%         \caption{GPT agreement ratios using role-based prompts.}
-%         \label{fig:gpt_agreement_Libertarianism_role}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}{0.48\textwidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/gpt_agreement_Libertarianism_native.png}
-%         \caption{GPT agreement ratios using native-language prompts.}
-%         \label{fig:gpt_agreement_Libertarianism_native}
-%     \end{minipage}
-% \end{figure}
-
-% \paragraph{Interpretation.}
-% The native prompt completions for libertarianism show a relatively high and consistent level of agreement across countries, with Iran, Israel, Germany, and China scoring at the top (above 0.53). The agreement range is fairly narrow, with all values between 0.42 and 0.56, indicating a general favorability.
-
-% On the other hand, the role-based completions result in a significantly lower overall agreement, with the maximum around 0.38 (America and the System). The distribution is also wider, with China scoring as low as 0.14 and other countries like Russia and France in the mid 0.24–0.26 range.
-
-% This contrast suggests that in this topic, the model tends to respond more favorably when prompted in native languages than when assuming explicit country roles. Additionally, while countries like Italy and Israel retain relatively high scores in both settings, Iran, Germany, and France show clear declines when assigned a role. This may indicate that libertarianism is contextually interpreted with greater constraint under role conditioning.
-
-% \end{document}
-
 
 \section{Dataset Exploration}
 
@@ -397,7 +170,7 @@ In this section we report the agreement ratios for each of the eight selected to
 \begin{itemize}
     \item \textbf{No nuclear weapons} 
 
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_3_by_country}
     \caption{Agreement ratios by country for the topic ``No nuclear weapons.''}
@@ -409,7 +182,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Legalize sex selection} 
 
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_4_by_country}
     \caption{Agreement ratios by country for the topic ``Legalize sex selection.''}
@@ -421,7 +194,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{No economic sanctions} 
     
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_15_by_country}
     \caption{Agreement ratios by country for the topic ``No economic sanctions.''}
@@ -433,7 +206,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Legalize prostitution} 
 
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_17_by_country}
     \caption{Agreement ratios by country for the topic ``Legalize prostitution.''}
@@ -445,7 +218,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Adopt multi-party system} 
     
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_18_by_country}
     \caption{Agreement ratios by country for the topic ``Adopt multi-party system.''}
@@ -457,7 +230,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Adopt atheism} 
 
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_22_by_country}
     \caption{Agreement ratios by country for the topic ``Adopt atheism.''}
@@ -469,7 +242,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Compulsory voting} 
     
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_36_by_country}
     \caption{Agreement ratios by country for the topic ``Compulsory voting.''}
@@ -481,7 +254,7 @@ In this section we report the agreement ratios for each of the eight selected to
     
     \item \textbf{Adopt libertarianism} 
     
-    \begin{figure}[ht]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/agreement_ratio/agreement_topic_40_by_country}
     \caption{Agreement ratios by country for the topic ``Adopt libertarianism.''}
@@ -531,42 +304,42 @@ Two clear trends emerge:
     \item Native vs. Assistant similarities tend to be lowest, implying that the ``helpful assistant'' completions diverge more strongly from role-based or native completions.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/gpt/rolebased_vs_assistant_summary.png}
     \caption{GPT-4o-mini: Role-based vs. Assistant similarities.}
     \label{fig:gpt_rolebased_vs_assistant}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/gpt/native_vs_rolebased_summary.png}
     \caption{GPT-4o-mini: Native vs. Role-based similarities.}
     \label{fig:gpt_native_vs_rolebased}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/gpt/native_vs_assistant_summary.png}
     \caption{GPT-4o-mini: Native vs. Assistant similarities.}
     \label{fig:gpt_native_vs_assistant}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/llama/rolebased_vs_assistant_summary.png}
     \caption{LLaMA 3.1-70B: Role-based vs. Assistant similarities.}
     \label{fig:llama_rolebased_vs_assistant}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/llama/native_vs_rolebased_summary.png}
     \caption{LLaMA 3.1-70B: Native vs. Role-based similarities.}
     \label{fig:llama_native_vs_rolebased}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/results/similarity/llama/native_vs_assistant_summary.png}
     \caption{LLaMA 3.1-70B: Native vs. Assistant similarities.}

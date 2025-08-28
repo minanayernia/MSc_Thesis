@@ -3,6 +3,9 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{pdflscape}
 \usepackage{amsmath}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -29,12 +32,53 @@
 
 \begin{document}
 
-% Title Page
-\title{Investigating Ideological Bias in Large Language Models: \\
-A Comparative Study of Role and Language Effects}
-\author{Mina Nayernia}
-\date{\today}
-\maketitle
+% --- title page (no \maketitle) ---
+\begin{titlepage}
+\newgeometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\centering
+
+% ---- Logo ----
+\includegraphics[width=15cm]{images/unimi_logo}\par\vspace{0.8cm}
+
+% ---- Degree line + rule ----
+{\large \textbf{Master's Degree in Computer Science}}\par
+\vspace{0.4cm}
+\rule{\textwidth}{0.6pt}\par
+\vspace{0.9cm}
+
+% ---- Thesis title ----
+{\LARGE \bfseries Investigating Ideological Bias in\\
+Large Language Models:\par}
+\vspace{0.25cm}
+{\Large \bfseries A Comparative Study of Role and Language Effects}\par
+\vspace{2.0cm}
+
+% ---- Supervisors (left) vs Student (right) ----
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+\RaggedRight
+\textbf{Supervisor:}\\
+Prof. Alfio Ferrara\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.38\textwidth}
+\RaggedLeft
+\textbf{Student Name:}\\
+Mina Nayernia\\[0.6cm]
+%\textbf{ID: 13798A}\\
+\end{minipage}
+
+\vfill
+
+% ---- Academic year (bottom) ----
+\textbf{Academic Year}\par
+2024--2025
+
+\end{titlepage}
+\restoregeometry
+
+
+
 
 % Abstract
 \begin{abstract}
@@ -75,5 +119,8 @@ A Comparative Study of Role and Language Effects}
 \input{limitations_and_future_works}
 
 \printbibliography[heading=bibintoc,title={References}]
+
+\chapter{Appendix}
+\input{appendix}
 
 \end{document}
