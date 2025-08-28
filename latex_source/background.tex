@@ -1,0 +1,84 @@
+
+\section{Large Language Models (LLMs)}
+
+Over the past decade, natural language processing (NLP) has undergone a major paradigm shift, moving from static word embeddings to large-scale pretrained language models.  
+
+\textbf{Static word embeddings.} Early approaches such as Word2Vec and GloVe mapped each word to a single fixed vector in a continuous space \parencite{mikolov2013word2vec}\parencite{pennington2014glove}. These methods captured semantic similarity (e.g., “king – man + woman $\approx$
+ queen”) but could not represent polysemy, since each word had only one embedding regardless of context.  
+
+\textbf{Contextual embeddings.} The next step was contextualized representations, where the embedding of a word depends on its surrounding text. Models such as ELMo and BERT introduced this capability \parencite{peters2018elmo}\parencite{devlin2019bert}. This shift enabled richer representations and significantly improved performance across many NLP tasks.  
+
+\textbf{Autoregressive language models.} In parallel, autoregressive models such as GPT adopted a left-to-right prediction strategy, generating text one token at a time conditioned on the previous context \parencite{radford2018improving}\parencite{brown2020language}. Scaling these models to billions of parameters demonstrated strong zero- and few-shot learning abilities. More recently, the LLaMA family introduced by Meta has followed the same decoder-only autoregressive design, offering competitive performance at smaller parameter scales by leveraging efficient training and curated public datasets \parencite{touvron_llama_2023}\parencite{touvron2023llama2}.  
+
+\textbf{Transformer architecture.} Transformer-based models can be broadly divided into encoder-style (e.g., BERT \parencite{devlin2019bert}) and decoder-style (e.g., GPT \parencite{radford2018improving}\parencite{brown2020language}, LLaMA \parencite{touvron_llama_2023}). The transformer itself \parencite{vaswani2017attention} relies on self-attention to capture long-range dependencies, avoiding the sequential bottlenecks of recurrent and convolutional networks (RNNs, CNNs). Decoder-only transformers have become the foundation for generative LLMs, while encoder-only models remain widely used for embeddings and retrieval tasks.  
+
+\textbf{Instruction tuning.} More recently, models have been fine-tuned with human feedback to better follow natural instructions. InstructGPT and ChatGPT exemplify this trend, aligning LLM behavior with user intent through reinforcement learning from human feedback (RLHF) \parencite{ouyang2022training}. Instruction-tuned variants of LLaMA (e.g., LLaMA-2-Chat) extend this paradigm in the open-source domain, making them valuable for research into model alignment and bias.  
+
+LLMs are not only technical achievements but also powerful social actors. Their outputs influence online information flows, education, journalism, and decision-making at scale \parencite{STAHL2024102700}\parencite{navigating-llm-ethics}. As a result, questions about fairness, bias, and accountability have become central: models can reproduce and even amplify societal stereotypes, political leanings, and ideological framings. Understanding these behaviors is thus essential to ensure responsible deployment of LLMs in sensitive domains.
+
+
+% ------------------------------------------------------------------
+
+
+\section{Bias in NLP and LLMs}
+
+The concept of bias in natural language processing (NLP) and large language models (LLMs) has been widely discussed across computer science, linguistics, and ethics. In this thesis, we adopt a broad definition of bias as any systematic deviation in model behavior that disproportionately favors, disadvantages, or misrepresents particular social groups, viewpoints, or languages \parencite{navigating-llm-ethics}\parencite{STAHL2024102700}.  
+
+\textbf{Types of bias.}  
+Several dimensions of bias are relevant for NLP systems:  
+
+\begin{itemize}
+    \item \textbf{Social and representational bias.} These biases occur when a model reflects or amplifies stereotypes associated with gender, race, age, religion, or profession. For example, occupation-related prompts may reproduce gender stereotypes, or religious terms may be disproportionately associated with negative sentiment \parencite{gender_gpt2023}\parencite{stereoset2021}\parencite{crows2020pairs}.  
+
+    \item \textbf{Ideological bias.} Models may encode political leanings or preferences for particular policy positions, subtly framing issues such as international conflict, economic sanctions, or social freedoms in ways that reflect the biases of their training data \parencite{silence_llms2023}\parencite{opiniongpt2023}\parencite{russia_china_war2024}. This type of bias is especially important when LLMs are used in settings where neutrality is expected, such as journalism, education, or policy debate.  
+
+    \item \textbf{Linguistic and cross-lingual bias.} Since many LLMs are primarily trained on English or high-resource languages, their behavior can vary significantly across languages. Cross-lingual evaluations show that low-resource languages often yield less accurate, less safe, or differently framed responses \parencite{nationality_bias2013}\parencite{silence_llms2023}. In addition, the language of a prompt itself can introduce ideological skew, independent of content, due to cultural or linguistic associations.  
+\end{itemize}
+
+\textbf{Implications.}  
+These forms of bias highlight that LLMs are not neutral information processors but active participants in shaping discourse. Standard surveys emphasize that mitigating bias is not only a technical challenge but also a social one, requiring awareness of how models interact with human values and institutions \parencite{navigating-llm-ethics}\parencite{STAHL2024102700}. In this thesis, we focus specifically on \emph{ideological bias across roles and languages}, which has received comparatively less attention than stereotype or demographic biases.
+
+% ---------------------
+
+\section{Stance Detection and Argument Mining}
+ -- i have commented this part since i do not think it is needed -- 
+
+% A related field to bias measurement is \emph{stance detection}, which aims to automatically determine whether a given text segment (e.g., a sentence, tweet, or argument) expresses a position \emph{in favor} or \emph{against} a particular target claim or topic \parencite{kuccuk2020stance}. Unlike sentiment analysis, which captures general polarity (positive/negative), stance detection is target-specific and requires understanding the relationship between the premise and the debated issue.  
+
+% Closely connected is the broader field of \emph{argument mining}, which studies the automatic identification of argumentative structures such as premises, conclusions, and relations between them \parencite{lawrence2020argument}. Argument mining provides the foundation for constructing stance-labeled corpora and for analyzing reasoning beyond surface-level sentiment.  
+
+% For this thesis, we draw on the Webis-ArgValues dataset introduced in the SemEval ValueEval shared task, which contains thousands of arguments annotated with gold stances (``in favor'' vs. ``against'') on a wide range of social and policy issues \parencite{kiesel2023semeval}. This corpus allows us to evaluate models in a controlled way, as each argument comes with both a stance label and an explicit argumentative premise.  
+
+% Stance detection is highly relevant to the study of ideological bias in LLMs. Prior audits of bias often focus on association tests or isolated prompts \parencite{kurita2019bias,stereoset2021}, but stance-labeled arguments provide a more structured basis for evaluation. They make it possible to examine whether models not only reproduce stereotypes but also take consistent ideological positions on policy-relevant topics, and whether their justifications align across roles and languages. This connects computational methods in argument mining with fairness audits of generative LLMs, bridging two research traditions.
+
+
+% ----------------------------------------------
+
+\section{Bias Measurement in NLP}
+
+A wide range of methods have been proposed to quantify bias in language models. Early approaches drew inspiration from psychology, in particular the \emph{Implicit Association Test} (IAT), which measures how quickly people associate target concepts with attributes \parencite{greenwald1998iat}. In NLP, this idea was adapted into the \emph{Word Embedding Association Test} (WEAT), which evaluates whether vector representations of words (e.g., ``man'' vs.\ ``woman'') are more closely associated with stereotypical attributes (e.g., ``career'' vs.\ ``family'') \parencite{kurita2019bias}.  
+
+Subsequent extensions generalized these ideas to contextualized embeddings and sentence encoders. The \emph{Sentence Encoder Association Test} (SEAT) evaluated biases in sentence-level models \parencite{may2019seat}, while large-scale benchmarks such as \emph{StereoSet} \parencite{stereoset2021} and \emph{CrowS-Pairs} \parencite{crows2020pairs} introduced datasets for testing gender, profession, race, and religion biases in pretrained LLMs.  
+
+More recent work has explored fairness metrics that go beyond associations, such as pairwise and multi-group comparison metrics, which compare outputs across demographic groups at a system level \parencite{quantifying2021}. These approaches aim to capture not only representational bias but also extrinsic disparities in model behavior.  
+
+Finally, prompt-based evaluation methods have become prominent in the LLM era. Instead of probing embeddings directly, these methods construct diagnostic prompts and analyze the generated completions. For example, \textcite{detecting2023} introduce both human- and model-level self-diagnosis techniques for prompt evaluation, while \textcite{opiniongpt2023} propose a fine-tuned model explicitly designed to surface political, geographic, and demographic biases.  
+
+Together, these strands of research show the progression from embedding-level association tests to prompt-based behavioral audits. Our approach follows this trajectory by introducing stance- and reasoning-focused measures (agreement ratios and embedding similarities) that are reproducible and directly applicable to multilingual, generative models.
+
+
+% ------------------------------------------------
+
+\section{Embeddings and Semantic Similarity}
+
+A central concept in modern NLP is the use of embeddings: vector representations of words, sentences, or documents in a continuous space.  
+
+\textbf{Word embeddings.} Early models such as Word2Vec \parencite{mikolov2013word2vec} and GloVe \parencite{pennington2014glove} mapped each word to a single static vector, capturing distributional similarity but failing to account for context. For example, the word ``bank'' would have the same representation whether referring to a riverbank or a financial institution.  
+
+\textbf{Contextual embeddings.} To address this limitation, contextualized representations were introduced. Models like ELMo \parencite{peters2018elmo} and BERT \parencite{devlin2019bert} produce embeddings that depend on the surrounding text, enabling richer and more accurate semantic representations. These advances marked a major shift in NLP, underpinning many downstream improvements.  
+
+\textbf{Sentence embeddings.} Building on contextual models, sentence-level encoders were developed to represent entire utterances or documents as dense vectors. Such models enable semantic similarity comparisons through measures such as cosine distance. They are widely used in clustering, retrieval, and argument similarity tasks \parencite{reimers2019sbert}.  
+
+\textbf{Cross-lingual embeddings.} For multilingual applications, cross-lingual models align semantically similar sentences across languages into a shared embedding space. Multilingual BERT (mBERT) extended BERT to 104 languages, though with uneven performance across resource levels \parencite{devlin2019bert}. More recent models like LaBSE (Language-Agnostic BERT Sentence Embedding) provide stronger cross-lingual alignment, supporting over 100 languages with consistent performance \parencite{feng2020labse}.  
+
+\textbf{Relevance to this thesis.} Embedding similarity provides a scalable way to compare not only the stances of LLM outputs but also the \emph{reasons} behind them. By embedding justifications and computing cosine similarity across role-based, native-language, and assistant completions, we can quantify ideological consistency at the level of argumentation rather than surface stance alone. This enables reproducible, multilingual comparisons of reasoning that go beyond manual interpretation.

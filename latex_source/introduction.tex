@@ -1,0 +1,41 @@
+\section{Motivation}
+Large Language Models (LLMs) such as GPT \cite{openai_gpt4_2023} and LLaMA \cite{touvron_llama_2023} are now deployed worldwide and used in many languages. As these systems mediate information access and public discourse, a central concern is whether they present the same opinions and reasoning to users across countries and languages---or whether they exhibit ideological or cultural biases \cite{weidinger_risks_2021} \cite{pmlr-v202-santurkar23a}. Understanding these effects is essential for trustworthy, fair, and transparent AI \cite{navigating-llm-ethics}.
+
+\section{Problem Statement}
+
+Existing audits have shown that large language models (LLMs) can encode biases along several axes, including social, linguistic, and representational dimensions \cite{kurita2019bias} \cite{stereoset2021} \cite{detecting2023}. However, most empirical studies remain limited to a single country, a single demographic axis, or rely heavily on manual prompt probes and human judgments \cite{gender_gpt2023}. Less attention has been paid to \emph{cross-country, cross-language ideological behavior} in contemporary chat models, and to disentangling the influence of \emph{role framing} (e.g., ``answer as a citizen of X'') from \emph{language framing} (answering in X's native language). Recent work has begun to examine political and national biases in LLMs \cite{silence_llms2023} \cite{nationality_bias2013} \cite{russia_china_war2024}, but reproducibility remains a challenge: manual inspection is often subjective and difficult to replicate. This motivates the need for a multilingual, reproducible evaluation that targets \emph{stance and reasoning} on policy-relevant topics, while reducing dependence on ad-hoc human judging.
+
+\section{Research Objectives and Questions}
+\textbf{Objectives.} (i) Build a reproducible framework to evaluate ideological bias across roles and languages \cite{silence_llms2023};
+(ii) analyze both stance alignment and the semantic similarity of justifications \cite{detecting2023};
+(iii) compare patterns across model families (GPT vs.\ LLaMA).
+
+\noindent\textbf{Research Questions.}
+\begin{enumerate}
+    \item Do LLMs exhibit ideological bias across countries and policy topics?
+    \item Are model outputs more sensitive to \emph{role} framing or to \emph{language} framing?
+    \item How similar are role-based and native-language responses for the same country?
+    \item Are the observed effects consistent across model families (GPT vs.\ LLaMA)?
+\end{enumerate}
+
+\section{Methodology (overview)}
+
+We adopt a multilingual, stance-based audit designed to minimize subjectivity and maximize reproducibility.
+
+\begin{itemize}
+    \item \textbf{Data.} We use a stance-labeled argument corpus (\texttt{arguments-training.tsv}, SemEval ValueEval / Webis-ArgValues) containing thousands of premises, conclusions, and gold stances (``in favor''/``against'') \cite{dataset}\cite{soni-etal-2022-human}.
+    
+    \item \textbf{Topic focus.} To concentrate on policy-relevant debates, we apply BERTopic \cite{bertopic2022} to the corpus and retain eight ideologically salient themes (e.g., nuclear weapons, economic sanctions, religion/atheism, compulsory voting, libertarianism, etc.).
+    
+    \item \textbf{Prompting conditions.} For each argument we elicit (a) \textbf{role-based} completions by setting the system persona to ``answer as a citizen of \{America, Iran, Israel, Ukraine, Germany, Italy, France, China\}'' plus a neutral assistant; and (b) \textbf{native-language} completions by translating the same instruction into each country's primary language (no persona). Our setup extends prior work that has studied role/persona framing or cross-lingual bias in isolation \cite{silence_llms2023}\cite{nationality_bias2013}\cite{gender_gpt2023}.
+    
+    \item \textbf{Models and outputs.} We run GPT and LLaMA. Each response is constrained to a JSON object with a binary stance (\texttt{Agree}/\texttt{Disagree}) and a short justification; refusals and formatting errors are logged, in line with other prompt-based evaluation frameworks \cite{detecting2023}.
+    
+    \item \textbf{Metrics.} (1) \emph{Agreement ratio}: compares model stance to gold labels per row and aggregates by topic/condition (with a neutral-aware denominator for LLaMA when needed), inspired by stance-alignment metrics in prior bias audits \cite{crows2020pairs}\cite{stereoset2021}. (2) \emph{Embedding similarity}: uses LaBSE \cite{feng2020labse} to embed justifications and computes cosine similarity on matched arguments for three comparisons: Role$\leftrightarrow$Assistant, Native$\leftrightarrow$Assistant, and Role$\leftrightarrow$Native.
+\end{itemize}
+
+This design targets ideological stance and reasoning, operates natively across languages, and avoids ad-hoc manual judging.
+
+\section{Thesis Structure}
+% -- not complete --
+The remainder of the thesis is organized as follows. \emph{Background} introduces bias taxonomies and evaluation paradigms relevant to our study. \emph{Related Works} surveys empirical audits of LLM bias (stereotypes, religion, gender), multilingual behavior, and role/persona effects, and contrasts prompt-probe methods with stance-based evaluation. \emph{Methodology} details the dataset, topic modeling, prompting setup, models, and metrics. \emph{Analysis of Results} reports agreement and similarity outcomes across topics, countries, and models. \emph{Limitations and Conclusion} discusses constraints of our approach and outlines directions for future work.

@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{report}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{svg}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,calc}
+\geometry{margin=1in}
+\usepackage{listings}
+\usepackage{booktabs}   % for \toprule \midrule \bottomrule
+\usepackage{tabularx}   % for tabularx + X columns
+\usepackage{array}      % for \newcolumntype
+\usepackage{pgf-pie}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+
+\doublespacing
+
+\begin{document}
+
+% Title Page
+\title{Investigating Ideological Bias in Large Language Models: \\
+A Comparative Study of Role and Language Effects}
+\author{Mina Nayernia}
+\date{\today}
+\maketitle
+
+% Abstract
+\begin{abstract}
+% Large Language Models (LLMs) such as GPT and LLaMA are increasingly integrated into everyday applications, from conversational assistants to decision-support systems. Their influence raises pressing concerns about fairness and trustworthiness, as LLMs often inherit and amplify societal biases present in their training data. In addition to well-documented demographic and stereotype biases, recent studies have highlighted ideological biases: systematic tendencies to favor or oppose political, cultural, or national viewpoints. Such biases may shape how arguments are presented, reinforcing certain ideologies while marginalizing others.
+
+% This thesis investigates the ideological biases of LLMs through a systematic study of role conditioning and native-language prompting. Specifically, we examine whether models produce different arguments when asked to answer (i) as a neutral assistant, (ii) as a citizen of a specific country, or (iii) in that country’s native language. By disentangling role and language effects, we aim to determine whether bias is more strongly driven by framing the model’s perspective or by the language of interaction.
+
+% Our methodology builds on the \texttt{argument-training.tsv} dataset from SemEval 2023 Task 4: ValueEval, which provides argumentative texts with explicit stance annotations. Because the dataset spans a wide range of heterogeneous issues, we applied BERTopic to reorganize arguments into higher-level themes. From 88 automatically extracted topics, we manually selected eight ideologically sensitive categories: nuclear weapons, gender and sex selection, economic sanctions, multi-party systems, atheism, legalizing prostitution, compulsory voting, and libertarianism. These topics serve as the basis for controlled prompting experiments.
+
+% We queried GPT and LLaMA under multiple conditions, requiring JSON-formatted outputs consisting of a binary stance (\textit{agree}/\textit{disagree}) and a short justification. To evaluate bias, we employed two complementary methods: (1) stance agreement ratios, comparing model outputs with gold labels, and (2) semantic similarity analysis of justifications using LaBSE multilingual sentence embeddings. This dual approach captures both surface-level alignment with human-annotated stances and deeper consistency in the reasoning underlying model outputs.
+
+% Our findings show that language introduces stronger divergence than role conditioning. While role-based responses remain relatively close to assistant responses, native-language completions often shift more substantially, with similarity ranges nearly twice as wide. Furthermore, role-based and native-language answers for the same country were not as closely aligned as expected, indicating that language framing can override role framing in shaping ideological outputs. These results hold consistently across both GPT and LLaMA, though LLaMA exhibited higher variability and more frequent deviations from the expected output format.
+
+% By quantifying these effects, this thesis contributes to ongoing discussions on the ethics and reliability of LLMs. We provide a framework for evaluating ideological bias across roles, languages, and models, offering evidence that language bias dominates role bias in shaping LLM outputs. Our work highlights the need for bias-aware evaluation in multilingual deployments and suggests that future mitigation strategies must explicitly account for language as a key factor in LLM fairness.
+\end{abstract}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Chapters
+\chapter{Introduction}
+\input{introduction}
+
+\chapter{Background}
+\input{background}
+
+\chapter{Related Works}
+\input{related_works}
+
+\chapter{Methodology}
+\input{methodology}
+
+\chapter{Analysis of Results}
+\input{results}
+
+\chapter{Limitations and Future works}
+\input{limitations_and_future_works}
+
+\printbibliography[heading=bibintoc,title={References}]
+
+\end{document}

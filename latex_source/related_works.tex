@@ -1,0 +1,61 @@
+\section{Audits of Bias in LLMs}
+
+Much of the literature has examined \textbf{social and representational biases}, particularly around gender, race, and religion. For example, \textcite{gender_gpt2023} demonstrate how ChatGPT responses reproduce gender stereotypes, while \textcite{persistent_muslim_bias} identify systematic anti-Muslim bias across GPT-3 outputs.  
+
+Beyond demographic bias, some works investigate \textbf{political and ideological bias}. \textcite{silence_llms2023} conduct a cross-lingual analysis of political leanings and misinformation in ChatGPT, Bard, and Bing Chat, while \textcite{opiniongpt2023} introduce a fine-tuned model explicitly designed to surface ideological positions. Similarly, \textcite{russia_china_war2024} analyze how LLMs portray the Russia–Ukraine war in Chinese social media, finding a systematic bias toward neutrality.  
+
+A smaller body of research focuses on \textbf{censorship and neutrality}. For instance, \textcite{censorship_encylopedia} examine how restrictions in online encyclopedias shape NLP training data, and \textcite{impact_censorship2019} study the downstream implications of censorship for LLM behavior. These findings highlight that bias can also emerge from absences and silences in the training corpus.  
+
+\section{Cross-Lingual and Cross-Cultural Bias}
+
+Bias does not manifest uniformly across languages. Early studies documented \textbf{nationality bias} in text generation \parencite{nationality_bias2013}, while more recent audits show that models like ChatGPT behave differently depending on the input language \parencite{silence_llms2023}. However, most of these works compare languages without disentangling the effect of \emph{persona framing} (e.g., “answer as a German citizen”) from \emph{native-language framing} (answering in German). To our knowledge, few studies explicitly test this distinction, which constitutes a core gap addressed in our thesis.  
+
+\section{Bias Detection Datasets}
+
+A variety of benchmark datasets have been introduced to study bias in NLP systems. CrowS-Pairs \parencite{crows2020pairs} and StereoSet \parencite{stereoset2021} are widely used to probe stereotypical associations in masked LMs through controlled sentence pairs or context association tests. Other resources such as WinoBias \parencite{zhao2018gender} and GAP \parencite{webster2018gap} focus specifically on gender bias in coreference resolution. By contrast, BOLD \parencite{dhamala2021bold} extends bias analysis to \emph{open-ended generation tasks}, prompting models to produce unconstrained outputs such as stories or descriptions, which can reveal subtler discursive biases beyond word-level associations.  
+
+Beyond stereotypes, argument- and stance-oriented datasets provide more structured evaluations. The Webis-ArgValues corpus from the SemEval ValueEval shared task \parencite{dataset} contains thousands of arguments with gold stances (``in favor'' vs.\ ``against'') across diverse policy issues, offering a controlled way to study opinionated text. Similarly, OpinionGPT \parencite{opiniongpt2023} leverages Reddit-based corpora to surface explicit political and demographic biases.  
+
+Our work is methodologically closest to BOLD in analyzing \emph{open-ended generations}, but we introduce additional structure by constraining outputs into stance labels and short justifications. This hybrid format combines the richness of open-ended text with the reproducibility of stance-based annotation, enabling systematic cross-country and cross-language comparisons that go beyond existing stereotype-focused resources.
+
+\section{Evaluation Metrics and Frameworks}
+
+Bias measurement methods range from embedding-level association tests to prompt-based audits. Early work adapted psychological tests into the Word Embedding Association Test (WEAT) and its sentence-level counterpart, SEAT \parencite{kurita2019bias,may2019seat}. Extrinsic fairness metrics later extended these approaches, introducing pairwise, background, and multi-group comparisons to evaluate disparities in system outputs \parencite{quantifying2021}.  
+
+In the LLM era, prompt-based approaches have gained prominence. \textcite{detecting2023} propose human- and model-level self-diagnosis methods, while \textcite{opiniongpt2023} show how instruction-tuned models can reveal political and demographic biases. However, many such approaches rely heavily on manual inspection, which limits reproducibility.  
+
+\section{Gap Analysis}
+
+From this review, three gaps become apparent:  
+
+\begin{enumerate}
+    \item Most studies focus on a single demographic axis, a single country, or a single language.  
+    \item Cross-country and cross-language analyses remain rare, and the specific distinction between \emph{role framing} and \emph{language framing} has been largely overlooked.  
+    \item Existing methods often emphasize stereotypes or associations, rather than systematically comparing stance and reasoning across conditions.  
+\end{enumerate}
+
+Our contribution addresses these gaps by (i) introducing a reproducible stance-based framework, (ii) evaluating both agreement ratios and semantic similarity of justifications, and (iii) comparing patterns across role-based and language-based prompts for multiple countries and two model families (GPT and LLaMA).  
+
+\section{Visual Summary}
+
+Table~\ref{tab:relatedworks} provides a high-level summary of related studies, contrasting their bias type, language coverage, methods, and limitations.
+
+\begin{table}[h]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lYYYY}
+\toprule
+\textbf{Study} & \textbf{Bias Type} & \textbf{Language(s)} & \textbf{Method} & \textbf{Limitations} \\
+\midrule
+StereoSet \parencite{stereoset2021} & Stereotype (gender, race, profession, religion) & English & Association tests with contextual LMs & Focused on stereotypes; single language \\
+CrowS\mbox{-}Pairs \parencite{crows2020pairs} & Stereotype (US\mbox{-}centric) & English & Paired\mbox{-}sentence probes & Narrow cultural scope \\
+Gender Bias in ChatGPT \parencite{gender_gpt2023} & Gender stereotypes & English & Prompt\mbox{-}based audit & Manual inspection; limited scope \\
+OpinionGPT \parencite{opiniongpt2023} & Political, demographic & English (Reddit) & Instruction-tuned model & Domain\mbox{-}specific; limited generality \\
+Silence of the LLMs \parencite{silence_llms2023} & Political, misinformation & Multilingual & Prompt\mbox{-}based, cross\mbox{-}lingual & Language effects not disentangled from role framing \\
+Russia--Ukraine War \parencite{russia_china_war2024} & Political neutrality & Chinese social media & Content analysis of LLM outputs & Single case; single conflict \\
+\bottomrule
+\end{tabularx}
+\caption{Summary of representative related works, showing their focus, scope, and limitations relative to this thesis.}
+\label{tab:relatedworks}
+\end{table}
