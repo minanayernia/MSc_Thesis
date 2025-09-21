@@ -53,7 +53,7 @@ The quality and structure of the discovered topics can be visually explored usin
 
 - Intertopic Distance Map (see Figure 1) shows how distinct the discovered topics are in a 2D semantic space. Larger circles represent more frequent topics.
 
-![intertopic_distance.png](topic_modeling_results/intertopic_distance.png)
+![intertopic_distance_map.png](topic_modeling_results/intertopic_distance_map.png)
 
 -Topic Word Scores (see Figure 2) display the most representative keywords for each topic, helping interpret the themes.
 
