@@ -1,52 +1,29 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Problem Statement}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Objectives and Questions}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Methodology (overview)}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Thesis Structure}{5}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Background}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Large Language Models (LLMs)}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Bias in NLP and LLMs}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Stance Detection and Argument Mining}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Bias Measurement in NLP}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Embeddings and Semantic Similarity}{9}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Related Works}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Audits of Bias in LLMs}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Cross-Lingual and Cross-Cultural Bias}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Bias Detection Datasets}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Evaluation Metrics and Frameworks}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Gap Analysis}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Visual Summary}{14}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Methodology}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dataset and Topic Modeling}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Dataset}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Why this corpus}{15}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Topic modeling with BERTopic}{15}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Prompting and Response Collection}{16}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Prompt design}{16}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Models}{17}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Translation and label normalization}{17}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Logging and error handling}{17}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Bias Measures}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Agreement ratio (stance-level)}{17}{subsection.4.3.1}%
-\contentsline {paragraph}{LLaMA adjustment.}{18}{section*.3}%
-\contentsline {subsection}{\numberline {4.3.2}Embedding similarity of justifications}{18}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Analysis Plan (per model)}{18}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Analysis of Results}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dataset Exploration}{19}{section.5.1}%
-\contentsline {paragraph}{Examples.}{19}{section*.5}%
-\contentsline {paragraph}{Distinct conclusions.}{19}{section*.7}%
-\contentsline {paragraph}{Stance distribution.}{19}{section*.8}%
-\contentsline {section}{\numberline {5.2}Topic Modeling Results}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Agreement Ratio Analysis}{21}{section.5.3}%
-\contentsline {paragraph}{General patterns.}{24}{section*.13}%
-\contentsline {paragraph}{Topic-wise observations.}{24}{section*.14}%
-\contentsline {paragraph}{Summary.}{26}{section*.23}%
-\contentsline {section}{\numberline {5.4}Embedding Similarity Results}{26}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}GPT-4o-mini}{29}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}LLaMA 3.1-70B}{29}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}General Patterns}{30}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Model Comparison (GPT vs LLaMA)}{30}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Limitations and Future works}{34}{chapter.6}%
-\contentsline {chapter}{References}{35}{chapter*.30}%
-\contentsline {chapter}{\numberline {7}Appendix}{41}{chapter.7}%
+\contentsline {section}{\numberline {1.1}Thesis Structure}{4}{section.1.1}%
+\contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Natural Language Processing (NLP)}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Large Language Models (LLMs)}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Bias in NLP and LLMs}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Gap Analysis}{8}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data and preprocessing}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Prompting and response collection}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis techniques and metrics}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Agreement ratio}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Embedding comparisons}{14}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Analysis of Results}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dataset Exploration}{15}{section.4.1}%
+\contentsline {paragraph}{Distinct conclusions.}{15}{section*.7}%
+\contentsline {paragraph}{Stance distribution.}{15}{section*.8}%
+\contentsline {section}{\numberline {4.2}Topic Modeling Results}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Agreement Ratio Analysis}{18}{section.4.3}%
+\contentsline {paragraph}{General patterns.}{18}{section*.13}%
+\contentsline {paragraph}{Topic-wise observations.}{19}{section*.14}%
+\contentsline {paragraph}{Summary.}{22}{section*.23}%
+\contentsline {section}{\numberline {4.4}Embedding Similarity Results}{23}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}GPT-4o-mini}{23}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}LLaMA 3.1-70B}{24}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}General Patterns}{24}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Model Comparison (GPT vs LLaMA)}{27}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Limitations and Future works}{28}{chapter.5}%
+\contentsline {chapter}{References}{29}{chapter*.30}%

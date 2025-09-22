@@ -1,0 +1,49 @@
+
+\section{Natural Language Processing (NLP)}
+
+Natural Language Processing (NLP) is the field of computer science and artificial intelligence concerned with enabling machines to understand, generate, and interact with human language. Its applications range from information retrieval and machine translation to dialogue systems and text summarization. A central challenge in NLP is finding effective ways to represent linguistic units—words, sentences, or entire documents—in a form that computers can manipulate.
+
+Early approaches to representation relied on static word embeddings such as Word2Vec and GloVe \parencite{mikolov2013word2vec,pennington2014glove}, which mapped words to fixed vectors. These methods captured broad semantic relations (e.g., \emph{king – man + woman ≈ queen}) but could not account for polysemy, since each word type was assigned a single embedding regardless of context. The introduction of contextualized embeddings, with models like ELMo and BERT \parencite{peters2018elmo,devlin2019bert}, addressed this limitation by letting representations depend on surrounding words. This innovation provided richer semantics and led to major performance gains across a variety of NLP tasks.
+
+Once words and sentences could be represented as vectors, similarity-based operations became possible. Sentence-level models such as SBERT \parencite{reimers2019sbert} and cross-lingual encoders like LaBSE \parencite{feng2020labse} extended these capabilities to semantic retrieval, clustering, and multilingual alignment. Measures such as cosine similarity thus became central tools for comparing meaning, and they form the foundation of our later reasoning analysis.
+
+\section{Large Language Models (LLMs)}
+
+A language model is a statistical or neural system trained to predict and generate sequences of text. Earlier generations of neural language models were based on recurrent architectures such as RNNs and LSTMs, which captured sequential dependencies but struggled with long-range context and computational efficiency. These limitations motivated the search for architectures that could scale more effectively.
+
+The introduction of the transformer architecture \parencite{vaswani2017attention} marked a decisive shift. Its attention mechanism allowed models to process text in parallel and capture global dependencies, laying the foundation for today’s large-scale language models. The transformer framework can be adapted in different ways: encoder–decoder architectures such as T5, which combine a bidirectional encoder with an autoregressive decoder; encoder-only models such as BERT, optimized for understanding tasks; and decoder-only models such as GPT and LLaMA \parencite{radford2018improving,brown2020language,touvron_llama_2023}, designed primarily for text generation.
+
+Training LLMs typically involves pretraining on massive text corpora using objectives such as next-token prediction or masked language modeling, followed by fine-tuning or instruction tuning to adapt the model to user-facing tasks \parencite{ouyang2022training}. While this paradigm enables strong zero- and few-shot generalization, it also makes LLMs highly dependent on the biases and imbalances present in their training data. As a result, stereotypes, ideological leanings, and cultural assumptions embedded in large-scale corpora can be learned and reproduced by the models, raising concerns about fairness and accountability \parencite{STAHL2024102700,navigating-llm-ethics}.
+
+Today, LLMs are regarded not only as technical achievements but also as social actors, given their growing impact on communication, public discourse, and decision-making. Their training dynamics and inherited biases thus form a crucial part of understanding their broader societal implications.
+
+\section{Bias in NLP and LLMs}
+Bias in language technologies manifests in multiple ways. Social and representational biases perpetuate stereotypes around gender, race, or religion \parencite{gender_gpt2023,stereoset2021,crows2020pairs}. Ideological biases appear in politically sensitive contexts, for instance when models discuss international conflicts, sanctions, or freedoms \parencite{silence_llms2023,opiniongpt2023,russia_china_war2024}. Linguistic and cross-lingual biases arise from discrepancies between high- and low-resource languages, often disadvantaging less represented groups \parencite{nationality_bias2013}.
+Efforts to measure these biases have evolved alongside NLP itself. Early work relied on embedding-level association tests such as WEAT and SEAT \parencite{greenwald1998iat,kurita2019bias,may2019seat}, followed by stereotype-focused datasets including CrowS-Pairs and StereoSet \parencite{crows2020pairs,stereoset2021}. In the era of LLMs, the focus has shifted toward prompt-based audits and open-ended evaluations \parencite{detecting2023,opiniongpt2023}. Our study builds on this trajectory by incorporating stance and justification into the analysis, moving beyond surface-level associations.
+
+
+\section{Gap Analysis}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Summary of representative related works, showing their focus, scope, and limitations relative to this thesis.}
+\label{tab:relatedworks}
+\begin{tabularx}{\textwidth}{lYYYY}
+\toprule
+\textbf{Study} & \textbf{Bias Type} & \textbf{Language(s)} & \textbf{Method} & \textbf{Limitations} \\
+\midrule
+StereoSet \parencite{stereoset2021} & Stereotype (gender, race, profession, religion) & English & Association tests with contextual LMs & Focused on stereotypes; single language \\
+CrowS\mbox{-}Pairs \parencite{crows2020pairs} & Stereotype (US\mbox{-}centric) & English & Paired\mbox{-}sentence probes & Narrow cultural scope \\
+Gender Bias in ChatGPT \parencite{gender_gpt2023} & Gender stereotypes & English & Prompt\mbox{-}based audit & Manual inspection; limited scope \\
+OpinionGPT \parencite{opiniongpt2023} & Political, demographic & English (Reddit) & Instruction-tuned model & Domain\mbox{-}specific; limited generality \\
+Silence of the LLMs \parencite{silence_llms2023} & Political, misinformation & Multilingual & Prompt\mbox{-}based, cross\mbox{-}lingual & Language effects not disentangled from role framing \\
+Russia--Ukraine War \parencite{russia_china_war2024} & Political neutrality & Chinese social media & Content analysis of LLM outputs & Single case; single conflict \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+As summarized in Table~\ref{tab:relatedworks}, prior research has concentrated on stereotype-centric audits in English, multilingual studies that do not clearly separate role framing from language framing, and evaluation methods that emphasize associations rather than systematic comparisons of stance and reasoning. Much of the existing work also remains limited in scope, either by focusing on a single demographic axis, a single language, or by relying on manual inspection.
+
+Our thesis addresses these gaps in three ways. First, we move beyond stereotypes to ideological and political dimensions, comparing how models handle sensitive topics such as sanctions, freedoms, and governance. Second, we explicitly disentangle role-based framing (e.g., answering as a speaker from a given country) from language-based framing (e.g., answering in that country’s native language), which are often conflated in prior work. Finally, we emphasize not only whether models agree or disagree, but also the reasoning they provide, combining stance-based agreement ratios with embedding similarities of justifications. This dual perspective aims to capture both surface-level outcomes and deeper argumentative patterns across languages and model families.

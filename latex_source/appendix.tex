@@ -1,3 +1,142 @@
+
+
+%\section{Translation Maps}
+%
+%\subsection{GPT Translation Map}
+%\begin{lstlisting}[language=Python]
+%TRANSLATION_MAP = {
+%    "en": {"Agree": ["Agree"], "Disagree": ["Disagree"]},
+%    "zh": {
+%        "Agree": ["同意","是的","是","我同意","我是同意的"],
+%        "Disagree": ["不同意","不"]
+%    },
+%    "fr": {
+%        "Agree": ["d'accord"],
+%        "Disagree": ["désaccord","en désaccord","disaccord"]
+%    },
+%    "de": {
+%        "Agree": ["zustimmen","zustimmung","vereinbarung"],
+%        "Disagree": ["nicht zustimmung","nicht zustimmen","nichtzustimmung"]
+%    },
+%    "ru": {
+%        "Agree": ["согласен"],
+%        "Disagree": ["не согласен"]
+%    },
+%    "uk": {
+%        "Agree": ["погоджуюсь","погодитися","погодитись","погоджуюся",
+%                  "згодні","погоджуються","погоджуватися","згоден"],
+%        "Disagree": ["не згоджуюсь","не згоден","не згодні","не згоді",
+%                     "незгоди","не згодитися","не згоджуся",
+%                     "не погоджуюсь","не згодний"]
+%    },
+%    "fa": {
+%        "Agree": ["موافق"],
+%        "Disagree": ["غیرموافق","مخالف"]
+%    },
+%    "it": {
+%        "Agree": ["d'accordo","accordo","accetto"],
+%        "Disagree": ["disacco","in disaccordo","disaccordo"]
+%    },
+%    "he": {
+%        "Agree": ["מסכים"],
+%        "Disagree": ["נגד חקיקת הזנות","לא מסכים","איני מסכים"]
+%    }
+%}
+%\end{lstlisting}
+%
+%\subsection{LLaMA Translation Map}
+%\begin{lstlisting}[language=Python]
+%TRANSLATION_MAP = {
+%    "en": {
+%        "Agree": ["Agree"],
+%        "Disagree": ["Disagree"],
+%    },
+%    "it": {
+%        "Agree": [
+%            "d'accordo","sì, d'accordo","sono d'accordo, ma con delle precisazioni",
+%            "condivido","rispetto","sì","concordo","in parte d'accordo",
+%            "parzialmente d'accordo","non sono completamente d'accordo",
+%            "sono d'accordo"
+%        ],
+%        "Disagree": [
+%            "non sono d'accordo","in disaccordo","discordo","contro",
+%            "parzialmente in disaccordo","parziale disaccordo"
+%        ],
+%        "Neutral": [
+%            "ambiguo","interessante","è una questione complessa",
+%            "è un argomento complesso","complessa","dubbi","discutibile"
+%        ]
+%    },
+%    "fr": {
+%        "Agree": [
+%            "d'accord","je suis d'accord","plutôt d'accord","je suis d'accord en partie",
+%            "je suis d'accord partiellement","d'accord avec certaines réserves",
+%            "d'accord avec des réserves"
+%        ],
+%        "Disagree": [
+%            "pas d'accord","désaccord","en désaccord","disaccord","non",
+%            "je ne suis pas d'accord","je ne suis pas entièrement d'accord",
+%            "je ne suis pas complètement d'accord","je ne suis pas sûr",
+%            "je suis en désaccord","je suis partiellement en désaccord",
+%            "je suis en désaccord partiel","pas nécessairement d'accord"
+%        ],
+%        "Neutral": [
+%            "nuancé","neutre","discutable","difficile à dire",
+%            "je vois les deux côtés","je vois les deux côtés de la question",
+%            "je comprends","je comprends les arguments éthiques et religieux",
+%            "je vois votre point de vue","je suis partagé"
+%        ]
+%    },
+%    "zh": {
+%        "Agree": ["同意","支持","认同","赞同","我同意","是的","对"],
+%        "Disagree": [
+%            "不同意","反对","否定","否决","不完全赞同","不完全同意","不完全正确",
+%            "我不同意","不","反对核武器","卖淫与许多强奸、骚扰和谋杀有关"
+%        ],
+%        "Neutral": [
+%            "部分同意","部分正确","不一定","有争议","批判性","担忧",
+%            "人口失衡可能会导致社会、经济和文化问题","宗教信仰多样化","自由主义"
+%        ]
+%    },
+%    "de": {
+%        "Agree": ["stimme zu","zustimmung","ja","ja, ich stimme zu","ja, stimme zu",
+%                  "ja, das stimmt","ja, das ist richtig"],
+%        "Disagree": [
+%            "stimme nicht zu","nicht stimmen","stimmen sie nicht zu",
+%            "stimmen nicht zu","stimmen gegen","stimme gegen",
+%            "nein","ich stimme nicht zu","nicht gut"
+%        ],
+%        "Neutral": ["neutral","problematisch","bedenklich","interessant",
+%                    "komplex","es ist zweifelhaft","interessant, aber komplex"]
+%    },
+%    "ru": {
+%        "Agree": ["согласен","соглашусь","согласен частично","в определенной степени согласен"],
+%        "Disagree": ["не согласен","несогласен","не полностью согласен","не вполне согласен",
+%                     "нет","против","не совсем согласен","не совсем"],
+%        "Neutral": ["не уверен","возможно","сомневаюсь","нейтрально",
+%                    "комплексный вопрос","неоднозначен","соглашусь с оговорками"]
+%    },
+%    "uk": {
+%        "Agree": ["погодитися","згодитися","підтверджую","підтримую","так","точно"],
+%        "Disagree": ["не погодитися","відхиляю","ні","відмовитися","відхиляти",
+%                     "непогодитися","ні, не погодитися","відсутність згоди"],
+%        "Neutral": ["відповідь залежить від багатьох чинників","залежить від ситуації",
+%                    "немає чіткої відповіді","відкрите питання","більш-менш згоден"]
+%    },
+%    "fa": {
+%        "Agree": ["موافق"],
+%        "Disagree": ["مخالف","غیر موافق","موافق نیستم","منفی","خلاف"],
+%        "Neutral": ["خنثی","غیر قابل قبول"]
+%    },
+%    "he": {
+%        "Agree": ["מסכים","חלקית מסכים"],
+%        "Disagree": ["לא מסכים","איני מסכים","איננו מסכים"],
+%        "Neutral": ["חלוק","אין הסכמה","חלוקה"]
+%    }
+%}
+%\end{lstlisting}
+
+
 % --- GPT page (stacked) ---
 \captionsetup{font=small}
 

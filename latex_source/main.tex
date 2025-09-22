@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper]{report}
 
+
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -7,7 +8,8 @@
 \usepackage{caption}
 \usepackage{pdflscape}
 \usepackage{amsmath}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage{lmodern}
 \usepackage{svg}
 \usepackage[hidelinks]{hyperref}
@@ -17,6 +19,7 @@
 \usetikzlibrary{positioning,arrows.meta,shapes.geometric,calc}
 \geometry{margin=1in}
 \usepackage{listings}
+\usepackage{float} % enables [H]
 \usepackage{booktabs}   % for \toprule \midrule \bottomrule
 \usepackage{tabularx}   % for tabularx + X columns
 \usepackage{array}      % for \newcolumntype
@@ -26,7 +29,6 @@
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
 \addbibresource{references.bib}
-
 
 \doublespacing
 
@@ -59,6 +61,8 @@ Large Language Models:\par}
 \RaggedRight
 \textbf{Supervisor:}\\
 Prof. Alfio Ferrara\\
+\textbf{Co-supervisor:}\\
+Dott. Elisabetta Rocchetti\\
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.38\textwidth}
@@ -103,11 +107,8 @@ Mina Nayernia\\[0.6cm]
 \chapter{Introduction}
 \input{introduction}
 
-\chapter{Background}
-\input{background}
-
-\chapter{Related Works}
-\input{related_works}
+\chapter{State of the Art}
+\input{state_of_art}
 
 \chapter{Methodology}
 \input{methodology}
@@ -120,7 +121,7 @@ Mina Nayernia\\[0.6cm]
 
 \printbibliography[heading=bibintoc,title={References}]
 
-\chapter{Appendix}
-\input{appendix}
+%\chapter{Appendix}
+%\input{appendix}
 
 \end{document}

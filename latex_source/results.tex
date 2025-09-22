@@ -1,53 +1,53 @@
 
 \section{Dataset Exploration}
 
-\paragraph{Examples.}
-Table~\ref{tab:dataset_samples} shows representative rows from the corpus. Note that
-the stance label is annotated \emph{relative to the conclusion} (``in favor of'' vs.\ ``against'').
-Some conclusions (e.g.,on nuclear energy) appear multiple times with diverse conclusions, and
-not all conclusions fall within the eight ideological themes we analyze later. This motivates
-our use of topic modeling on the \emph{premise} text to obtain higher-level themes.
-
-
-\begin{table}[htbp]
-\centering
-\begingroup
-\footnotesize
-\renewcommand{\arraystretch}{1.12}%
-\setlength{\tabcolsep}{4pt}% local, affects only inside this group
-
-\begin{tabularx}{\textwidth}{
-  >{\raggedright\arraybackslash}p{1.8cm}   % Argument ID (fixed)
-  >{\raggedright\arraybackslash}p{5.2cm}   % Conclusion (fixed)
-  >{\raggedright\arraybackslash}p{1.6cm}   % Stance (fixed)
-  >{\raggedright\arraybackslash}X          % Premise (flex, wraps to fill)
-}
-\toprule
-\textbf{Argument ID} & \textbf{Conclusion} & \textbf{Stance} & \textbf{Premise} \\
-\midrule
-A01009 & We should fight for the abolition of nuclear weapons & against &
-nuclear weapons help keep the peace in uncertain times. \\
-A05040 & We should legalize sex selection & against &
-we should not do this because other countries like China already did and it caused an epidemic where there is a huge imbalance of males to females which disrupts the population. \\
-A05057 & We should subsidize Wikipedia & against &
-subsidizing Wikipedia could be a back gateway to some form of governmental control, debasing the validity of the articles and information provided. \\
-A05048 & We should ban fast food & against &
-fast food is sometimes the only way poor people can feed their families cheaply. If you ban it then you are taking away someone's only meal. \\
-A05089 & We should ban missionary work & against &
-missionary work is beneficial for those receiving aid. \\
-E04002 & We need to invest in nuclear energy & against &
-Nuclear energy is too expensive and hence economically not viable. According to researchers at RethinkX, a clean energy disruption in the next ten years may leave investments in oil, coal, and nuclear stranded. \\
-E01030 & Gas and nuclear power should be supported with money from European countries & against &
-Continuing to invest in environmentally damaging and immensely expensive nuclear power plants is a waste of resources that could be used for sustainable transformations. \\
-A05017 & cosmetic surgery is unnecessary and dangerous. & in favor of &We should ban cosmetic surgery \\
-
-\bottomrule
-\end{tabularx}
-
-\endgroup
-\caption{Sample arguments with conclusions, stance labels and premises.}
-\label{tab:dataset_samples}
-\end{table}
+%\paragraph{Examples.}
+%Table~\ref{tab:dataset_samples} shows representative rows from the corpus. Note that
+%the stance label is annotated \emph{relative to the conclusion} (``in favor of'' vs.\ ``against'').
+%Some conclusions (e.g.,on nuclear energy) appear multiple times with diverse conclusions, and
+%not all conclusions fall within the eight ideological themes we analyze later. This motivates
+%our use of topic modeling on the \emph{premise} text to obtain higher-level themes.
+%
+%
+%\begin{table}[htbp]
+%\centering
+%\begingroup
+%\footnotesize
+%\renewcommand{\arraystretch}{1.12}%
+%\setlength{\tabcolsep}{4pt}% local, affects only inside this group
+%
+%\begin{tabularx}{\textwidth}{
+%  >{\raggedright\arraybackslash}p{1.8cm}   % Argument ID (fixed)
+%  >{\raggedright\arraybackslash}p{5.2cm}   % Conclusion (fixed)
+%  >{\raggedright\arraybackslash}p{1.6cm}   % Stance (fixed)
+%  >{\raggedright\arraybackslash}X          % Premise (flex, wraps to fill)
+%}
+%\toprule
+%\textbf{Argument ID} & \textbf{Conclusion} & \textbf{Stance} & \textbf{Premise} \\
+%\midrule
+%A01009 & We should fight for the abolition of nuclear weapons & against &
+%nuclear weapons help keep the peace in uncertain times. \\
+%A05040 & We should legalize sex selection & against &
+%we should not do this because other countries like China already did and it caused an epidemic where there is a huge imbalance of males to females which disrupts the population. \\
+%A05057 & We should subsidize Wikipedia & against &
+%subsidizing Wikipedia could be a back gateway to some form of governmental control, debasing the validity of the articles and information provided. \\
+%A05048 & We should ban fast food & against &
+%fast food is sometimes the only way poor people can feed their families cheaply. If you ban it then you are taking away someone's only meal. \\
+%A05089 & We should ban missionary work & against &
+%missionary work is beneficial for those receiving aid. \\
+%E04002 & We need to invest in nuclear energy & against &
+%Nuclear energy is too expensive and hence economically not viable. According to researchers at RethinkX, a clean energy disruption in the next ten years may leave investments in oil, coal, and nuclear stranded. \\
+%E01030 & Gas and nuclear power should be supported with money from European countries & against &
+%Continuing to invest in environmentally damaging and immensely expensive nuclear power plants is a waste of resources that could be used for sustainable transformations. \\
+%A05017 & cosmetic surgery is unnecessary and dangerous. & in favor of &We should ban cosmetic surgery \\
+%
+%\bottomrule
+%\end{tabularx}
+%
+%\endgroup
+%\caption{Sample arguments with conclusions, stance labels and premises.}
+%\label{tab:dataset_samples}
+%\end{table}
 
 
 \paragraph{Distinct conclusions.}

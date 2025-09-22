@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.28)  28 AUG 2025 15:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.9.14)  22 SEP 2025 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11,15 +11,15 @@ Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@chapter=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -28,10 +28,12 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-)
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
@@ -46,10 +48,10 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: xetex.def on input line 107.
 
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
@@ -72,13 +74,13 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen150
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count196
-\c@continuedfloat=\count197
+\c@caption@flags=\count192
+\c@continuedfloat=\count193
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count198
+\c@subfigure=\count194
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count199
+\c@subtable=\count195
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -94,15 +96,16 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
 ))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
+Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+Package: amstext 2024/11/17 v2.01 AMS text
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
@@ -116,40 +119,40 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count266
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count267
-\leftroot@=\count268
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count269
-\DOTSCASE@=\count270
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen153
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count271
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count272
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count267
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count268
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
 \tag@help=\toks21
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
 \andhelp@=\toks22
 \eqnshift@=\dimen154
 \alignsep@=\dimen155
@@ -161,13 +164,79 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \multlinegap=\skip51
 \multlinetaggap=\skip52
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
 )
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count274
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count275
+\g__pdf_backend_annotation_int=\count276
+\g__pdf_backend_link_int=\count277
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count278
+\l__fontspec_language_int=\count279
+\l__fontspec_strnum_int=\count280
+\l__fontspec_tmp_int=\count281
+\l__fontspec_tmpa_int=\count282
+\l__fontspec_tmpb_int=\count283
+\l__fontspec_tmpc_int=\count284
+\l__fontspec_em_int=\count285
+\l__fontspec_emdef_int=\count286
+\l__fontspec_strong_int=\count287
+\l__fontspec_strongdef_int=\count288
+\l__fontspec_tmpa_dim=\dimen160
+\l__fontspec_tmpb_dim=\dimen161
+\l__fontspec_tmpc_dim=\dimen162
+ (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg)
+! Undefined control sequence.
+<inserted text> \prop_gput_if_not_in:Nnn 
+                                         \g__fontspec_strong_prop {m}{0}
+l.4227 \strongfontdeclare{\bfseries}
+                                    
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4227 \strongfontdeclare{\bfseries}
+                                    
+? 
+! Undefined control sequence.
+<inserted text> \prop_gput_if_not_in:Nnn 
+                                         \g__fontspec_strong_prop {bx}{1}
+l.4227 \strongfontdeclare{\bfseries}
+                                    
+? 
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: A property list was misused.
+l.4227 \strongfontdeclare{\bfseries}
+                                    
+? 
+)) (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -239,7 +308,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
 ty
@@ -248,19 +317,18 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@svg@param@lastpage=\count278
-\svg@box=\box53
-\c@svg@param@currpage=\count279
+\c@svg@param@lastpage=\count289
+\svg@box=\box54
+\c@svg@param@currpage=\count290
 ) (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: xetex.def on input line 274.
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
@@ -283,9 +351,11 @@ l.42 \IfPDFManagementActiveF
 Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color
  stack (HO)
 
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))
+
+Package transparent Warning: Loading aborted, because pdfTeX is not running in 
+PDF mode.
+
+)
 ! Undefined control sequence.
 l.43 \IfPDFManagementActiveF
                              {\endinput}
@@ -298,12 +368,12 @@ y
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen160
-\pgfutil@tempdimb=\dimen161
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box55
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -323,46 +393,52 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen162
-\pgf@y=\dimen163
-\pgf@xa=\dimen164
-\pgf@ya=\dimen165
-\pgf@xb=\dimen166
-\pgf@yb=\dimen167
-\pgf@xc=\dimen168
-\pgf@yc=\dimen169
-\pgf@xd=\dimen170
-\pgf@yd=\dimen171
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count280
-\c@pgf@countb=\count281
-\c@pgf@countc=\count282
-\c@pgf@countd=\count283
+\c@pgf@counta=\count291
+\c@pgf@countb=\count292
+\c@pgf@countc=\count293
+\c@pgf@countd=\count294
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count284
+\pgf@sys@id@count=\count295
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+s-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count296
 )))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count285
-\pgfsyssoftpath@bigbuffer@items=\count286
+\pgfsyssoftpath@smallbuffer@items=\count297
+\pgfsyssoftpath@bigbuffer@items=\count298
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -388,6 +464,9 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 .sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
@@ -401,30 +480,26 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count287
+\c@section@level=\count299
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count288
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count300
 )
-\@linkdim=\dimen172
-\Hy@linkcounter=\count289
-\Hy@pagecounter=\count290
+\@linkdim=\dimen175
+\Hy@linkcounter=\count301
+\Hy@pagecounter=\count302
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count291
+\Hy@SavedSpaceFactor=\count303
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4181.
 Package hyperref Info: Link nesting OFF on input line 4186.
@@ -433,14 +508,14 @@ Package hyperref Info: Plain pages OFF on input line 4196.
 Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count292
+\c@Hy@tempcnt=\count304
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen173
+\XeTeXLinkMargin=\dimen176
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -450,9 +525,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count293
-\Field@Width=\dimen174
-\Fld@charsize=\dimen175
+\Fld@menulength=\count305
+\Field@Width=\dimen177
+\Fld@charsize=\dimen178
 Package hyperref Info: Hyper figures OFF on input line 6065.
 Package hyperref Info: Link nesting OFF on input line 6070.
 Package hyperref Info: Hyper index ON on input line 6073.
@@ -465,21 +540,24 @@ Package hyperref Info: PDF/A mode OFF on input line 6095.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count294
-\c@Item=\count295
-\c@Hfootnote=\count296
+\Hy@abspage=\count306
+\c@Item=\count307
+\c@Hfootnote=\count308
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+Package hyperref Info: Driver (autodetected): hxetex.
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+File: hxetex.def 2023-11-26 v7.01g Hyperref driver for XeTeX
 
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
+)
+\pdfm@box=\box56
+\c@Hy@AnnotLevel=\count309
+\HyField@AnnotCount=\count310
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -503,17 +581,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count299
-\Gm@cntv=\count300
-\c@Gm@tempcnt=\count301
-\Gm@bindingoffset=\dimen176
-\Gm@wd@mp=\dimen177
-\Gm@odd@mp=\dimen178
-\Gm@even@mp=\dimen179
-\Gm@layoutwidth=\dimen180
-\Gm@layoutheight=\dimen181
-\Gm@layouthoffset=\dimen182
-\Gm@layoutvoffset=\dimen183
+\Gm@cnth=\count313
+\Gm@cntv=\count314
+\c@Gm@tempcnt=\count315
+\Gm@bindingoffset=\dimen179
+\Gm@wd@mp=\dimen180
+\Gm@odd@mp=\dimen181
+\Gm@even@mp=\dimen182
+\Gm@layoutwidth=\dimen183
+\Gm@layoutheight=\dimen184
+\Gm@layouthoffset=\dimen185
+\Gm@layoutvoffset=\dimen186
 \Gm@dimlist=\toks32
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
@@ -535,9 +613,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 code.tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen184
-\pgfmath@count=\count302
-\pgfmath@box=\box55
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count316
+\pgfmath@box=\box57
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
@@ -564,59 +642,59 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count303
+\c@pgfmathroundto@lastzeros=\count317
 ))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen185
-\pgf@picmaxx=\dimen186
-\pgf@picminy=\dimen187
-\pgf@picmaxy=\dimen188
-\pgf@pathminx=\dimen189
-\pgf@pathmaxx=\dimen190
-\pgf@pathminy=\dimen191
-\pgf@pathmaxy=\dimen192
-\pgf@xx=\dimen193
-\pgf@xy=\dimen194
-\pgf@yx=\dimen195
-\pgf@yy=\dimen196
-\pgf@zx=\dimen197
-\pgf@zy=\dimen198
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen199
-\pgf@path@lasty=\dimen256
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen257
-\pgf@shorten@start@additional=\dimen258
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count304
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count318
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen259
+\pgflinewidth=\dimen262
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen260
-\pgf@pt@y=\dimen261
-\pgf@pt@temp=\dimen262
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -633,14 +711,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen263
+\pgfarrowsep=\dimen266
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen264
-\pgf@sys@shading@range@num=\count305
-\pgf@shadingcount=\count306
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count319
+\pgf@shadingcount=\count320
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -649,7 +727,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box59
+\pgfexternal@startupbox=\box61
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -670,7 +748,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box60
+\pgfnodeparttextbox=\box62
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -679,8 +757,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen265
-\pgf@nodesepend=\dimen266
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -698,8 +776,8 @@ ty
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen267
-\pgffor@skip=\dimen268
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
 ))
@@ -710,34 +788,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count307
-\pgfplotmarksize=\dimen269
+\pgf@plot@mark@count=\count321
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen270
-\tikz@lasty=\dimen271
-\tikz@lastxsaved=\dimen272
-\tikz@lastysaved=\dimen273
-\tikz@lastmovetox=\dimen274
-\tikz@lastmovetoy=\dimen275
-\tikzleveldistance=\dimen276
-\tikzsiblingdistance=\dimen277
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count308
-\tikznumberofchildren=\count309
-\tikznumberofcurrentchild=\count310
-\tikz@fig@count=\count311
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikz@lastmovetox=\dimen277
+\tikz@lastmovetoy=\dimen278
+\tikzleveldistance=\dimen279
+\tikzsiblingdistance=\dimen280
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count322
+\tikznumberofchildren=\count323
+\tikznumberofcurrentchild=\count324
+\tikz@fig@count=\count325
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count312
-\pgfmatrixcurrentcolumn=\count313
-\pgf@matrix@numberofcolumns=\count314
+\pgfmatrixcurrentrow=\count326
+\pgfmatrixcurrentcolumn=\count327
+\pgf@matrix@numberofcolumns=\count328
 )
-\tikz@expandcount=\count315
+\tikz@expandcount=\count329
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -750,10 +828,10 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen278
-\pgfarrowlength=\dimen279
-\pgfarrowwidth=\dimen280
-\pgfarrowlinewidth=\dimen281
+\pgfarrowinset=\dimen281
+\pgfarrowlength=\dimen282
+\pgfarrowwidth=\dimen283
+\pgfarrowlinewidth=\dimen284
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.geometric.code.tex
@@ -768,69 +846,79 @@ z/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count316
-\lst@gtempboxa=\box65
+\lst@mode=\count330
+\lst@gtempboxa=\box67
 \lst@token=\toks38
-\lst@length=\count317
-\lst@currlwidth=\dimen282
-\lst@column=\count318
-\lst@pos=\count319
-\lst@lostspace=\dimen283
-\lst@width=\dimen284
-\lst@newlines=\count320
-\lst@lineno=\count321
-\lst@maxwidth=\dimen285
+\lst@length=\count331
+\lst@currlwidth=\dimen285
+\lst@column=\count332
+\lst@pos=\count333
+\lst@lostspace=\dimen286
+\lst@width=\dimen287
+\lst@newlines=\count334
+\lst@lineno=\count335
+\lst@maxwidth=\dimen288
 
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count322
-\lst@skipnumbers=\count323
-\lst@framebox=\box66
+
+! Package Listings Error: Couldn't load requested aspect.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2279 \lst@RequireAspects\lst@loadaspects
+                                          
+? 
 )
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
-))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count336
+\float@exts=\toks39
+\float@box=\box68
+\@float@everytoks=\toks40
+\@floatcapt=\box69
+)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen286
-\lightrulewidth=\dimen287
-\cmidrulewidth=\dimen288
-\belowrulesep=\dimen289
-\belowbottomsep=\dimen290
-\aboverulesep=\dimen291
-\abovetopsep=\dimen292
-\cmidrulesep=\dimen293
-\cmidrulekern=\dimen294
-\defaultaddspace=\dimen295
-\@cmidla=\count324
-\@cmidlb=\count325
-\@aboverulesep=\dimen296
-\@belowrulesep=\dimen297
-\@thisruleclass=\count326
-\@lastruleclass=\count327
-\@thisrulewidth=\dimen298
+\heavyrulewidth=\dimen289
+\lightrulewidth=\dimen290
+\cmidrulewidth=\dimen291
+\belowrulesep=\dimen292
+\belowbottomsep=\dimen293
+\aboverulesep=\dimen294
+\abovetopsep=\dimen295
+\cmidrulesep=\dimen296
+\cmidrulekern=\dimen297
+\defaultaddspace=\dimen298
+\@cmidla=\count337
+\@cmidlb=\count338
+\@aboverulesep=\dimen299
+\@belowrulesep=\dimen300
+\@thisruleclass=\count339
+\@lastruleclass=\count340
+\@thisrulewidth=\dimen301
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen299
-\ar@mcellbox=\box67
-\extrarowheight=\dimen300
-\NC@list=\toks39
+\col@sep=\dimen302
+\ar@mcellbox=\box70
+\extrarowheight=\dimen303
+\NC@list=\toks41
 \extratabsurround=\skip54
 \backup@length=\skip55
-\ar@cellbox=\box68
+\ar@cellbox=\box71
 )
-\TX@col@width=\dimen301
-\TX@old@table=\dimen302
-\TX@old@col=\dimen303
-\TX@target=\dimen304
-\TX@delta=\dimen305
-\TX@cols=\count328
-\TX@ftn=\toks40
+\TX@col@width=\dimen304
+\TX@old@table=\dimen305
+\TX@old@col=\dimen306
+\TX@target=\dimen307
+\TX@delta=\dimen308
+\TX@cols=\count341
+\TX@ftn=\toks42
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pgf-pie\pgf-pie.sty
 Package: pgf-pie 2022/06/14 v0.7 Some LaTeX macros for pie chart by using PGF/T
@@ -839,10 +927,10 @@ ikz package.
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pgf-pie\tikzlibrarypie.
 code.tex
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-\pgfpie@angleEnd=\dimen306
-\pgfpie@explodeLength=\count329
-\pgfpie@colorLength=\count330
-\pgfpie@sliceLength=\count331
+\pgfpie@angleEnd=\dimen309
+\pgfpie@explodeLength=\count342
+\pgfpie@colorLength=\count343
+\pgfpie@sliceLength=\count344
 )) (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.st
 y
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.rev
@@ -853,12 +941,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 e.tex
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore
 .code.tex
-\t@pgfplots@toka=\toks41
-\t@pgfplots@tokb=\toks42
-\t@pgfplots@tokc=\toks43
-\pgfplots@tmpa=\dimen307
-\c@pgfplots@coordindex=\count332
-\c@pgfplots@scanlineindex=\count333
+\t@pgfplots@toka=\toks43
+\t@pgfplots@tokb=\toks44
+\t@pgfplots@tokc=\toks45
+\pgfplots@tmpa=\dimen310
+\c@pgfplots@coordindex=\count345
+\c@pgfplots@scanlineindex=\count346
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
 sysgeneric.code.tex))
@@ -869,9 +957,9 @@ ib\pgfplotsoldpgfsupp_loader.code.tex
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks44
-\t@pgf@tokb=\toks45
-\t@pgf@tokc=\toks46
+\t@pgf@toka=\toks46
+\t@pgf@tokb=\toks47
+\t@pgf@tokc=\toks48
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
 ib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -883,14 +971,14 @@ e\pgfplotsliststructure.code.tex)
 e\pgfplotsliststructureext.code.tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count334
+\c@pgfplotsarray@tmp=\count347
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsmatrix.code.tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
 plotstableshared.code.tex
-\c@pgfplotstable@counta=\count335
-\t@pgfplotstable@a=\toks47
+\c@pgfplotstable@counta=\count348
+\t@pgfplotstable@a=\toks49
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsdeque.code.tex)
@@ -902,10 +990,14 @@ sbinary.data.code.tex))
 sutil.verb.code.tex)
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
 arypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count336
+\c@pgfplotslibrarysurf@no=\count349
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
-rypgfplots.surfshading.pgfsys-pdftex.def)))
+rypgfplots.surfshading.pgfsys-xetex.def
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
+rypgfplots.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count350
+))))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
 scolormap.code.tex
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
@@ -934,16 +1026,16 @@ hs.code.tex)
 z/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen308
-\pgfdecoratedremainingdistance=\dimen309
-\pgfdecoratedinputsegmentcompleteddistance=\dimen310
-\pgfdecoratedinputsegmentremainingdistance=\dimen311
-\pgf@decorate@distancetomove=\dimen312
-\pgf@decorate@repeatstate=\count337
-\pgfdecorationsegmentamplitude=\dimen313
-\pgfdecorationsegmentlength=\dimen314
+\pgfdecoratedcompleteddistance=\dimen311
+\pgfdecoratedremainingdistance=\dimen312
+\pgfdecoratedinputsegmentcompleteddistance=\dimen313
+\pgfdecoratedinputsegmentremainingdistance=\dimen314
+\pgf@decorate@distancetomove=\dimen315
+\pgf@decorate@repeatstate=\count351
+\pgfdecorationsegmentamplitude=\dimen316
+\pgfdecorationsegmentlength=\dimen317
 )
-\tikz@lib@dec@box=\box69
+\tikz@lib@dec@box=\box72
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -955,13 +1047,13 @@ z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
 rarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count338
-\pgfplots@xmin@reg=\dimen315
-\pgfplots@xmax@reg=\dimen316
-\pgfplots@ymin@reg=\dimen317
-\pgfplots@ymax@reg=\dimen318
-\pgfplots@zmin@reg=\dimen319
-\pgfplots@zmax@reg=\dimen320
+\pgfplots@numplots=\count352
+\pgfplots@xmin@reg=\dimen318
+\pgfplots@xmax@reg=\dimen319
+\pgfplots@ymin@reg=\dimen320
+\pgfplots@ymax@reg=\dimen321
+\pgfplots@zmin@reg=\dimen322
+\pgfplots@zmax@reg=\dimen323
 )
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryplotmarks.code.tex
@@ -972,11 +1064,11 @@ aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
-Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count339
+\lrq@indent=\count353
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -984,49 +1076,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count340
-\c@listtotal=\count341
-\c@listcount=\count342
-\c@liststart=\count343
-\c@liststop=\count344
-\c@citecount=\count345
-\c@citetotal=\count346
-\c@multicitecount=\count347
-\c@multicitetotal=\count348
-\c@instcount=\count349
-\c@maxnames=\count350
-\c@minnames=\count351
-\c@maxitems=\count352
-\c@minitems=\count353
-\c@citecounter=\count354
-\c@maxcitecounter=\count355
-\c@savedcitecounter=\count356
-\c@uniquelist=\count357
-\c@uniquename=\count358
-\c@refsection=\count359
-\c@refsegment=\count360
-\c@maxextratitle=\count361
-\c@maxextratitleyear=\count362
-\c@maxextraname=\count363
-\c@maxextradate=\count364
-\c@maxextraalpha=\count365
-\c@abbrvpenalty=\count366
-\c@highnamepenalty=\count367
-\c@lownamepenalty=\count368
-\c@maxparens=\count369
-\c@parenlevel=\count370
-\blx@tempcnta=\count371
-\blx@tempcntb=\count372
-\blx@tempcntc=\count373
-\c@blx@maxsection=\count374
-\blx@maxsegment@0=\count375
-\blx@notetype=\count376
-\blx@parenlevel@text=\count377
-\blx@parenlevel@foot=\count378
-\blx@sectionciteorder@0=\count379
-\blx@sectionciteorderinternal@0=\count380
-\blx@entrysetcounter=\count381
-\blx@biblioinstance=\count382
+\c@tabx@nest=\count354
+\c@listtotal=\count355
+\c@listcount=\count356
+\c@liststart=\count357
+\c@liststop=\count358
+\c@citecount=\count359
+\c@citetotal=\count360
+\c@multicitecount=\count361
+\c@multicitetotal=\count362
+\c@instcount=\count363
+\c@maxnames=\count364
+\c@minnames=\count365
+\c@maxitems=\count366
+\c@minitems=\count367
+\c@citecounter=\count368
+\c@maxcitecounter=\count369
+\c@savedcitecounter=\count370
+\c@uniquelist=\count371
+\c@uniquename=\count372
+\c@refsection=\count373
+\c@refsegment=\count374
+\c@maxextratitle=\count375
+\c@maxextratitleyear=\count376
+\c@maxextraname=\count377
+\c@maxextradate=\count378
+\c@maxextraalpha=\count379
+\c@abbrvpenalty=\count380
+\c@highnamepenalty=\count381
+\c@lownamepenalty=\count382
+\c@maxparens=\count383
+\c@parenlevel=\count384
+\blx@tempcnta=\count385
+\blx@tempcntb=\count386
+\blx@tempcntc=\count387
+\c@blx@maxsection=\count388
+\blx@maxsegment@0=\count389
+\blx@notetype=\count390
+\blx@parenlevel@text=\count391
+\blx@parenlevel@foot=\count392
+\blx@sectionciteorder@0=\count393
+\blx@sectionciteorderinternal@0=\count394
+\blx@entrysetcounter=\count395
+\blx@biblioinstance=\count396
 \labelnumberwidth=\skip56
 \labelalphawidth=\skip57
 \biblabelsep=\skip58
@@ -1038,87 +1130,87 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language79
-\c@mincomprange=\count383
-\c@maxcomprange=\count384
-\c@mincompwidth=\count385
+\c@mincomprange=\count397
+\c@maxcomprange=\count398
+\c@mincompwidth=\count399
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
-File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count386
-\c@savedafterword=\count387
-\c@annotator=\count388
-\c@savedannotator=\count389
-\c@author=\count390
-\c@savedauthor=\count391
-\c@bookauthor=\count392
-\c@savedbookauthor=\count393
-\c@commentator=\count394
-\c@savedcommentator=\count395
-\c@editor=\count396
-\c@savededitor=\count397
-\c@editora=\count398
-\c@savededitora=\count399
-\c@editorb=\count400
-\c@savededitorb=\count401
-\c@editorc=\count402
-\c@savededitorc=\count403
-\c@foreword=\count404
-\c@savedforeword=\count405
-\c@holder=\count406
-\c@savedholder=\count407
-\c@introduction=\count408
-\c@savedintroduction=\count409
-\c@namea=\count410
-\c@savednamea=\count411
-\c@nameb=\count412
-\c@savednameb=\count413
-\c@namec=\count414
-\c@savednamec=\count415
-\c@translator=\count416
-\c@savedtranslator=\count417
-\c@shortauthor=\count418
-\c@savedshortauthor=\count419
-\c@shorteditor=\count420
-\c@savedshorteditor=\count421
-\c@labelname=\count422
-\c@savedlabelname=\count423
-\c@institution=\count424
-\c@savedinstitution=\count425
-\c@lista=\count426
-\c@savedlista=\count427
-\c@listb=\count428
-\c@savedlistb=\count429
-\c@listc=\count430
-\c@savedlistc=\count431
-\c@listd=\count432
-\c@savedlistd=\count433
-\c@liste=\count434
-\c@savedliste=\count435
-\c@listf=\count436
-\c@savedlistf=\count437
-\c@location=\count438
-\c@savedlocation=\count439
-\c@organization=\count440
-\c@savedorganization=\count441
-\c@origlocation=\count442
-\c@savedoriglocation=\count443
-\c@origpublisher=\count444
-\c@savedorigpublisher=\count445
-\c@publisher=\count446
-\c@savedpublisher=\count447
-\c@language=\count448
-\c@savedlanguage=\count449
-\c@origlanguage=\count450
-\c@savedoriglanguage=\count451
-\c@pageref=\count452
-\c@savedpageref=\count453
+\c@afterword=\count400
+\c@savedafterword=\count401
+\c@annotator=\count402
+\c@savedannotator=\count403
+\c@author=\count404
+\c@savedauthor=\count405
+\c@bookauthor=\count406
+\c@savedbookauthor=\count407
+\c@commentator=\count408
+\c@savedcommentator=\count409
+\c@editor=\count410
+\c@savededitor=\count411
+\c@editora=\count412
+\c@savededitora=\count413
+\c@editorb=\count414
+\c@savededitorb=\count415
+\c@editorc=\count416
+\c@savededitorc=\count417
+\c@foreword=\count418
+\c@savedforeword=\count419
+\c@holder=\count420
+\c@savedholder=\count421
+\c@introduction=\count422
+\c@savedintroduction=\count423
+\c@namea=\count424
+\c@savednamea=\count425
+\c@nameb=\count426
+\c@savednameb=\count427
+\c@namec=\count428
+\c@savednamec=\count429
+\c@translator=\count430
+\c@savedtranslator=\count431
+\c@shortauthor=\count432
+\c@savedshortauthor=\count433
+\c@shorteditor=\count434
+\c@savedshorteditor=\count435
+\c@labelname=\count436
+\c@savedlabelname=\count437
+\c@institution=\count438
+\c@savedinstitution=\count439
+\c@lista=\count440
+\c@savedlista=\count441
+\c@listb=\count442
+\c@savedlistb=\count443
+\c@listc=\count444
+\c@savedlistc=\count445
+\c@listd=\count446
+\c@savedlistd=\count447
+\c@liste=\count448
+\c@savedliste=\count449
+\c@listf=\count450
+\c@savedlistf=\count451
+\c@location=\count452
+\c@savedlocation=\count453
+\c@organization=\count454
+\c@savedorganization=\count455
+\c@origlocation=\count456
+\c@savedoriglocation=\count457
+\c@origpublisher=\count458
+\c@savedorigpublisher=\count459
+\c@publisher=\count460
+\c@savedpublisher=\count461
+\c@language=\count462
+\c@savedlanguage=\count463
+\c@origlanguage=\count464
+\c@savedoriglanguage=\count465
+\c@pageref=\count466
+\c@savedpageref=\count467
 \shorthandwidth=\skip64
 \shortjournalwidth=\skip65
 \shortserieswidth=\skip66
@@ -1133,61 +1225,66 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorttitlewidth=\skip75
 \localshortauthorwidth=\skip76
 \localshorteditorwidth=\skip77
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.de
+f)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
-File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
-File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count454
-\c@textcitetotal=\count455
-\c@textcitemaxnames=\count456
-\c@biburlbigbreakpenalty=\count457
-\c@biburlbreakpenalty=\count458
-\c@biburlnumpenalty=\count459
-\c@biburlucpenalty=\count460
-\c@biburllcpenalty=\count461
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count468
+\c@textcitetotal=\count469
+\c@textcitemaxnames=\count470
+\c@biburlbigbreakpenalty=\count471
+\c@biburlbreakpenalty=\count472
+\c@biburlnumpenalty=\count473
+\c@biburlucpenalty=\count474
+\c@biburllcpenalty=\count475
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count462
+\c@smartand=\count476
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
 mp.bbx
-File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
 x
-File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
-File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count463
-\c@bbx:relatedtotal=\count464
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count477
+\c@bbx:relatedtotal=\count478
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-co
 mp.cbx
-File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count465
-\c@cbx@tempcntb=\count466
-\c@cbx@tempcntc=\count467
-\c@cbx@tempcntd=\count468
+File: numeric-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count479
+\c@cbx@tempcntb=\count480
+\c@cbx@tempcntc=\count481
+\c@cbx@tempcntd=\count482
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1206,18 +1303,9 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
-
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-01-04 L3 programming layer (loader) 
-
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count469
-\l__pdf_internal_box=\box70
-))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-01-04 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
@@ -1225,80 +1313,55 @@ Package biblatex Info: ... and expl3
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
 .sty
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
-)
-Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-\@quotelevel=\count470
-\@quotereset=\count471
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33
-.
- (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(main.aux)
+\@quotelevel=\count483
+\@quotereset=\count484
+ (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+5.
 
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count472
-\scratchdimen=\dimen321
-\scratchbox=\box71
-\nofMPsegments=\count473
-\nofMParguments=\count474
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count475
-\MPscratchDim=\dimen322
-\MPnumerator=\count476
-\makeMPintoPDFobject=\count477
-\everyMPtoPDFconversion=\toks49
+(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 33.
- (main.out) (main.out)
+Package hyperref Info: Link coloring OFF on input line 35.
+
+(main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1329,7 +1392,7 @@ Package hyperref Info: Link coloring OFF on input line 33.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count478
+\c@lstlisting=\count485
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -1338,9 +1401,10 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
 x
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 \openout4 = `main.bcf'.
@@ -1348,10 +1412,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 33.
-Package biblatex Info: Reference segment=0 on input line 33.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
+ [1
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
+* driver: xetex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1382,42 +1449,30 @@ Package biblatex Info: Reference segment=0 on input line 33.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/unimi_logo.jpg, id=186, 398.4486pt x 156.585pt>
-File: images/unimi_logo.jpg Graphic file (type jpg)
-<use images/unimi_logo.jpg>
-Package pdftex.def Info: images/unimi_logo.jpg  used on input line 41.
-(pdftex.def)             Requested size: 426.79134pt x 167.72588pt.
+File: images/unimi_logo.jpg Graphic file (type bmp)
+<images/unimi_logo.jpg>
 
 ! Undefined control sequence.
-l.59 \RaggedRight
+l.61 \RaggedRight
                  
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
 ! Undefined control sequence.
-l.65 \RaggedLeft
+l.69 \RaggedLeft
                 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--69
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
 [1
 
-
-{C:/Users/minan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/mina
-n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./images/unimi_l
-ogo.jpg>]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.96 \end{abstract}
-                    [1
+] [1
 
 ] (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
@@ -1450,533 +1505,155 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 2.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22 ...line {4.1.1}Dataset}{15}{subsection.4.1.1}
-                                                  % [1
+ [1
 
 ])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2]
+
+[2]
 Chapter 1.
 (introduction.tex [3
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-6.
-
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-6.
-
-(C:\Users\minan\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4{C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
-}])
-[5{C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}]
+]) [4]
 Chapter 2.
-(background.tex
-Overfull \hbox (1.55154pt too wide) in paragraph at lines 4--5
-\T1/lmr/m/n/12 Over the past decade, nat-u-ral lan-guage pro-cess-ing (NLP) has
- un-der-gone a ma-jor paradigm
+(state_of_art.tex
+Missing character: There is no ≈ in font [lmroman12-italic]:mapping=tex-text;!
+
+Overfull \hbox (0.67613pt too wide) in paragraph at lines 6--7
+[]\TU/lmr/m/n/12 Early approaches to representation relied on static word embed
+dings such as Word2Vec
+ []
+
+[5
+
+] [6]
+Overfull \hbox (3.28093pt too wide) in paragraph at lines 44--44
+[]|\TU/lmr/bx/n/10.95 Language(s)|  
  []
 
 
-Overfull \hbox (8.17546pt too wide) in paragraph at lines 13--14
-\T1/lmr/m/n/12 Decoder-only trans-form-ers have be-come the foun-da-tion for ge
-n-er-a-tive LLMs, while encoder-
+Overfull \hbox (10.79263pt too wide) in paragraph at lines 44--44
+[]|\TU/lmr/m/n/10.95 Paired[]sentence 
  []
 
-[6
 
-] [7] [8] [9]) [10]
+Overfull \hbox (3.5109pt too wide) in paragraph at lines 44--44
+[]|\TU/lmr/m/n/10.95 Prompt[]based 
+ []
+
+
+Overfull \hbox (15.03027pt too wide) in paragraph at lines 44--44
+[]|\TU/lmr/m/n/10.95 Domain[]specific; 
+ []
+
+
+Overfull \hbox (6.555pt too wide) in paragraph at lines 44--44
+[]|\TU/lmr/m/n/10.95 Prompt[]based, 
+ []
+
+[7] [8]) [9]
 Chapter 3.
-(related_works.tex [11
-
-] [12]
-Overfull \hbox (3.27425pt too wide) in paragraph at lines 58--58
-[]|\T1/lmr/bx/n/10.95 Language(s)|  
- []
-
-
-Overfull \hbox (10.80144pt too wide) in paragraph at lines 58--58
-[]|\T1/lmr/m/n/10.95 Paired[]sentence 
- []
-
-
-Overfull \hbox (3.50085pt too wide) in paragraph at lines 58--58
-[]|\T1/lmr/m/n/10.95 Prompt[]based 
- []
-
-
-Overfull \hbox (15.0289pt too wide) in paragraph at lines 58--58
-[]|\T1/lmr/m/n/10.95 Domain[]specific; 
- []
-
-
-Overfull \hbox (6.5425pt too wide) in paragraph at lines 58--58
-[]|\T1/lmr/m/n/10.95 Prompt[]based, 
- []
-
-[13]) [14]
-Chapter 4.
 (methodology.tex
-Overfull \hbox (4.16006pt too wide) in paragraph at lines 11--12
-\T1/lmr/m/n/12 with \T1/lmr/bx/n/12 BERTopic \T1/lmr/m/n/12 [[]15[]], us-ing tr
-ans-former em-bed-dings (Ope-nAI \T1/lmtt/m/n/12 gpt-3.5-turbo \T1/lmr/m/n/12 [
-[]1[]]), UMAP
- []
+File: images/methods/methods_2.png Graphic file (type bmp)
+<images/methods/methods_2.png>
+ [10
 
-[15
+] [11] [12] [13]) [14]
+Chapter 4.
+(results.tex [15
 
-] [16]
-Overfull \hbox (1.88797pt too wide) in paragraph at lines 72--74
-\T1/lmr/m/n/12 Agreement means the model la-bel matches the gold stance for tha
-t row (e.g., gold=\T1/lmr/m/it/12 against\T1/lmr/m/n/12 ,
- []
-
-[17{C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
-nc}{C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-
-Overfull \hbox (19.54514pt too wide) in paragraph at lines 84--85
-\T1/lmr/m/n/12 To com-pare the \T1/lmr/m/it/12 rea-sons \T1/lmr/m/n/12 (be-yond
- la-bels), we em-bed \T1/lmtt/m/n/12 LLM_reason \T1/lmr/m/n/12 with mul-ti-lin-
-gual \T1/lmr/bx/n/12 LaBSE \T1/lmr/m/n/12 [[]17[]]
- []
-
-<images/methods/method.png, id=486, 761.84625pt x 167.12437pt>
-File: images/methods/method.png Graphic file (type png)
-<use images/methods/method.png>
-Package pdftex.def Info: images/methods/method.png  used on input line 97.
-(pdftex.def)             Requested size: 452.9679pt x 99.36499pt.
-) [18 <./images/methods/method.png>]
-Chapter 5.
-(results.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19
-
-] [20]
-Overfull \hbox (1.87885pt too wide) in paragraph at lines 134--134
-[]|\T1/lmr/bx/n/10 Topic|  
+]
+Overfull \hbox (1.8727pt too wide) in paragraph at lines 134--134
+[]|\TU/lmr/bx/n/10 Topic|  
  []
 
 
-Overfull \hbox (5.37923pt too wide) in paragraph at lines 134--134
-[]|\T1/lmr/bx/n/10 Count|  
+Overfull \hbox (5.3827pt too wide) in paragraph at lines 134--134
+[]|\TU/lmr/bx/n/10 Count|  
  []
 
-<images/results/topicmodeling/topic_word_scores.png, id=517, 1003.75pt x 501.87
-5pt>
-File: images/results/topicmodeling/topic_word_scores.png Graphic file (type png
+File: images/results/topicmodeling/topic_word_scores.png Graphic file (type bmp
 )
-<use images/results/topicmodeling/topic_word_scores.png>
-Package pdftex.def Info: images/results/topicmodeling/topic_word_scores.png  us
-ed on input line 143.
-(pdftex.def)             Requested size: 407.66833pt x 203.8326pt.
-<images/results/topicmodeling/intertopic_distance_map.png, id=518, 652.4375pt x
- 652.4375pt>
+<images/results/topicmodeling/topic_word_scores.png>
 File: images/results/topicmodeling/intertopic_distance_map.png Graphic file (ty
-pe png)
-<use images/results/topicmodeling/intertopic_distance_map.png>
-Package pdftex.def Info: images/results/topicmodeling/intertopic_distance_map.p
-ng  used on input line 151.
-(pdftex.def)             Requested size: 407.66833pt x 407.68283pt.
-[21] [22 <./images/results/topicmodeling/topic_word_scores.png>] [23 <./images/
-results/topicmodeling/intertopic_distance_map.png>]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_3_by_country.png, id=537, 614.2
-95pt x 289.08pt>
+pe bmp)
+<images/results/topicmodeling/intertopic_distance_map.png>
+[16] [17] [18]
 File: images/results/agreement_ratio/agreement_topic_3_by_country.png Graphic f
-ile (type png)
-<use images/results/agreement_ratio/agreement_topic_3_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_3_by_co
-untry.png  used on input line 175.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_4_by_country.png, id=539, 614.2
-95pt x 289.08pt>
+ile (type bmp)
+<images/results/agreement_ratio/agreement_topic_3_by_country.png>
 File: images/results/agreement_ratio/agreement_topic_4_by_country.png Graphic f
-ile (type png)
-<use images/results/agreement_ratio/agreement_topic_4_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_4_by_co
-untry.png  used on input line 187.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.197     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_15_by_country.png, id=541, 614.
-295pt x 289.08pt>
+ile (type bmp)
+<images/results/agreement_ratio/agreement_topic_4_by_country.png>
 File: images/results/agreement_ratio/agreement_topic_15_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_15_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_15_by_c
-ountry.png  used on input line 199.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.209     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_17_by_country.png, id=543, 614.
-295pt x 289.08pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_15_by_country.png>
+ [19]
 File: images/results/agreement_ratio/agreement_topic_17_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_17_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_17_by_c
-ountry.png  used on input line 211.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_18_by_country.png, id=545, 614.
-295pt x 289.08pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_17_by_country.png>
 File: images/results/agreement_ratio/agreement_topic_18_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_18_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_18_by_c
-ountry.png  used on input line 223.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-[24] [25 <./images/results/agreement_ratio/agreement_topic_3_by_country.png> <.
-/images/results/agreement_ratio/agreement_topic_4_by_country.png> <./images/res
-ults/agreement_ratio/agreement_topic_15_by_country.png>]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_22_by_country.png, id=564, 614.
-295pt x 289.08pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_18_by_country.png>
+ [20]
 File: images/results/agreement_ratio/agreement_topic_22_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_22_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_22_by_c
-ountry.png  used on input line 235.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.245     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_36_by_country.png, id=566, 614.
-295pt x 289.08pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_22_by_country.png>
 File: images/results/agreement_ratio/agreement_topic_36_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_36_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_36_by_c
-ountry.png  used on input line 247.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.257     \begin{figure}[H]
-                           
-? 
-<images/results/agreement_ratio/agreement_topic_40_by_country.png, id=568, 614.
-295pt x 289.08pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_36_by_country.png>
+ [21]
 File: images/results/agreement_ratio/agreement_topic_40_by_country.png Graphic 
-file (type png)
-<use images/results/agreement_ratio/agreement_topic_40_by_country.png>
-Package pdftex.def Info: images/results/agreement_ratio/agreement_topic_40_by_c
-ountry.png  used on input line 259.
-(pdftex.def)             Requested size: 385.02547pt x 181.19063pt.
-[26] [27 <./images/results/agreement_ratio/agreement_topic_17_by_country.png> <
-./images/results/agreement_ratio/agreement_topic_18_by_country.png> <./images/r
-esults/agreement_ratio/agreement_topic_22_by_country.png>] [28 <./images/result
-s/agreement_ratio/agreement_topic_36_by_country.png> <./images/results/agreemen
-t_ratio/agreement_topic_40_by_country.png>] [29]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.307 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/gpt/rolebased_vs_assistant_summary.png, id=611, 512.
-8761pt x 367.3725pt>
+file (type bmp)
+<images/results/agreement_ratio/agreement_topic_40_by_country.png>
+ [22] [23]
 File: images/results/similarity/gpt/rolebased_vs_assistant_summary.png Graphic 
-file (type png)
-<use images/results/similarity/gpt/rolebased_vs_assistant_summary.png>
-Package pdftex.def Info: images/results/similarity/gpt/rolebased_vs_assistant_s
-ummary.png  used on input line 309.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.314 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/gpt/native_vs_rolebased_summary.png, id=612, 512.876
-1pt x 367.3725pt>
+file (type bmp)
+<images/results/similarity/gpt/rolebased_vs_assistant_summary.png>
+ [24]
 File: images/results/similarity/gpt/native_vs_rolebased_summary.png Graphic fil
-e (type png)
-<use images/results/similarity/gpt/native_vs_rolebased_summary.png>
-Package pdftex.def Info: images/results/similarity/gpt/native_vs_rolebased_summ
-ary.png  used on input line 316.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.321 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/gpt/native_vs_assistant_summary.png, id=613, 512.876
-1pt x 367.3725pt>
+e (type bmp)
+<images/results/similarity/gpt/native_vs_rolebased_summary.png>
 File: images/results/similarity/gpt/native_vs_assistant_summary.png Graphic fil
-e (type png)
-<use images/results/similarity/gpt/native_vs_assistant_summary.png>
-Package pdftex.def Info: images/results/similarity/gpt/native_vs_assistant_summ
-ary.png  used on input line 323.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/llama/rolebased_vs_assistant_summary.png, id=614, 51
-2.8761pt x 367.3725pt>
+e (type bmp)
+<images/results/similarity/gpt/native_vs_assistant_summary.png>
+ [25]
 File: images/results/similarity/llama/rolebased_vs_assistant_summary.png Graphi
-c file (type png)
-<use images/results/similarity/llama/rolebased_vs_assistant_summary.png>
-Package pdftex.def Info: images/results/similarity/llama/rolebased_vs_assistant
-_summary.png  used on input line 330.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.335 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/llama/native_vs_rolebased_summary.png, id=615, 512.8
-761pt x 367.3725pt>
+c file (type bmp)
+<images/results/similarity/llama/rolebased_vs_assistant_summary.png>
 File: images/results/similarity/llama/native_vs_rolebased_summary.png Graphic f
-ile (type png)
-<use images/results/similarity/llama/native_vs_rolebased_summary.png>
-Package pdftex.def Info: images/results/similarity/llama/native_vs_rolebased_su
-mmary.png  used on input line 337.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.342 \begin{figure}[H]
-                       
-? 
-<images/results/similarity/llama/native_vs_assistant_summary.png, id=616, 512.8
-761pt x 367.3725pt>
+ile (type bmp)
+<images/results/similarity/llama/native_vs_rolebased_summary.png>
+ [26]
 File: images/results/similarity/llama/native_vs_assistant_summary.png Graphic f
-ile (type png)
-<use images/results/similarity/llama/native_vs_assistant_summary.png>
-Package pdftex.def Info: images/results/similarity/llama/native_vs_assistant_su
-mmary.png  used on input line 344.
-(pdftex.def)             Requested size: 385.02547pt x 275.80896pt.
-) [30] [31 <./images/results/similarity/gpt/rolebased_vs_assistant_summary.png>
- <./images/results/similarity/gpt/native_vs_rolebased_summary.png>] [32 <./imag
-es/results/similarity/gpt/native_vs_assistant_summary.png> <./images/results/si
-milarity/llama/rolebased_vs_assistant_summary.png>] [33 <./images/results/simil
-arity/llama/native_vs_rolebased_summary.png> <./images/results/similarity/llama
-/native_vs_assistant_summary.png>]
-Chapter 6.
-(limitations_and_future_works.tex) [34
+ile (type bmp)
+<images/results/similarity/llama/native_vs_assistant_summary.png>
+) [27]
+Chapter 5.
+(limitations_and_future_works.tex) [28
 
-] [35
+] [29
 
-] [36] [37] [38] [39] [40]
-Chapter 7.
-(appendix.tex
-<images/results/similarity/gpt/rolebased_vs_assistant_heatmap.png, id=770, 697.
-1646pt x 368.577pt>
-File: images/results/similarity/gpt/rolebased_vs_assistant_heatmap.png Graphic 
-file (type png)
-<use images/results/similarity/gpt/rolebased_vs_assistant_heatmap.png>
-Package pdftex.def Info: images/results/similarity/gpt/rolebased_vs_assistant_h
-eatmap.png  used on input line 6.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-<images/results/similarity/gpt/native_vs_rolebased_heatmap.png, id=771, 697.164
-6pt x 368.577pt>
-File: images/results/similarity/gpt/native_vs_rolebased_heatmap.png Graphic fil
-e (type png)
-<use images/results/similarity/gpt/native_vs_rolebased_heatmap.png>
-Package pdftex.def Info: images/results/similarity/gpt/native_vs_rolebased_heat
-map.png  used on input line 10.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-<images/results/similarity/gpt/native_vs_assistant_heatmap.png, id=772, 697.164
-6pt x 368.577pt>
-File: images/results/similarity/gpt/native_vs_assistant_heatmap.png Graphic fil
-e (type png)
-<use images/results/similarity/gpt/native_vs_assistant_heatmap.png>
-Package pdftex.def Info: images/results/similarity/gpt/native_vs_assistant_heat
-map.png  used on input line 14.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-
-
-LaTeX Warning: Float too large for page by 65.96436pt on input line 19.
-
-<images/results/similarity/llama/rolebased_vs_assistant_heatmap.png, id=773, 69
-7.1646pt x 368.577pt>
-File: images/results/similarity/llama/rolebased_vs_assistant_heatmap.png Graphi
-c file (type png)
-<use images/results/similarity/llama/rolebased_vs_assistant_heatmap.png>
-Package pdftex.def Info: images/results/similarity/llama/rolebased_vs_assistant
-_heatmap.png  used on input line 24.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-<images/results/similarity/llama/native_vs_rolebased_heatmap.png, id=774, 697.1
-646pt x 368.577pt>
-File: images/results/similarity/llama/native_vs_rolebased_heatmap.png Graphic f
-ile (type png)
-<use images/results/similarity/llama/native_vs_rolebased_heatmap.png>
-Package pdftex.def Info: images/results/similarity/llama/native_vs_rolebased_he
-atmap.png  used on input line 28.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-<images/results/similarity/llama/native_vs_assistant_heatmap.png, id=775, 697.1
-646pt x 368.577pt>
-File: images/results/similarity/llama/native_vs_assistant_heatmap.png Graphic f
-ile (type png)
-<use images/results/similarity/llama/native_vs_assistant_heatmap.png>
-Package pdftex.def Info: images/results/similarity/llama/native_vs_assistant_he
-atmap.png  used on input line 32.
-(pdftex.def)             Requested size: 407.66833pt x 215.52386pt.
-
-LaTeX Warning: Float too large for page by 65.96436pt on input line 37.
-
-[41
-
-] [42 <./images/results/similarity/gpt/rolebased_vs_assistant_heatmap.png> <./i
-mages/results/similarity/gpt/native_vs_rolebased_heatmap.png> <./images/results
-/similarity/gpt/native_vs_assistant_heatmap.png>] [43 <./images/results/similar
-ity/llama/rolebased_vs_assistant_heatmap.png> <./images/results/similarity/llam
-a/native_vs_rolebased_heatmap.png> <./images/results/similarity/llama/native_vs
-_assistant_heatmap.png>])
-! Undefined control sequence.
-\__hook enddocument ...o\endcsname }}\ifTRP@rerun 
-                                                  \PackageWarningNoLine {tra...
-l.126 \end{document}
-                    
-? 
-
-Package transparent Warning: Rerun to get transparencies right.
-
-! Extra \fi.
-\__hook enddocument ...t transparencies right}\fi 
-                                                  \ifpgf@external@grabshipou...
-l.126 \end{document}
-                    
-? 
-(main.aux)
+] [30] [31] [32] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 162A3FF4E7EAABA5A9E05EDFEE2C25D2;7493.
+(rerunfilecheck)             Checksum: 9AA89BC348B0626F9802F9BADEB78767;3884.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43721 strings out of 474486
- 1004552 string characters out of 5743755
- 1940542 words of memory out of 5000000
- 65153 multiletter control sequences out of 15000+600000
- 640280 words of font info for 80 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 94i,11n,93p,2413b,1466s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
-fb><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.p
-fb><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
-b><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><
-C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><
-C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
-C:/Users/minan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (45 pages, 3332898 bytes).
-PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 44818 strings out of 409612
+ 1057421 string characters out of 5773901
+ 2019002 words of memory out of 5000000
+ 66269 multiletter control sequences out of 15000+600000
+ 583997 words of font info for 78 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 94i,11n,93p,2412b,4853s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on main.pdf (35 pages).
