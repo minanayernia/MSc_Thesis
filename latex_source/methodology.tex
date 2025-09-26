@@ -129,13 +129,38 @@
 %
 %
 
-Our methodology follows the pipeline illustrated in Figure~\ref{fig:method_pipeline}. We begin with a curated dataset of arguments, preprocess it through topic modeling and translation, and then prompt large language models under controlled conditions. Their outputs are collected, normalized, and evaluated through both stance agreement and embedding similarity. This section first introduces the data and its processing, then details the prompting and response collection procedure, and finally outlines the metrics used for analysis.
+Our study follows the pipeline in Figure~\ref{fig:method_pipeline}.
+Beginning with a topic-selected set of arguments, we elicit model responses under three prompting regimes (assistant, role, native).
+We then summarize the outputs with two complementary views: a stance-level \emph{agreement ratio} against the gold conclusion, and a reason-level \emph{semantic similarity} based on cross-lingual embeddings.
+
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\linewidth,keepaspectratio]{images/methods/methods_2}
-  \caption{Methodology pipeline: BERTopic selection, prompting (role/native), stance agreement, and embedding similarity.}
+  \begin{subfigure}{\linewidth}
+    \centering
+    % (a) Prompting & outputs
+    \includegraphics[width=\linewidth]{images/methods/method_prompting}
+    \caption{Prompting setup. For each argument, we query three conditions: \emph{Role} (country persona), \emph{Assistant} (default), and \emph{Native} (prompt in the country’s language).
+    Each reply is normalized to JSON with \texttt{idea} (stance) and \texttt{reason} (justification).}
+    \label{fig:pipeline_prompting}
+  \end{subfigure}
+
+  \vspace{0.75em}
+
+  \begin{subfigure}{\linewidth}
+    \centering
+    % (b) Analysis paths
+    \includegraphics[width=\linewidth]{images/methods/method_analysis}
+    \caption{Analysis paths. (i) \textbf{Agreement Ratio}: stance agreement with the gold conclusion stance.
+    (ii) \textbf{Embedding Similarity}: double-translate reasons to align languages, embed, then compute cosine similarity.}
+    \label{fig:pipeline_analysis}
+  \end{subfigure}
+
+  \caption{\textbf{Methodology pipeline.}
+  (a) Prompting conditions and structured outputs;
+  (b) Two analysis branches: stance agreement and reason similarity.}
   \label{fig:method_pipeline}
 \end{figure}
+
 
 \section{Data and preprocessing}
 
@@ -224,33 +249,27 @@ Two model families are queried: OpenAI’s GPT-4o-mini, which supports native JS
 Our analysis combines stance-based and reasoning-based evaluations, complemented by error profiling. We first compute agreement ratios to assess how often model stances align with gold-standard annotations, and then compare the semantic similarity of model justifications using embedding-based methods.
 
 \subsection{Agreement ratio}
-Agreement ratios capture whether a model’s predicted stance on a premise implies agreement with the conclusion stance given in the dataset. For topic $t$ and condition $r$, we define
+Agreement ratios capture whether a model’s predicted stance on a premise implies agreement with the gold-standard conclusion stance. For topic $t$ and condition $r$ we compute
 \[
-\mathrm{AgreeRatio}(t,r) =
-\frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}}.
+\mathrm{AgreeRatio}(t,r)=
+\frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}+\#\text{neutral}}.
 \]
+Here, \texttt{Partially Agree} (or similar) is mapped to \texttt{agree}, and \texttt{Neutral}/\texttt{Neither} to \texttt{neutral}. If a model does not produce neutral outputs, then $\#\text{neutral}=0$.
 
-The mapping between model stance and dataset stance is shown below:
+The mapping between model stance and dataset stance is:
 
 \[
 \begin{array}{c c c}
 \toprule
-\text{Model stance} & \text{Argument stance} & \text{Model $\to$ Conclusion} \\
+\text{Model stance} & \text{Argument stance} & \text{Model }{\to}\text{ Conclusion} \\
 \midrule
-\text{Agree} & \text{In favor of} & \text{Agree} \\
+\text{Agree}    & \text{In favor of} & \text{Agree} \\
 \text{Disagree} & \text{In favor of} & \text{Disagree} \\
-\text{Agree} & \text{Against} & \text{Disagree} \\
-\text{Disagree} & \text{Against} & \text{Agree} \\
+\text{Agree}    & \text{Against}     & \text{Disagree} \\
+\text{Disagree} & \text{Against}     & \text{Agree} \\
 \bottomrule
 \end{array}
 \]
-
-For LLaMA outputs, we extend the denominator to handle \texttt{Neutral}/\texttt{Partial} cases:
-\[
-\mathrm{AgreeRatio}^{\text{\scriptsize LLAMA}}(t,r)=
-\frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}+\#\text{neutral}},
-\]
-where \texttt{Partially Agree} is mapped to \texttt{agree}, and \texttt{Neutral}/\texttt{Neither} to \texttt{neutral}. Agreement is counted when the inferred stance matches the gold-standard conclusion stance, providing a robust stance-level measure across topics and conditions.
 
 \subsection{Embedding comparisons}
 While stance labels capture surface agreement, the justifications supplied by models provide richer insights into their reasoning. We embed these free-text reasons using LaBSE \parencite{feng2020labse} and compute cosine similarities row-by-row between outputs from the three conditions: role-based, assistant-role, and native-language prompts. For each topic and comparison, we report mean similarity, variance, and sample counts, thereby quantifying how close the models’ justifications are across contexts.

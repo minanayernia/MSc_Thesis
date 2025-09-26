@@ -12,26 +12,27 @@
 \usepackage{fontspec}
 \usepackage{lmodern}
 \usepackage{svg}
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
 \usepackage{setspace}
 \usepackage{geometry}
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows.meta,shapes.geometric,calc}
 \geometry{margin=1in}
 \usepackage{listings}
-\usepackage{float} % enables [H]
-\usepackage{booktabs}   % for \toprule \midrule \bottomrule
-\usepackage{tabularx}   % for tabularx + X columns
-\usepackage{array}      % for \newcolumntype
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{pgf-pie}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\usepackage[hidelinks,unicode]{hyperref}
 \addbibresource{references.bib}
 
 \doublespacing
-
+\hypersetup{pageanchor=false}
 \begin{document}
 
 % --- title page (no \maketitle) ---
@@ -79,10 +80,11 @@ Mina Nayernia\\[0.6cm]
 2024--2025
 
 \end{titlepage}
+
+\clearpage
+\hypersetup{pageanchor=true}
+
 \restoregeometry
-
-
-
 
 % Abstract
 \begin{abstract}
@@ -115,6 +117,9 @@ Mina Nayernia\\[0.6cm]
 
 \chapter{Analysis of Results}
 \input{results}
+
+\chapter{Discussion}
+\input{discussion}
 
 \chapter{Limitations and Future works}
 \input{limitations_and_future_works}

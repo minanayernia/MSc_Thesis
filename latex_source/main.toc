@@ -6,24 +6,24 @@
 \contentsline {section}{\numberline {2.3}Bias in NLP and LLMs}{7}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Gap Analysis}{8}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data and preprocessing}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Prompting and response collection}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analysis techniques and metrics}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Agreement ratio}{13}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.1}Data and preprocessing}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Prompting and response collection}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis techniques and metrics}{14}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Agreement ratio}{14}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Embedding comparisons}{14}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Analysis of Results}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dataset Exploration}{15}{section.4.1}%
-\contentsline {paragraph}{Distinct conclusions.}{15}{section*.7}%
-\contentsline {paragraph}{Stance distribution.}{15}{section*.8}%
-\contentsline {section}{\numberline {4.2}Topic Modeling Results}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Agreement Ratio Analysis}{18}{section.4.3}%
-\contentsline {paragraph}{General patterns.}{18}{section*.13}%
-\contentsline {paragraph}{Topic-wise observations.}{19}{section*.14}%
-\contentsline {paragraph}{Summary.}{22}{section*.23}%
-\contentsline {section}{\numberline {4.4}Embedding Similarity Results}{23}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}GPT-4o-mini}{23}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}LLaMA 3.1-70B}{24}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}General Patterns}{24}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Model Comparison (GPT vs LLaMA)}{27}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Limitations and Future works}{28}{chapter.5}%
-\contentsline {chapter}{References}{29}{chapter*.30}%
+\contentsline {chapter}{\numberline {4}Analysis of Results}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Agreement Ratio Analysis}{16}{section.4.1}%
+\contentsline {paragraph}{General patterns.}{16}{section*.7}%
+\contentsline {paragraph}{Topic-wise observations.}{17}{section*.8}%
+\contentsline {paragraph}{Summary.}{20}{section*.17}%
+\contentsline {section}{\numberline {4.2}Embedding similarities}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}GPT-4o-mini}{21}{subsection.4.2.1}%
+\contentsline {paragraph}{Bar-chart interpretation.}{21}{section*.18}%
+\contentsline {paragraph}{Heatmap observations.}{22}{section*.20}%
+\contentsline {subsection}{\numberline {4.2.2}LLaMA~3.1-70B}{24}{subsection.4.2.2}%
+\contentsline {paragraph}{Bar-chart interpretation.}{24}{section*.22}%
+\contentsline {paragraph}{Heatmap observations.}{24}{section*.24}%
+\contentsline {section}{\numberline {4.3}Errors and Neutrality}{27}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Discussion}{28}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Limitations and Future works}{30}{chapter.6}%
+\contentsline {chapter}{References}{32}{chapter*.27}%

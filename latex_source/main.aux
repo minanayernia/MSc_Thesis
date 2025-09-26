@@ -1,7 +1,7 @@
 \relax 
+\abx@aux@refcontext{none/global//global/global/global}
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand*\HyPL@Entry[1]{}
-\abx@aux@refcontext{none/global//global/global/global}
 \HyPL@Entry{0<</S/D>>}
 \HyPL@Entry{1<</S/D>>}
 \HyPL@Entry{2<</S/D>>}
@@ -114,90 +114,86 @@
 \@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of representative related works, showing their focus, scope, and limitations relative to this thesis.}}{8}{table.caption.2}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:relatedworks}{{2.1}{8}{Summary of representative related works, showing their focus, scope, and limitations relative to this thesis}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
 \abx@aux@cite{0}{dataset}
 \abx@aux@segm{0}{0}{dataset}
 \abx@aux@cite{0}{soni-etal-2022-human}
 \abx@aux@segm{0}{0}{soni-etal-2022-human}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}\protected@file@percent }
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Methodology pipeline: BERTopic selection, prompting (role/native), stance agreement, and embedding similarity.}}{10}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:method_pipeline}{{3.1}{10}{Methodology pipeline: BERTopic selection, prompting (role/native), stance agreement, and embedding similarity}{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Data and preprocessing}{10}{section.3.1}\protected@file@percent }
+\newlabel{fig:pipeline_prompting}{{3.1a}{11}{Prompting setup. For each argument, we query three conditions: \emph {Role} (country persona), \emph {Assistant} (default), and \emph {Native} (prompt in the country’s language). Each reply is normalized to JSON with \texttt {idea} (stance) and \texttt {reason} (justification)}{figure.caption.3}{}}
+\newlabel{sub@fig:pipeline_prompting}{{a}{11}{Prompting setup. For each argument, we query three conditions: \emph {Role} (country persona), \emph {Assistant} (default), and \emph {Native} (prompt in the country’s language). Each reply is normalized to JSON with \texttt {idea} (stance) and \texttt {reason} (justification)}{figure.caption.3}{}}
+\newlabel{fig:pipeline_analysis}{{3.1b}{11}{Analysis paths. (i) \textbf {Agreement Ratio}: stance agreement with the gold conclusion stance. (ii) \textbf {Embedding Similarity}: double-translate reasons to align languages, embed, then compute cosine similarity}{figure.caption.3}{}}
+\newlabel{sub@fig:pipeline_analysis}{{b}{11}{Analysis paths. (i) \textbf {Agreement Ratio}: stance agreement with the gold conclusion stance. (ii) \textbf {Embedding Similarity}: double-translate reasons to align languages, embed, then compute cosine similarity}{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \textbf  {Methodology pipeline.} (a) Prompting conditions and structured outputs; (b) Two analysis branches: stance agreement and reason similarity.}}{11}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:method_pipeline}{{3.1}{11}{\textbf {Methodology pipeline.} (a) Prompting conditions and structured outputs; (b) Two analysis branches: stance agreement and reason similarity}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Data and preprocessing}{11}{section.3.1}\protected@file@percent }
 \abx@aux@cite{0}{bertopic2022}
 \abx@aux@segm{0}{0}{bertopic2022}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Sample arguments with conclusions, stance labels, and premises.}}{11}{table.caption.4}\protected@file@percent }
-\newlabel{tab:dataset_samples}{{3.1}{11}{Sample arguments with conclusions, stance labels, and premises}{table.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Sample arguments with conclusions, stance labels, and premises.}}{12}{table.caption.4}\protected@file@percent }
+\newlabel{tab:dataset_samples}{{3.1}{12}{Sample arguments with conclusions, stance labels, and premises}{table.caption.4}{}}
 \abx@aux@cite{0}{deep_translator}
 \abx@aux@segm{0}{0}{deep_translator}
 \abx@aux@cite{0}{openai_api_docs}
 \abx@aux@segm{0}{0}{openai_api_docs}
 \abx@aux@cite{0}{touvron_llama_2023}
 \abx@aux@segm{0}{0}{touvron_llama_2023}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Topic distribution across selected themes.}}{12}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:topic-pie}{{3.2}{12}{Topic distribution across selected themes}{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Prompting and response collection}{12}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Topic distribution across selected themes.}}{13}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:topic-pie}{{3.2}{13}{Topic distribution across selected themes}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Prompting and response collection}{13}{section.3.2}\protected@file@percent }
 \abx@aux@cite{0}{feng2020labse}
 \abx@aux@segm{0}{0}{feng2020labse}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Analysis techniques and metrics}{13}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Agreement ratio}{13}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Analysis techniques and metrics}{14}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Agreement ratio}{14}{subsection.3.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Embedding comparisons}{14}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Analysis of Results}{15}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Analysis of Results}{16}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Dataset Exploration}{15}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Distinct conclusions.}{15}{section*.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Stance distribution.}{15}{section*.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Distribution of stance labels relative to conclusions.}}{15}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:stance_pie}{{4.1}{15}{Distribution of stance labels relative to conclusions}{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Topic Modeling Results}{16}{section.4.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Topic word scores for selected clusters (higher bars indicate higher c-TF--IDF weight).}}{16}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:topic_word_scores}{{4.2}{16}{Topic word scores for selected clusters (higher bars indicate higher c-TF--IDF weight)}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Intertopic distance map from BERTopic showing relative topic positions and sizes.}}{17}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:intertopic_distance}{{4.3}{17}{Intertopic distance map from BERTopic showing relative topic positions and sizes}{figure.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Selected BERTopic clusters: counts, readable names, and top c-TF–IDF keywords.}}{18}{table.caption.10}\protected@file@percent }
-\newlabel{tab:topic_info_samples}{{4.1}{18}{Selected BERTopic clusters: counts, readable names, and top c-TF–IDF keywords}{table.caption.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Agreement Ratio Analysis}{18}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{General patterns.}{18}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Topic-wise observations.}{19}{section*.14}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Agreement ratios by country for the topic ``No nuclear weapons.''}}{19}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:agreement_topic_3_by_country}{{4.4}{19}{Agreement ratios by country for the topic ``No nuclear weapons.''}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Agreement ratios by country for the topic ``Legalize sex selection.''}}{19}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:agreement_topic_4_by_country}{{4.5}{19}{Agreement ratios by country for the topic ``Legalize sex selection.''}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Agreement ratios by country for the topic ``No economic sanctions.''}}{20}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:agreement_topic_15_by_country}{{4.6}{20}{Agreement ratios by country for the topic ``No economic sanctions.''}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Agreement ratios by country for the topic ``Legalize prostitution.''}}{20}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:agreement_topic_17_by_country}{{4.7}{20}{Agreement ratios by country for the topic ``Legalize prostitution.''}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Agreement ratios by country for the topic ``Adopt multi-party system.''}}{21}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:agreement_topic_18_by_country}{{4.8}{21}{Agreement ratios by country for the topic ``Adopt multi-party system.''}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Agreement ratios by country for the topic ``Adopt atheism.''}}{21}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:agreement_topic_22_by_country}{{4.9}{21}{Agreement ratios by country for the topic ``Adopt atheism.''}{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Agreement ratios by country for the topic ``Compulsory voting.''}}{22}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:agreement_topic_36_by_country}{{4.10}{22}{Agreement ratios by country for the topic ``Compulsory voting.''}{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Agreement ratios by country for the topic ``Adopt libertarianism.''}}{22}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:agreement_topic_40_by_country}{{4.11}{22}{Agreement ratios by country for the topic ``Adopt libertarianism.''}{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {paragraph}{Summary.}{22}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Embedding Similarity Results}{23}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}GPT-4o-mini}{23}{subsection.4.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}LLaMA 3.1-70B}{24}{subsection.4.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}General Patterns}{24}{subsection.4.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces GPT-4o-mini: Role-based vs. Assistant similarities.}}{25}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:gpt_rolebased_vs_assistant}{{4.12}{25}{GPT-4o-mini: Role-based vs. Assistant similarities}{figure.caption.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces GPT-4o-mini: Native vs. Role-based similarities.}}{25}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:gpt_native_vs_rolebased}{{4.13}{25}{GPT-4o-mini: Native vs. Role-based similarities}{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces GPT-4o-mini: Native vs. Assistant similarities.}}{26}{figure.caption.26}\protected@file@percent }
-\newlabel{fig:gpt_native_vs_assistant}{{4.14}{26}{GPT-4o-mini: Native vs. Assistant similarities}{figure.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces LLaMA 3.1-70B: Role-based vs. Assistant similarities.}}{26}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:llama_rolebased_vs_assistant}{{4.15}{26}{LLaMA 3.1-70B: Role-based vs. Assistant similarities}{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces LLaMA 3.1-70B: Native vs. Role-based similarities.}}{27}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:llama_native_vs_rolebased}{{4.16}{27}{LLaMA 3.1-70B: Native vs. Role-based similarities}{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces LLaMA 3.1-70B: Native vs. Assistant similarities.}}{27}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:llama_native_vs_assistant}{{4.17}{27}{LLaMA 3.1-70B: Native vs. Assistant similarities}{figure.caption.29}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Model Comparison (GPT vs LLaMA)}{27}{section.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Limitations and Future works}{28}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Agreement Ratio Analysis}{16}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{General patterns.}{16}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Topic-wise observations.}{17}{section*.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Agreement ratios by country for the topic ``No nuclear weapons.''}}{17}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:agreement_topic_3_by_country}{{4.1}{17}{Agreement ratios by country for the topic ``No nuclear weapons.''}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Agreement ratios by country for the topic ``Legalize sex selection.''}}{17}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:agreement_topic_4_by_country}{{4.2}{17}{Agreement ratios by country for the topic ``Legalize sex selection.''}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Agreement ratios by country for the topic ``No economic sanctions.''}}{18}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:agreement_topic_15_by_country}{{4.3}{18}{Agreement ratios by country for the topic ``No economic sanctions.''}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Agreement ratios by country for the topic ``Legalize prostitution.''}}{18}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:agreement_topic_17_by_country}{{4.4}{18}{Agreement ratios by country for the topic ``Legalize prostitution.''}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Agreement ratios by country for the topic ``Adopt multi-party system.''}}{19}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:agreement_topic_18_by_country}{{4.5}{19}{Agreement ratios by country for the topic ``Adopt multi-party system.''}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Agreement ratios by country for the topic ``Adopt atheism.''}}{19}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:agreement_topic_22_by_country}{{4.6}{19}{Agreement ratios by country for the topic ``Adopt atheism.''}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Agreement ratios by country for the topic ``Compulsory voting.''}}{20}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:agreement_topic_36_by_country}{{4.7}{20}{Agreement ratios by country for the topic ``Compulsory voting.''}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Agreement ratios by country for the topic ``Adopt libertarianism.''}}{20}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:agreement_topic_40_by_country}{{4.8}{20}{Agreement ratios by country for the topic ``Adopt libertarianism.''}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {paragraph}{Summary.}{20}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Embedding similarities}{21}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}GPT-4o-mini}{21}{subsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bar-chart interpretation.}{21}{section*.18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces \textbf  {GPT-4o-mini — mean cosine similarity by country.} Bars show means across eight topics; whiskers show \textbf  {standard deviation across topics} (topic dispersion). NvA and NvR are uniformly high (language and role remain close to native), while RvA is lower and more topic-sensitive (persona effect).}}{22}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:gpt_bars}{{4.9}{22}{\textbf {GPT-4o-mini — mean cosine similarity by country.} Bars show means across eight topics; whiskers show \textbf {standard deviation across topics} (topic dispersion). NvA and NvR are uniformly high (language and role remain close to native), while RvA is lower and more topic-sensitive (persona effect)}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Heatmap observations.}{22}{section*.20}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces \textbf  {GPT-4o-mini — country–topic heatmaps.} Darker cells indicate higher similarity. Most-stable topics (darker across countries) include \emph  {Multi-party system} and \emph  {Adopt atheism}. The lowest rows in RvA (lighter cells) frequently occur on \emph  {No economic sanctions}, \emph  {Compulsory voting}, and \emph  {Adopt libertarianism}, revealing where persona prompts diverge most from the assistant baseline.}}{23}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:gpt_heat}{{4.10}{23}{\textbf {GPT-4o-mini — country–topic heatmaps.} Darker cells indicate higher similarity. Most-stable topics (darker across countries) include \emph {Multi-party system} and \emph {Adopt atheism}. The lowest rows in RvA (lighter cells) frequently occur on \emph {No economic sanctions}, \emph {Compulsory voting}, and \emph {Adopt libertarianism}, revealing where persona prompts diverge most from the assistant baseline}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}LLaMA~3.1-70B}{24}{subsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bar-chart interpretation.}{24}{section*.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces \textbf  {LLaMA~3.1-70B — mean cosine similarity by country.} Bars are means across eight topics; whiskers show \textbf  {standard deviation across topics}. NvA and NvR remain uniformly high; RvA is lowest with larger topic dispersion, indicating a strong persona effect.}}{24}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:llama_bars}{{4.11}{24}{\textbf {LLaMA~3.1-70B — mean cosine similarity by country.} Bars are means across eight topics; whiskers show \textbf {standard deviation across topics}. NvA and NvR remain uniformly high; RvA is lowest with larger topic dispersion, indicating a strong persona effect}{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {paragraph}{Heatmap observations.}{24}{section*.24}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces \textbf  {LLaMA~3.1-70B — country–topic heatmaps.} Darker = higher similarity. As with GPT-4o-mini, \emph  {Multi-party system} and \emph  {Adopt atheism} are relatively stable/high across countries in NvA/NvR, whereas RvA is lighter on \emph  {No economic sanctions}, \emph  {Compulsory voting}, and \emph  {Adopt libertarianism}, indicating stronger persona-driven divergence.}}{26}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:llama_heat}{{4.12}{26}{\textbf {LLaMA~3.1-70B — country–topic heatmaps.} Darker = higher similarity. As with GPT-4o-mini, \emph {Multi-party system} and \emph {Adopt atheism} are relatively stable/high across countries in NvA/NvR, whereas RvA is lighter on \emph {No economic sanctions}, \emph {Compulsory voting}, and \emph {Adopt libertarianism}, indicating stronger persona-driven divergence}{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Errors and Neutrality}{27}{section.4.3}\protected@file@percent }
+\newlabel{tab:cond_model_error_neutral}{{\caption@xref {tab:cond_model_error_neutral}{ on input line 353}}{27}{Errors and Neutrality}{table.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Error and neutrality summary across condition--model pairs. Error rate is computed as \textit  {error\_count}/\textit  {total\_rows}; neutrality rate as \textit  {neutral\_count}/\textit  {total\_rows}.}}{27}{table.caption.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Discussion}{28}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{References}{29}{chapter*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Limitations and Future works}{30}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{References}{32}{chapter*.27}\protected@file@percent }
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
 \abx@aux@read@bbl@mdfivesum{27AA12E90E290B49FEC8AACA76936D44}
 \abx@aux@defaultrefcontext{0}{openai_gpt4_2023}{none/global//global/global/global}
@@ -232,4 +228,4 @@
 \abx@aux@defaultrefcontext{0}{bertopic2022}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{deep_translator}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{openai_api_docs}{none/global//global/global/global}
-\gdef \@abspage@last{35}
+\gdef \@abspage@last{38}
