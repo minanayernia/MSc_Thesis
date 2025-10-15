@@ -5,7 +5,7 @@ from pathlib import Path
 
 # -------- 1) CONFIG --------
 FILES = {
-    "America":  "results/llama3.1-70b/similarities_rolebased_vs_assistant/similarity_llama_rolebased_america_assistant.csv",
+    "USA":  "results/llama3.1-70b/similarities_rolebased_vs_assistant/similarity_llama_rolebased_america_assistant.csv",
     "China":    "results/llama3.1-70b/similarities_rolebased_vs_assistant/similarity_llama_rolebased_china_assistant.csv",
     "France":   "results/llama3.1-70b/similarities_rolebased_vs_assistant/similarity_llama_rolebased_france_assistant.csv",
     "Germany":  "results/llama3.1-70b/similarities_rolebased_vs_assistant/similarity_llama_rolebased_germany_assistant.csv",
@@ -36,6 +36,8 @@ OUT_PDF = OUTDIR / "rolebased_vs_assistant_heatmap.pdf"
 
 # Color scale (keep consistent across similar figures)
 VMIN, VMAX = 0.3, 0.90   # adjust if your values are outside this band
+CHART_TITLE = "Assistant vs Role — Mean Cosine Similarity by Topic (llama3.1-70b)"
+
 
 # -------- 2) LOAD & PIVOT --------
 rows = []
@@ -58,21 +60,26 @@ countries_order = list(FILES.keys())
 pivot = pivot.reindex(index=countries_order, columns=TOPICS_ORDER)
 
 # -------- 3) HEATMAP (matplotlib) --------
-plt.figure(figsize=(10.5, 5.2))
-im = plt.imshow(pivot.values, aspect="auto", vmin=VMIN, vmax=VMAX, cmap="Blues")
-cbar = plt.colorbar(im)
+fig, ax = plt.subplots(figsize=(10.5, 5.2))
+im = ax.imshow(pivot.values, aspect="auto", vmin=VMIN, vmax=VMAX, cmap="Blues")
+cbar = fig.colorbar(im, ax=ax)
 cbar.set_label("Mean cosine similarity")
 
 # y-axis: countries
-plt.yticks(np.arange(len(pivot.index)), pivot.index)
+ax.set_yticks(np.arange(len(pivot.index)))
+ax.set_yticklabels(pivot.index)
 
 # x-axis: topics (use short labels)
 xlabels = [TOPIC_LABELS.get(t, str(t)) for t in pivot.columns]
-plt.xticks(np.arange(len(pivot.columns)), xlabels, rotation=30, ha="right")
+ax.set_xticks(np.arange(len(pivot.columns)))
+ax.set_xticklabels(xlabels, rotation=30, ha="right")
 
-plt.tight_layout()
-plt.savefig(OUT_PNG, dpi=300, bbox_inches="tight")
-plt.savefig(OUT_PDF, bbox_inches="tight")
-plt.close()
+# chart title
+ax.set_title(CHART_TITLE, pad=10)
+
+fig.tight_layout()
+fig.savefig(OUT_PNG, dpi=300, bbox_inches="tight")
+fig.savefig(OUT_PDF, bbox_inches="tight")
+plt.close(fig)
 
 print(f"Saved heatmap:\n- {OUT_PNG}\n- {OUT_PDF}")

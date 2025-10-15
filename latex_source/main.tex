@@ -2,17 +2,36 @@
 
 
 % Packages
-\usepackage[utf8]{inputenc}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX, Renderer=HarfBuzz} % better Arabic shaping
+\setmainfont{TeX Gyre Termes}
+
+\newfontfamily\zhfont[Script=CJK]{Noto Serif CJK SC}   % Chinese (macOS: PingFang SC, Windows: SimSun)
+\newfontfamily\cyrfont[Script=Cyrillic]{DejaVu Serif}  % Cyrillic (or Times New Roman / CMU Serif / Noto Serif)
+\newfontfamily\hefont[Script=Hebrew,RawFeature={+rtl}]{Noto Serif Hebrew}
+\newfontfamily\fafont[Script=Arabic,RawFeature={+rtl}]{Noto Naskh Arabic}
+
+\newcommand{\zh}[1]{{\zhfont #1}}
+\newcommand{\ru}[1]{{\cyrfont #1}}
+\newcommand{\uk}[1]{{\cyrfont #1}}
+\newcommand{\he}[1]{%
+  \bgroup\rightskip=0pt plus 1fil\relax
+  \hefont\beginR #1\endR\egroup}
+
+\newcommand{\fa}[1]{%
+  \bgroup\rightskip=0pt plus 1fil\relax
+  \fafont\beginR #1\endR\egroup}
+
+
+\usepackage{longtable}
+\usepackage{ltablex}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{caption}
 \usepackage{pdflscape}
 \usepackage{amsmath}
-%\usepackage[T1]{fontenc}
-\usepackage{fontspec}
-\usepackage{lmodern}
 \usepackage{svg}
-%\usepackage[hidelinks]{hyperref}
 \usepackage{setspace}
 \usepackage{geometry}
 \usepackage{tikz}
@@ -27,15 +46,18 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\usepackage{csquotes}
+\usepackage{ragged2e}  % Added for \RaggedRight and \RaggedLeft commands
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
-\usepackage[hidelinks,unicode]{hyperref}
 \addbibresource{references.bib}
+\usepackage[hidelinks,unicode]{hyperref}
+
 
 \doublespacing
-\hypersetup{pageanchor=false}
-\begin{document}
 
-% --- title page (no \maketitle) ---
+\begin{document}
+\pagenumbering{gobble} % Suppress page numbers for title page
+
 \begin{titlepage}
 \newgeometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
 \centering
@@ -70,7 +92,7 @@ Dott. Elisabetta Rocchetti\\
 \RaggedLeft
 \textbf{Student Name:}\\
 Mina Nayernia\\[0.6cm]
-%\textbf{ID: 13798A}\\
+\textbf{ID: 13798A}\\
 \end{minipage}
 
 \vfill
@@ -82,28 +104,22 @@ Mina Nayernia\\[0.6cm]
 \end{titlepage}
 
 \clearpage
-\hypersetup{pageanchor=true}
+\pagenumbering{roman} % Roman numerals for front matter
+\setcounter{page}{1}
 
 \restoregeometry
 
 % Abstract
 \begin{abstract}
-% Large Language Models (LLMs) such as GPT and LLaMA are increasingly integrated into everyday applications, from conversational assistants to decision-support systems. Their influence raises pressing concerns about fairness and trustworthiness, as LLMs often inherit and amplify societal biases present in their training data. In addition to well-documented demographic and stereotype biases, recent studies have highlighted ideological biases: systematic tendencies to favor or oppose political, cultural, or national viewpoints. Such biases may shape how arguments are presented, reinforcing certain ideologies while marginalizing others.
-
-% This thesis investigates the ideological biases of LLMs through a systematic study of role conditioning and native-language prompting. Specifically, we examine whether models produce different arguments when asked to answer (i) as a neutral assistant, (ii) as a citizen of a specific country, or (iii) in that country’s native language. By disentangling role and language effects, we aim to determine whether bias is more strongly driven by framing the model’s perspective or by the language of interaction.
-
-% Our methodology builds on the \texttt{argument-training.tsv} dataset from SemEval 2023 Task 4: ValueEval, which provides argumentative texts with explicit stance annotations. Because the dataset spans a wide range of heterogeneous issues, we applied BERTopic to reorganize arguments into higher-level themes. From 88 automatically extracted topics, we manually selected eight ideologically sensitive categories: nuclear weapons, gender and sex selection, economic sanctions, multi-party systems, atheism, legalizing prostitution, compulsory voting, and libertarianism. These topics serve as the basis for controlled prompting experiments.
-
-% We queried GPT and LLaMA under multiple conditions, requiring JSON-formatted outputs consisting of a binary stance (\textit{agree}/\textit{disagree}) and a short justification. To evaluate bias, we employed two complementary methods: (1) stance agreement ratios, comparing model outputs with gold labels, and (2) semantic similarity analysis of justifications using LaBSE multilingual sentence embeddings. This dual approach captures both surface-level alignment with human-annotated stances and deeper consistency in the reasoning underlying model outputs.
-
-% Our findings show that language introduces stronger divergence than role conditioning. While role-based responses remain relatively close to assistant responses, native-language completions often shift more substantially, with similarity ranges nearly twice as wide. Furthermore, role-based and native-language answers for the same country were not as closely aligned as expected, indicating that language framing can override role framing in shaping ideological outputs. These results hold consistently across both GPT and LLaMA, though LLaMA exhibited higher variability and more frequent deviations from the expected output format.
-
-% By quantifying these effects, this thesis contributes to ongoing discussions on the ethics and reliability of LLMs. We provide a framework for evaluating ideological bias across roles, languages, and models, offering evidence that language bias dominates role bias in shaping LLM outputs. Our work highlights the need for bias-aware evaluation in multilingual deployments and suggests that future mitigation strategies must explicitly account for language as a key factor in LLM fairness.
+Large Language Models (LLMs) are increasingly used in diverse applications, but concerns about bias challenge their reliability. Among different possible biases, this thesis investigates ideological bias, focusing on how models vary across topics, roles, and languages. Two models—GPT 4o-mini and LLaMA 3.1-70B —were evaluated under conditions where they answered as specific national roles, as a neutral assistant, or in native languages. Bias was assessed through stance alignment, measuring agreement ratios, and through semantic similarity of justifications, capturing how consistently models explained their answers. Results show systematic divergences across conditions: agreement ratios varied by topic, with multiparty systems and economic sanctions showing the widest differences. Role assignments exerted stronger influence than language, with roles associated with the USA and European countries displaying higher alignment than those of Iran, Israel, and China. Assistant-role completions also diverged from role-based answers, further highlighting ideological variation. These findings contribute a two-level framework for assessing bias in LLMs and provide insights into their ideological behavior and societal implications.
 \end{abstract}
 
 % Table of Contents
 \tableofcontents
 \newpage
+
+\pagenumbering{arabic} % Arabic numerals for main content
+\setcounter{page}{1}
 
 % Chapters
 \chapter{Introduction}
@@ -118,7 +134,7 @@ Mina Nayernia\\[0.6cm]
 \chapter{Analysis of Results}
 \input{results}
 
-\chapter{Discussion}
+\chapter{Conclusions}
 \input{discussion}
 
 \chapter{Limitations and Future works}
@@ -126,7 +142,17 @@ Mina Nayernia\\[0.6cm]
 
 \printbibliography[heading=bibintoc,title={References}]
 
-%\chapter{Appendix}
-%\input{appendix}
+\clearpage
+\appendix
+\renewcommand{\thesection}{\arabic{section}} % sections = 1,2,3...
+\setcounter{section}{0}
+
+\section*{Appendix}
+\phantomsection                 % if you use hyperref
+\addcontentsline{toc}{section}{Appendix}
+\markboth{Appendix}{Appendix}   % optional, for headers
+
+\input{appendix}
+
 
 \end{document}

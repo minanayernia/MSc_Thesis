@@ -36,6 +36,9 @@ OUT_PDF = OUTDIR / "native_vs_assistant_heatmap.pdf"
 
 VMIN, VMAX = 0.3, 0.90
 
+# Add a title for the chart
+CHART_TITLE = "Native vs Assistant — Mean Cosine Similarity by Topic (GPT-4o-mini)"
+
 # -------- 2) LOAD & PIVOT --------
 rows = []
 for country, path in FILES.items():
@@ -57,17 +60,21 @@ countries_order = list(FILES.keys())
 pivot = pivot.reindex(index=countries_order, columns=TOPICS_ORDER)
 
 # -------- 3) HEATMAP (matplotlib) --------
-plt.figure(figsize=(10.5, 5.2))
-im = plt.imshow(pivot.values, aspect="auto", vmin=VMIN, vmax=VMAX, cmap="Blues")
-cbar = plt.colorbar(im)
+fig, ax = plt.subplots(figsize=(10.5, 5.2))
+im = ax.imshow(pivot.values, aspect="auto", vmin=VMIN, vmax=VMAX, cmap="Blues")
+cbar = fig.colorbar(im, ax=ax)
 cbar.set_label("Mean cosine similarity")
 
 # y-axis: countries
-plt.yticks(np.arange(len(pivot.index)), pivot.index)
+ax.set_yticks(np.arange(len(pivot.index)))
+ax.set_yticklabels(pivot.index)
 
 # x-axis: topics (use short labels)
 xlabels = [TOPIC_LABELS.get(t, str(t)) for t in pivot.columns]
-plt.xticks(np.arange(len(pivot.columns)), xlabels, rotation=30, ha="right")
+ax.set_xticks(np.arange(len(pivot.columns)))
+ax.set_xticklabels(xlabels, rotation=30, ha="right")
+# chart title
+ax.set_title(CHART_TITLE, pad=10)
 
 plt.tight_layout()
 plt.savefig(OUT_PNG, dpi=300, bbox_inches="tight")

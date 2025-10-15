@@ -3,7 +3,7 @@
 
 Natural Language Processing (NLP) is the field of computer science and artificial intelligence concerned with enabling machines to understand, generate, and interact with human language. Its applications range from information retrieval and machine translation to dialogue systems and text summarization. A central challenge in NLP is finding effective ways to represent linguistic units—words, sentences, or entire documents—in a form that computers can manipulate.
 
-Early approaches to representation relied on static word embeddings such as Word2Vec and GloVe \parencite{mikolov2013word2vec,pennington2014glove}, which mapped words to fixed vectors. These methods captured broad semantic relations (e.g., \emph{king – man + woman ≈ queen}) but could not account for polysemy, since each word type was assigned a single embedding regardless of context. The introduction of contextualized embeddings, with models like ELMo and BERT \parencite{peters2018elmo,devlin2019bert}, addressed this limitation by letting representations depend on surrounding words. This innovation provided richer semantics and led to major performance gains across a variety of NLP tasks.
+Early approaches to representation relied on static word embeddings such as Word2Vec and GloVe \parencite{mikolov2013word2vec,pennington2014glove}, which mapped words to fixed vectors. These methods captured broad semantic relations (e.g., \emph{king – man + woman - queen}) but could not account for polysemy, since each word type was assigned a single embedding regardless of context. The introduction of contextualized embeddings, with models like ELMo and BERT \parencite{peters2018elmo,devlin2019bert}, addressed this limitation by letting representations depend on surrounding words. This innovation provided richer semantics and led to major performance gains across a variety of NLP tasks.
 
 Once words and sentences could be represented as vectors, similarity-based operations became possible. Sentence-level models such as SBERT \parencite{reimers2019sbert} and cross-lingual encoders like LaBSE \parencite{feng2020labse} extended these capabilities to semantic retrieval, clustering, and multilingual alignment. Measures such as cosine similarity thus became central tools for comparing meaning, and they form the foundation of our later reasoning analysis.
 
@@ -24,12 +24,15 @@ Efforts to measure these biases have evolved alongside NLP itself. Early work re
 
 \section{Gap Analysis}
 
+As summarized in Table~\ref{tab:relatedworks}, prior research has concentrated on stereotype-centric audits in English, multilingual studies that do not clearly separate role framing from language framing, and evaluation methods that emphasize associations rather than systematic comparisons of stance and reasoning. Much of the existing work also remains limited in scope, either by focusing on a single demographic axis, a single language, or by relying on manual inspection.
+
+Our thesis addresses these gaps in three ways. First, we move beyond stereotypes to ideological and political dimensions, comparing how models handle sensitive topics such as sanctions, freedoms, and governance. Second, we explicitly disentangle role-based framing (e.g., answering as a speaker from a given country) from language-based framing (e.g., answering in that country’s native language), which are often conflated in prior work. Finally, we emphasize not only whether models agree or disagree, but also the reasoning they provide, combining stance-based agreement ratios with embedding similarities of justifications. This dual perspective aims to capture both surface-level outcomes and deeper argumentative patterns across languages and model families.
+
+
 \begin{table}[H]
 \centering
 \small
 \renewcommand{\arraystretch}{1.2}
-\caption{Summary of representative related works, showing their focus, scope, and limitations relative to this thesis.}
-\label{tab:relatedworks}
 \begin{tabularx}{\textwidth}{lYYYY}
 \toprule
 \textbf{Study} & \textbf{Bias Type} & \textbf{Language(s)} & \textbf{Method} & \textbf{Limitations} \\
@@ -42,8 +45,7 @@ Silence of the LLMs \parencite{silence_llms2023} & Political, misinformation & M
 Russia--Ukraine War \parencite{russia_china_war2024} & Political neutrality & Chinese social media & Content analysis of LLM outputs & Single case; single conflict \\
 \bottomrule
 \end{tabularx}
+\caption{Summary of representative related works, showing their focus, scope, and limitations relative to this thesis.}
+\label{tab:relatedworks}
 \end{table}
 
-As summarized in Table~\ref{tab:relatedworks}, prior research has concentrated on stereotype-centric audits in English, multilingual studies that do not clearly separate role framing from language framing, and evaluation methods that emphasize associations rather than systematic comparisons of stance and reasoning. Much of the existing work also remains limited in scope, either by focusing on a single demographic axis, a single language, or by relying on manual inspection.
-
-Our thesis addresses these gaps in three ways. First, we move beyond stereotypes to ideological and political dimensions, comparing how models handle sensitive topics such as sanctions, freedoms, and governance. Second, we explicitly disentangle role-based framing (e.g., answering as a speaker from a given country) from language-based framing (e.g., answering in that country’s native language), which are often conflated in prior work. Finally, we emphasize not only whether models agree or disagree, but also the reasoning they provide, combining stance-based agreement ratios with embedding similarities of justifications. This dual perspective aims to capture both surface-level outcomes and deeper argumentative patterns across languages and model families.

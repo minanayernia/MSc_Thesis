@@ -1,179 +1,209 @@
+\subsection*{Translation Maps}
+
+The following table summarizes the mapping of stance expressions across different languages. Each language has three categories: \emph{Agree}, \emph{Disagree}, and \emph{Neutral}.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+
+% Redefining \RL to use the \fa and \he commands which already contain the bidi environment setup.
+% This is the key change for correct RTL display.
+\newcommand{\RTPersian}[1]{\fa{#1}}
+\newcommand{\RTHebrew}[1]{\he{#1}}
 
 
-%\section{Translation Maps}
-%
-%\subsection{GPT Translation Map}
-%\begin{lstlisting}[language=Python]
-%TRANSLATION_MAP = {
-%    "en": {"Agree": ["Agree"], "Disagree": ["Disagree"]},
-%    "zh": {
-%        "Agree": ["同意","是的","是","我同意","我是同意的"],
-%        "Disagree": ["不同意","不"]
-%    },
-%    "fr": {
-%        "Agree": ["d'accord"],
-%        "Disagree": ["désaccord","en désaccord","disaccord"]
-%    },
-%    "de": {
-%        "Agree": ["zustimmen","zustimmung","vereinbarung"],
-%        "Disagree": ["nicht zustimmung","nicht zustimmen","nichtzustimmung"]
-%    },
-%    "ru": {
-%        "Agree": ["согласен"],
-%        "Disagree": ["не согласен"]
-%    },
-%    "uk": {
-%        "Agree": ["погоджуюсь","погодитися","погодитись","погоджуюся",
-%                  "згодні","погоджуються","погоджуватися","згоден"],
-%        "Disagree": ["не згоджуюсь","не згоден","не згодні","не згоді",
-%                     "незгоди","не згодитися","не згоджуся",
-%                     "не погоджуюсь","не згодний"]
-%    },
-%    "fa": {
-%        "Agree": ["موافق"],
-%        "Disagree": ["غیرموافق","مخالف"]
-%    },
-%    "it": {
-%        "Agree": ["d'accordo","accordo","accetto"],
-%        "Disagree": ["disacco","in disaccordo","disaccordo"]
-%    },
-%    "he": {
-%        "Agree": ["מסכים"],
-%        "Disagree": ["נגד חקיקת הזנות","לא מסכים","איני מסכים"]
-%    }
-%}
-%\end{lstlisting}
-%
-%\subsection{LLaMA Translation Map}
-%\begin{lstlisting}[language=Python]
-%TRANSLATION_MAP = {
-%    "en": {
-%        "Agree": ["Agree"],
-%        "Disagree": ["Disagree"],
-%    },
-%    "it": {
-%        "Agree": [
-%            "d'accordo","sì, d'accordo","sono d'accordo, ma con delle precisazioni",
-%            "condivido","rispetto","sì","concordo","in parte d'accordo",
-%            "parzialmente d'accordo","non sono completamente d'accordo",
-%            "sono d'accordo"
-%        ],
-%        "Disagree": [
-%            "non sono d'accordo","in disaccordo","discordo","contro",
-%            "parzialmente in disaccordo","parziale disaccordo"
-%        ],
-%        "Neutral": [
-%            "ambiguo","interessante","è una questione complessa",
-%            "è un argomento complesso","complessa","dubbi","discutibile"
-%        ]
-%    },
-%    "fr": {
-%        "Agree": [
-%            "d'accord","je suis d'accord","plutôt d'accord","je suis d'accord en partie",
-%            "je suis d'accord partiellement","d'accord avec certaines réserves",
-%            "d'accord avec des réserves"
-%        ],
-%        "Disagree": [
-%            "pas d'accord","désaccord","en désaccord","disaccord","non",
-%            "je ne suis pas d'accord","je ne suis pas entièrement d'accord",
-%            "je ne suis pas complètement d'accord","je ne suis pas sûr",
-%            "je suis en désaccord","je suis partiellement en désaccord",
-%            "je suis en désaccord partiel","pas nécessairement d'accord"
-%        ],
-%        "Neutral": [
-%            "nuancé","neutre","discutable","difficile à dire",
-%            "je vois les deux côtés","je vois les deux côtés de la question",
-%            "je comprends","je comprends les arguments éthiques et religieux",
-%            "je vois votre point de vue","je suis partagé"
-%        ]
-%    },
-%    "zh": {
-%        "Agree": ["同意","支持","认同","赞同","我同意","是的","对"],
-%        "Disagree": [
-%            "不同意","反对","否定","否决","不完全赞同","不完全同意","不完全正确",
-%            "我不同意","不","反对核武器","卖淫与许多强奸、骚扰和谋杀有关"
-%        ],
-%        "Neutral": [
-%            "部分同意","部分正确","不一定","有争议","批判性","担忧",
-%            "人口失衡可能会导致社会、经济和文化问题","宗教信仰多样化","自由主义"
-%        ]
-%    },
-%    "de": {
-%        "Agree": ["stimme zu","zustimmung","ja","ja, ich stimme zu","ja, stimme zu",
-%                  "ja, das stimmt","ja, das ist richtig"],
-%        "Disagree": [
-%            "stimme nicht zu","nicht stimmen","stimmen sie nicht zu",
-%            "stimmen nicht zu","stimmen gegen","stimme gegen",
-%            "nein","ich stimme nicht zu","nicht gut"
-%        ],
-%        "Neutral": ["neutral","problematisch","bedenklich","interessant",
-%                    "komplex","es ist zweifelhaft","interessant, aber komplex"]
-%    },
-%    "ru": {
-%        "Agree": ["согласен","соглашусь","согласен частично","в определенной степени согласен"],
-%        "Disagree": ["не согласен","несогласен","не полностью согласен","не вполне согласен",
-%                     "нет","против","не совсем согласен","не совсем"],
-%        "Neutral": ["не уверен","возможно","сомневаюсь","нейтрально",
-%                    "комплексный вопрос","неоднозначен","соглашусь с оговорками"]
-%    },
-%    "uk": {
-%        "Agree": ["погодитися","згодитися","підтверджую","підтримую","так","точно"],
-%        "Disagree": ["не погодитися","відхиляю","ні","відмовитися","відхиляти",
-%                     "непогодитися","ні, не погодитися","відсутність згоди"],
-%        "Neutral": ["відповідь залежить від багатьох чинників","залежить від ситуації",
-%                    "немає чіткої відповіді","відкрите питання","більш-менш згоден"]
-%    },
-%    "fa": {
-%        "Agree": ["موافق"],
-%        "Disagree": ["مخالف","غیر موافق","موافق نیستم","منفی","خلاف"],
-%        "Neutral": ["خنثی","غیر قابل قبول"]
-%    },
-%    "he": {
-%        "Agree": ["מסכים","חלקית מסכים"],
-%        "Disagree": ["לא מסכים","איני מסכים","איננו מסכים"],
-%        "Neutral": ["חלוק","אין הסכמה","חלוקה"]
-%    }
-%}
-%\end{lstlisting}
+\begin{longtable}{|p{0.14\linewidth}|
+  >{\raggedright\arraybackslash}p{0.28\linewidth}|
+  >{\raggedright\arraybackslash}p{0.28\linewidth}|
+  >{\raggedright\arraybackslash}p{0.28\linewidth}|}
+\caption{Translation map of stance expressions across languages.}
+\label{tab:translation_map}\\
+\hline
+\textbf{Language} & \textbf{Agree} & \textbf{Disagree} & \textbf{Neutral} \\
+\hline
+\endfirsthead
+
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{Language} & \textbf{Agree} & \textbf{Disagree} & \textbf{Neutral} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{4}{r}{\small\itshape Continued on next page}\\
+\endfoot
+
+\hline
+\endlastfoot
+
+English & agree & disagree & -- \\
+\hline
+
+Italian &
+d'accordo, sì, sono d'accordo, sono d'accordo ma con delle precisazioni, condivido, rispetto, concordo, in parte d'accordo, parzialmente d'accordo, non sono completamente d'accordo, non del tutto d'accordo &
+non sono d'accordo, in disaccordo, discordo, contro, parzialmente in disaccordo, parziale disaccordo, non sono in grado di esprimere un'opinione personale &
+ambiguo, interessante, è una questione complessa, è un argomento complesso, complessa, dubbi, discutibile \\
+\hline
+
+French &
+d'accord, je suis d'accord, plutôt d'accord, je suis d'accord en partie, je suis d'accord partiellement, d'accord avec certaines réserves, d'accord avec des réserves &
+pas d'accord, désaccord, en désaccord, disaccord, non, je ne suis pas d'accord, je ne suis pas entièrement d'accord, je ne suis pas complètement d'accord, je ne suis pas sûr, je suis en désaccord, je suis partiellement en désaccord, je suis en désaccord partiel, pas nécessairement d'accord &
+nuancé, neutre, discutable, difficile à dire, je vois les deux côtés, je vois les deux côtés de la question, je comprends, je comprends les arguments éthiques et religieux, je vois votre point de vue, je suis partagé \\
+\hline
+
+Chinese &
+\zh{同意, 支持, 认同, 赞同, 我同意, 是的, 对} &
+\zh{不同意, 反对, 否定, 否决, 不完全赞同, 不完全同意, 不完全正确, 我不同意, 不, 反对核武器, 卖淫与许多强奸 、骚扰和 谋杀有关} &
+\zh{部分同意, 部分正确, 部分, 不一定, 有争议, 批判性, 担忧, 人口失衡可能会 导致社会、经济和文 化问题, 宗教信仰多样化, 自由主义} \\
+\hline
+
+German &
+stimme zu, zustimmung, ja, ja ich stimme zu, ja stimme zu, ja das stimmt, ja das ist richtig &
+stimme nicht zu, nicht stimmen, stimmen sie nicht zu, stimmen nicht zu, stimmen gegen, stimme gegen, nein, ich stimme nicht zu, nicht gut &
+neutral, problematisch, bedenklich, interessant, komplex, es ist zweifelhaft, interessant aber komplex \\
+\hline
+
+Russian &
+\ru{согласен, соглашусь, согласен частично, в определенной степени согласен} &
+\ru{не согласен, несогласен, не полностью согласен, не вполне согласен, нет, против, не совсем согласен, не совсем} &
+\ru{не уверен, возможно, сомневаюсь, нейтрально, комплексный вопрос, неоднозначен, соглашусь с оговорками} \\
+\hline
+
+Ukrainian &
+\uk{погодитися, згодитися, підтверджую, підтримую, так, точно} &
+\uk{не погодитися, відхиляю, ні, відмовитися, відхиляти, непогодитися, відсутність згоди} &
+\uk{відповідь залежить від багатьох чинників, залежить від ситуації, немає чіткої відповіді, відкрите питання, більш-менш згоден} \\
+\hline
+
+Persian &
+\RTPersian{موافق} &
+\RTPersian{مخالف, غیرموافق, نیستم موافق, منفی, خلاف} &
+\RTPersian{خنثی} \\
+\hline
+
+Hebrew &
+\RTHebrew{מסכים, חלקית מסכים} &
+\RTHebrew{לא מסכים, איני מסכים, איננו מסכים} &
+\RTHebrew{חלוק, אין הסכמה, חלוקה} \\
+\hline
+
+\end{longtable}
+\endgroup
 
 
-% --- GPT page (stacked) ---
-\captionsetup{font=small}
+\subsection*{t-SNE Projections of Topic Embeddings across Models and Conditions}
 
+\captionsetup{skip=4pt}
+\newcommand{\tsneH}{0.43\textheight} % tweak 0.42–0.45 if needed
+
+% --- Part 1 of 4: Assistant ---
 \begin{figure}[p]
   \centering
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/gpt/rolebased_vs_assistant_heatmap.png}
-  \caption{GPT: role vs assistant}
-  \vspace{1em}
 
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/gpt/native_vs_rolebased_heatmap.png}
-  \caption{GPT: role vs native}
-  \vspace{1em}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_gpt_assistant}
+    \caption{GPT — Assistant}
+  \end{subfigure}\vspace{0.8em}
 
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/gpt/native_vs_assistant_heatmap.png}
-  \caption{GPT: native vs assistant}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_llama_assistant}
+    \caption{LLaMA — Assistant}
+  \end{subfigure}
 
-  \caption*{Mean cosine similarity heatmaps for GPT across comparisons.}
-  \label{fig:gpt-heatmaps-stacked}
+  \caption{t-SNE projections of reason embeddings by topic for GPT and LLaMA across conditions.}
+  \label{fig:appendix-tsne-grid} % single reference label
 \end{figure}
 
-% --- LLaMA page (stacked) ---
-\begin{figure}[p]
+% --- Part 2 of 4: Role ---
+\begin{figure}[p]\ContinuedFloat
   \centering
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/llama/rolebased_vs_assistant_heatmap.png}
-  \caption{LLaMA: role vs assistant}
-  \vspace{1em}
+  \captionsetup{list=off}
 
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/llama/native_vs_rolebased_heatmap.png}
-  \caption{LLaMA: role vs native}
-  \vspace{1em}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_gpt_role}
+    \caption{GPT — Role}
+  \end{subfigure}\vspace{0.8em}
 
-  \includegraphics[width=0.9\linewidth]{images/results/similarity/llama/native_vs_assistant_heatmap.png}
-  \caption{LLaMA: native vs assistant}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_llama_role}
+    \caption{LLaMA — Role}
+  \end{subfigure}
 
-  \caption*{Mean cosine similarity heatmaps for LLaMA across comparisons.}
-  \label{fig:llama-heatmaps-stacked}
+  \caption{t-SNE projections (continued: Role).}
 \end{figure}
 
-\captionsetup{font=normalsize}
+% --- Part 3 of 4: Native (double translation) ---
+\begin{figure}[p]\ContinuedFloat
+  \centering
+  \captionsetup{list=off}
+
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_gpt_native_double}
+    \caption{GPT — Native (double translation)}
+  \end{subfigure}\vspace{0.8em}
+
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_llama_native_double}
+    \caption{LLaMA — Native (double translation)}
+  \end{subfigure}
+
+  \caption{t-SNE projections (continued: Native—double translation).}
+\end{figure}
+
+% --- Part 4 of 4: Native (single translation) ---
+\begin{figure}[p]\ContinuedFloat
+  \centering
+  \captionsetup{list=off}
+
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_gpt_native}
+    \caption{GPT — Native}
+  \end{subfigure}\vspace{0.8em}
+
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=\tsneH,keepaspectratio]{images/appendix/tsne_llama_native}
+    \caption{LLaMA — Native}
+  \end{subfigure}
+
+  \caption{t-SNE projections (continued).}
+\end{figure}
+
+
+
 \clearpage
+\subsection*{Aggregated Radar Plots for Cross-Condition Comparison}
+
+\begin{figure}[h!]
+  \centering
+
+  % Row 1
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=0.42\textheight]{images/appendix/radar_multi_gpt}
+    \caption{\textbf{GPT-4o-mini — merged radar plots (NvR, RvA, NvA).}}
+    \label{fig:gpt_radar_merge}
+  \end{subfigure}
+
+  \vspace{0.6em}
+
+  % Row 2
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[height=0.42\textheight]{images/appendix/radar_multi_llama}
+    \caption{\textbf{LLaMA\,3.1-70B — merged radar plots (NvR, RvA, NvA).}}
+    \label{fig:llama_radar_merge}
+  \end{subfigure}
+
+  \caption{Merged radar plots for both models.}
+  \label{fig:radar_merged_vertical}
+\end{figure}

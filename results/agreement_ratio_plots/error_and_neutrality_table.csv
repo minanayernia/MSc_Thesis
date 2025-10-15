@@ -1,0 +1,7 @@
+condition_model,error_rate,neutrality_rate,error_count,neutral_count,total_rows
+Assistant - GPT,0.0,0.0,0,0,6610
+Assistant - LLaMA,0.13177004538577913,0.0,871,0,6610
+Native - GPT,0.00016809547823163558,0.0,1,0,5949
+Native - LLaMA,0.1450663977139015,0.012439065389141033,863,74,5949
+Role - GPT,0.0,0.0,0,0,6610
+Role - LLaMA,0.13177004538577913,0.0,871,0,6610

@@ -1,133 +1,3 @@
-%
-%\section{Dataset and Topic Modeling}
-%
-%\subsection{Dataset}
-%We use \texttt{arguments-training.tsv} from SemEval 2023 Task~4: ValueEval \parencite{dataset}, based on the Webis-ArgValues-22 corpus \parencite{soni-etal-2022-human}, containing \textbf{5{,}393} arguments with fields \texttt{ID}, \texttt{premise}, \texttt{conclusion}, and \texttt{stance} (in favor / against).
-%Here, the stance label is not the annotator’s personal opinion, but a relational annotation indicating whether the premise supports (\emph{in favor}) or attacks (\emph{against}) the associated conclusion.
-%This provides an auditable, per-row ground truth for comparing model-generated stances against the dataset annotations.
-%
-%\subsection{Why this corpus}
-%Our evaluation requires (i) many arguments per theme, (ii) explicit stance labels, and (iii) coverage of sensitive socio-political topics. ValueEval satisfies these simultaneously, enabling reproducible bias measures rather than ad-hoc human judgments.
-%
-%\subsection{Topic modeling with BERTopic}
-%Because the raw topics are heterogeneous and often fine-grained, we cluster arguments with \textbf{BERTopic} \parencite{bertopic2022}, using transformer embeddings (OpenAI \texttt{gpt-3.5-turbo} \parencite{openai_gpt4_2023}), UMAP for dimensionality reduction, and HDBSCAN for clustering (default parameters unless noted). BERTopic produced \textbf{88} topics; we manually inspected keywords and exemplars and retained \textbf{8} ideologically salient themes:
-%
-%\begin{center}
-%\begin{tabular}{ll}
-%\hline
-%\textbf{ID} & \textbf{Theme} \\
-%\hline
-%3  & Nuclear weapons \& war \\
-%4  & Sex selection \& gender \\
-%15 & Economic sanctions \& countries \\
-%17 & Legalizing prostitution \\
-%18 & Multi-party system \\
-%22 & Atheism \& religion \\
-%36 & Compulsory voting \\
-%40 & Libertarianism \& government \\
-%\hline
-%\end{tabular}
-%\end{center}
-%
-%We use BERTopic’s \texttt{topic\_info.csv} (topic size, top words, representatives) to audit clusters; sanity checks include the intertopic distance map (reported as a figure in the Appendix).
-%
-%\section{Prompting and Response Collection}
-%
-%\subsection{Prompt design}
-%For each argument we request a JSON object with a binary stance and a short justification:
-%\begin{verbatim}
-%{"idea": "Agree", "why": "this is my reason"}
-%\end{verbatim}
-%We run two settings:
-%\begin{enumerate}
-%  \item \textbf{Role-based:} system role = \{\emph{America, Iran, Israel, Ukraine, Germany, Italy, France, China}\} and a neutral \emph{assistant}.
-%  \item \textbf{Native-language:} same instruction translated to the country’s primary language; no role persona.
-%\end{enumerate}
-%To reduce parsing errors we enable JSON-enforced replies where supported
-%
-%\texttt{response\_format=\{"type":"json\_object"\}}.
-%
-%\subsection{Models}
-%We query two families:
-%\begin{itemize}
-%  \item \textbf{GPT-4o-mini} (OpenAI; JSON enforcement available \parencite{openai_api_docs}),
-%  \item \textbf{LLaMA 3.1-70B}, a successor in the LLaMA family \parencite{touvron_llama_2023}
-%\end{itemize}
-%
-%\subsection{Translation and label normalization}
-%Native-language prompts are translated using the \texttt{deep-translator} Python library
-%\parencite{deep_translator}, which provides programmatic access to Google Translate
-%(\emph{DeepL} was not used since it lacks support for Persian and Hebrew). Returned stance
-%tokens are normalized to canonical \texttt{Agree}/\texttt{Disagree} labels per language.
-%The explicit mapping table is included in the Appendix for auditability.
-%
-%
-%\subsection{Logging and error handling}
-%For each call we store: model, condition (role/native), topic ID, argument ID, raw text, parsed JSON, and flags for API/JSON errors, soft refusals, or empty output. Error rows are excluded from metric denominators but reported separately.
-%
-%\section{Bias Measures}
-%
-%\subsection{Agreement ratio (stance-level)}
-%In our setup, the model is given only the \emph{premise} of an argument and asked for its stance (\texttt{Agree}/\texttt{Disagree}).
-%By itself, this does not reveal the model’s position on the argument’s \emph{conclusion}.
-%To infer this, we use the dataset’s gold \emph{argument stance}, which specifies whether the premise is \emph{in favor of} or \emph{against} the conclusion.
-%The model’s response and the dataset stance are then combined to determine whether the model ultimately agrees or disagrees with the conclusion.
-%The mapping is as follows:
-%
-%\begin{center}
-%\begin{tabular}{c c c}
-%\toprule
-%Model stance & Argument stance & Model $\to$ Conclusion \\
-%\midrule
-%Agree     & In favor of & Agree \\
-%Disagree  & In favor of & Disagree \\
-%Agree     & Against     & Disagree \\
-%Disagree  & Against     & Agree \\
-%\bottomrule
-%\end{tabular}
-%\end{center}
-%
-%Agreement is counted when the inferred model label matches the gold conclusion stance for that row.
-%
-%\[
-%\mathrm{AgreeRatio}(t,r)=
-%\frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}}
-%\]
-%
-%for topic $t$ and condition $r$.
-%
-%\paragraph{LLaMA adjustment.}
-%When \texttt{Neutral}/\texttt{Neither}/\texttt{Partial} labels occur in the outputs, we extend the denominator:
-%
-%\[
-%\mathrm{AgreeRatio}^{\text{\scriptsize LLAMA}}(t,r)=
-%\frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}+\#\text{neutral}}
-%\]
-%
-%where \texttt{Partially Agree} counts as \texttt{agree}, and
-%\texttt{Neutral}/\texttt{Neither} counts as \texttt{neutral}.
-%
-%
-%\subsection{Embedding similarity of justifications}
-%To compare the \emph{reasons} (beyond labels), we embed \texttt{LLM\_reason} with multilingual \textbf{LaBSE}~\parencite{feng2020labse} (768-D) and compute cosine similarity on matched rows between:
-%\begin{enumerate}
-%  \item Role-based vs.\ Assistant,
-%  \item Native-language vs.\ Assistant,
-%  \item Role-based vs.\ Native-language.
-%\end{enumerate}
-%Per topic/comparison we report mean, standard deviation, and $n$.
-%
-%\section{Analysis Plan (per model)}
-%We run the three pairwise comparisons above, and additionally (i) summarize JSON error/refusal rates by condition, and (ii) examine topic sensitivity (which themes show the largest language-vs-role gaps). All figures/tables are generated from logged artifacts for full reproducibility.
-%
-%\begin{figure}[t]
-%  \centering
-%  \includegraphics[width=\linewidth,keepaspectratio]{images/methods/method.png}
-%  \caption{Methodology pipeline: BERTopic selection, prompting (role/native), stance agreement, and embedding similarity.}
-%  \label{fig:method_pipeline}
-%\end{figure}
-%
-%
 
 Our study follows the pipeline in Figure~\ref{fig:method_pipeline}.
 Beginning with a topic-selected set of arguments, we elicit model responses under three prompting regimes (assistant, role, native).
@@ -209,8 +79,6 @@ We should ban cosmetic surgery. \\
 
 Because the arguments span diverse and fine-grained issues, we apply BERTopic \parencite{bertopic2022} to cluster them into broader themes. Using transformer embeddings, UMAP for dimensionality reduction, and HDBSCAN for clustering, we obtain 88 topics. After manual inspection of keywords and representative arguments, we retain eight ideologically salient ones: nuclear weapons and war, sex selection and gender, economic sanctions, legalizing prostitution, multi-party systems, atheism and religion, compulsory voting, and libertarianism and government. The distribution of arguments across these themes is shown in Figure~\ref{fig:topic-pie}, ensuring that our evaluation centers on socially and politically sensitive debates.
 
-
-
 \begin{figure}[h!]
 \centering
 \begin{tikzpicture}
@@ -234,12 +102,29 @@ Because the arguments span diverse and fine-grained issues, we apply BERTopic \p
 \label{fig:topic-pie}
 \end{figure}
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/methods/topic_word_score}
+  \caption{Topic--word scores for the eight selected topics retained after manual inspection.}
+  \label{fig:topic-word-scores}
+\end{figure}
+
+
+
+The corresponding topic–word scores for these selected clusters are visualized in Figure~\ref{fig:topic-word-scores}. Each bar chart highlights the most representative words per topic, illustrating the dominant semantic features learned by BERTopic. The \emph{topic–word score} reflects the relative importance of each word within that topic, combining its frequency and its distinctiveness compared to other topics. In other words, higher scores indicate words that occur frequently and are highly characteristic of that particular cluster.
+
+For instance, the \textit{nuclear weapons} topic includes terms such as “nuclear,” “weapons,” and “war,” while the \textit{sex selection} topic emphasizes “sex,” “selection,” and “gender”.
+
+
+
+
+
 
 \section{Prompting and response collection}
 
 Our setup involves prompting large language models under three conditions. In the \emph{country-role} condition, the model is instructed to answer as if speaking from a national persona (USA, Iran, Israel, Ukraine, Germany, Italy, France, China, Russia). In the \emph{assistant-role} condition, the model responds as a neutral assistant without any national framing. Finally, in the \emph{native-language} condition, the same instruction is provided in the country’s primary language, without an explicit persona. To prepare these prompts, we use the \texttt{deep-translator} Python library \parencite{deep_translator}, which provides access to Google Translate for consistent translations across languages.
 
-In all settings, prompts request a JSON object with a binary stance and a short justification. Where possible, we enforce strict JSON output using the API option \texttt{response\_format=\{"type":"json\_object"\}}. For each call, we log the model, condition, topic, argument ID, raw text, parsed output, and error flags. This ensures a complete trace for reproducibility and error analysis.
+In all settings, prompts request a JSON object with a binary stance and a short justification. Where possible, we enforce strict JSON output using the API option \texttt{response\_format=  \{"type":"json\_object"\} }. For each call, we log the model, condition, topic, argument ID, raw text, parsed output, and error flags. This ensures a complete trace for reproducibility and error analysis.
 
 Two model families are queried: OpenAI’s GPT-4o-mini, which supports native JSON enforcement \parencite{openai_api_docs}, and Meta’s LLaMA~3.1-70B \parencite{touvron_llama_2023}.
 
@@ -254,6 +139,9 @@ Agreement ratios capture whether a model’s predicted stance on a premise impli
 \mathrm{AgreeRatio}(t,r)=
 \frac{\#\text{agree}}{\#\text{agree}+\#\text{disagree}+\#\text{neutral}}.
 \]
+
+Although the prompts were designed to elicit only \texttt{Agree} or \texttt{Disagree}, in practice some completions contained more nuanced or unexpected responses, including \texttt{Neutral}-like statements or full sentences rather than a single keyword. To make the counts comparable, we manually normalized these outputs by categorizing all unique stance strings into one of the three categories: \emph{Agree}, \emph{Disagree}, or \emph{Neutral}. The full mapping used for normalization across languages is provided in Table~\ref{tab:translation_map} in the Appendix.
+
 Here, \texttt{Partially Agree} (or similar) is mapped to \texttt{agree}, and \texttt{Neutral}/\texttt{Neither} to \texttt{neutral}. If a model does not produce neutral outputs, then $\#\text{neutral}=0$.
 
 The mapping between model stance and dataset stance is:
@@ -271,10 +159,13 @@ The mapping between model stance and dataset stance is:
 \end{array}
 \]
 
+
 \subsection{Embedding comparisons}
 While stance labels capture surface agreement, the justifications supplied by models provide richer insights into their reasoning. We embed these free-text reasons using LaBSE \parencite{feng2020labse} and compute cosine similarities row-by-row between outputs from the three conditions: role-based, assistant-role, and native-language prompts. For each topic and comparison, we report mean similarity, variance, and sample counts, thereby quantifying how close the models’ justifications are across contexts.
 
 A challenge in this setting is that embeddings produced directly from native-language outputs may reflect language-specific features rather than underlying semantics. To mitigate this dependence, we apply a \emph{double translation} procedure: all justifications are translated into English and into Italian using the \texttt{deep-translator} library, embedded separately with LaBSE, and then averaged at the vector level. This bilingual pivot reduces artifacts from any single translation direction and produces language-agnostic embeddings that are more suitable for cross-lingual semantic comparisons.
+
+The resulting embedding spaces are further projected using \textit{t}-SNE for visualization purposes. These projections illustrate the clustering of arguments by topic across different models and conditions, as shown in Appendix~\ref{fig:appendix-tsne-grid}, providing a complementary qualitative view of how semantically coherent each topic remains under varying generation settings.
 
 \subsection*{Error profiling}
 In addition to stance and reasoning analysis, we track robustness indicators by summarizing JSON parsing failures, soft refusals, and empty outputs per model and condition. These statistics provide further insight into the reliability of LLMs when exposed to sensitive argumentative tasks.

@@ -12,8 +12,17 @@ def plot_similarity_summary(csv_path, outdir, title, fname_prefix, xlim=(0.4, 0.
     if not {"country","avg_bias_score","bias_std"}.issubset(df.columns):
         raise ValueError("CSV must have columns: country, avg_bias_score, bias_std")
 
-    # Sort countries by mean similarity
-    df = df.sort_values("avg_bias_score", ascending=True)
+    # Define desired order
+    country_order = [
+        "Ukraine", "Iran", "Israel", "China", "Russia",
+        "Italy" ,"France" , "Germany", "USA"
+    ]
+
+    # Make country a categorical with the fixed order
+    df["country"] = pd.Categorical(df["country"], categories=country_order, ordered=True)
+
+    # Reorder the dataframe accordingly
+    df = df.sort_values("country")
 
     plt.figure(figsize=(7.2, 5.2))
     y = np.arange(len(df))

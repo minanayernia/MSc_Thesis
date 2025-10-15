@@ -72,26 +72,29 @@ def make_country_radar_single(summary_df, title="Mean Cosine Similarity",
         plt.savefig(save_path, dpi=200, bbox_inches="tight")
     return fig, ax
 
-def make_country_radar_multi(series_dict, title="Bias (avg similarity) by country",
-                             value_col="avg_bias_score", order=COUNTRY_ORDER,
-                             ylim=(0, 1), radial_ticks=(0.4, 0.6, 0.8, 1.0),
-                             show_legend=True, save_path=None):
-
+def make_country_radar_single(summary_df, title="Mean Cosine Similarity",
+                              value_col="avg_bias_score", order=COUNTRY_ORDER,
+                              ylim=(0, 1), radial_ticks=(0.4, 0.6, 0.8, 1.0),
+                              save_path=None):
+    """
+    Plot a single radar (spider) polygon for one summary_df.
+    """
     labels = order
+    vals = _values_in_order(summary_df, value_col=value_col, order=order)
+
     N = len(labels)
     base_angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
 
-    fig, ax = plt.subplots(figsize=(8.5, 8.5), subplot_kw=dict(polar=True))
+    # Close the loop
+    vals = np.r_[vals, vals[0]]
+    angles = np.r_[base_angles, base_angles[0]]
+
+    fig, ax = plt.subplots(figsize=(7.5, 7.5), subplot_kw=dict(polar=True))
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
 
-    for name, sdf in series_dict.items():
-        vals = _values_in_order(sdf, value_col=value_col, order=order)
-        vals = np.r_[vals, vals[0]]
-        angles = np.r_[base_angles, base_angles[0]]
-
-        ax.plot(angles, vals, linewidth=2, label=name)
-        ax.fill(angles, vals, alpha=0.15)
+    ax.plot(angles, vals, linewidth=2)
+    ax.fill(angles, vals, alpha=0.25)
 
     ax.set_xticks(base_angles)
     ax.set_xticklabels(labels)
@@ -102,8 +105,96 @@ def make_country_radar_multi(series_dict, title="Bias (avg similarity) by countr
         ax.set_yticks(radial_ticks)
         ax.set_yticklabels([f"{t:.2f}" for t in radial_ticks])
 
-    if show_legend:
+    ax.set_title(title, pad=20)
+
+    if save_path:
+        plt.savefig(save_path, dpi=200, bbox_inches="tight")
+    return fig, ax
+
+def make_country_radar_multi(
+    series_dict,
+    title="Mean Cosine Similarity by country",
+    value_col="avg_bias_score",
+    order=COUNTRY_ORDER,
+    ylim=(0, 1),
+    radial_ticks=(0.4, 0.6, 0.8, 1.0),
+    show_legend=True,
+    save_path=None,
+    duplicate_tol=1e-4,  # consider two series identical within this tolerance
+):
+    labels = order
+    N = len(labels)
+    base_angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
+
+    fig, ax = plt.subplots(figsize=(8.5, 8.5), subplot_kw=dict(polar=True))
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+
+    # Style cycles (don’t set explicit colors if you prefer defaults)
+    linestyles = ["-", "--", "-.", ":"]
+    markers = ["o", "s", "D", "^", "v", "P", "X", "*"]
+
+    # Prepare numeric vectors to check duplicates
+    series_vals = {}
+    for name, sdf in series_dict.items():
+        vals = _values_in_order(sdf, value_col=value_col, order=order)
+        series_vals[name] = np.array(vals, dtype=float)
+
+    # Detect near-duplicates
+    duplicate_groups = {}  # name -> list of others it matches
+    names = list(series_vals.keys())
+    for i, ni in enumerate(names):
+        dupes = []
+        for j, nj in enumerate(names):
+            if j <= i:
+                continue
+            vi, vj = series_vals[ni], series_vals[nj]
+            if np.allclose(vi, vj, atol=duplicate_tol, rtol=0):
+                dupes.append(nj)
+        if dupes:
+            duplicate_groups[ni] = dupes
+
+    # Plot
+    for idx, (name, sdf) in enumerate(series_dict.items()):
+        vals = series_vals[name]
+        angles = np.r_[base_angles, base_angles[0]]
+        vals_closed = np.r_[vals, vals[0]]
+
+        # Pick styles
+        ls = linestyles[idx % len(linestyles)]
+        mk = markers[idx % len(markers)]
+
+        # 1) subtle fill (light alpha)
+        ax.fill(angles, vals_closed, alpha=0.12, zorder=1)
+
+        # 2) white glow under the line to keep edges visible
+        ax.plot(angles, vals_closed, linewidth=4, color="white", alpha=0.9, zorder=2)
+
+        # 3) main outline with linestyle + markers
+        ax.plot(angles, vals_closed, linewidth=2, linestyle=ls, marker=mk, markersize=4, zorder=3, label=name)
+
+    ax.set_xticks(base_angles)
+    ax.set_xticklabels(labels)
+
+    if ylim is not None:
+        ax.set_ylim(*ylim)
+    if radial_ticks:
+        ax.set_yticks(radial_ticks)
+        ax.set_yticklabels([f"{t:.2f}" for t in radial_ticks])
+
+    # Annotate duplicates in legend labels
+    # (append "(overlaps)" for any series that has a duplicate)
+    if duplicate_groups and show_legend:
+        handles, labels_leg = ax.legend(loc="upper right", bbox_to_anchor=(1.2, 1.15)).legendHandles, []
+        ax.legend_.remove()  # remove to rebuild with modified labels
+        new_labels = []
+        for name in series_dict.keys():
+            tag = " (overlaps)" if any(name in [k] + v for k, v in duplicate_groups.items()) else ""
+            new_labels.append(name + tag)
+        ax.legend(handles=ax.get_legend_handles_labels()[0], labels=new_labels, loc="upper right", bbox_to_anchor=(1.2, 1.15))
+    elif show_legend:
         ax.legend(loc="upper right", bbox_to_anchor=(1.2, 1.15))
+
     ax.set_title(title, pad=20)
 
     if save_path:
@@ -111,32 +202,45 @@ def make_country_radar_multi(series_dict, title="Bias (avg similarity) by countr
     return fig, ax
 
 
+
 # ---------- Example usage with your precomputed summary CSV ----------
 
 # Single-series radar from one precomputed summary
-summary_path = "results/gpt-4o-mini/similarities_with_double_translation_native_vs_role/bias_summary_native_vs_role.csv"
-summary_df = load_bias_summary(summary_path)
-
-fig, ax = make_country_radar_single(
-    summary_df,
-    title="Mean Cosine Similarity – Native vs Role (GPT-4o-mini)",
-    ylim=(0, 1),
-    radial_ticks=(0.5, 0.6, 0.7, 0.8, 0.9, 1.0),
-    save_path="results/gpt-4o-mini/similarities_with_double_translation_native_vs_role/plots/radar_native_vs_role.png",
-)
-
-# Multi-series example (overlaying multiple precomputed summaries)
-# series_paths = {
-#     "GPT-4o-mini – Native vs Assistant": "results/.../bias_summary_native_vs_assistant.csv",
-#     "GPT-4o-mini – Role vs Assistant":   "results/.../bias_summary_role_vs_assistant.csv",
-#     "LLaMA – Native vs Assistant":       "results/.../llama/bias_summary_native_vs_assistant.csv",
-# }
-# series = {name: load_bias_summary(p) for name, p in series_paths.items()}
-# fig, ax = make_country_radar_multi(
-#     series,
-#     title="Bias (avg similarity) – Comparison across conditions/models",
+# summary_path = "results/gpt-4o-mini/similarities_with_double_translation_native_vs_role/bias_summary_native_vs_role.csv"
+# summary_df = load_bias_summary(summary_path)
+#
+# fig, ax = make_country_radar_single(
+#     summary_df,
+#     title="Mean Cosine Similarity – Native vs Role (GPT-4o-mini)",
 #     ylim=(0, 1),
 #     radial_ticks=(0.5, 0.6, 0.7, 0.8, 0.9, 1.0),
-#     save_path="/content/drive/MyDrive/radar_multi.png",
+#     save_path="results/gpt-4o-mini/similarities_with_double_translation_native_vs_role/plots/radar_native_vs_role.png",
 # )
-# print("Saved multi-series radar to /content/drive/MyDrive/radar_multi.png")
+
+########### Multi-series radar ###########
+# Load multiple summaries
+summary_native_vs_role = load_bias_summary(
+    "results/gpt-4o-mini/similarities_with_double_translation_native_vs_role/bias_summary_native_vs_role.csv"
+)
+summary_role_vs_assistant = load_bias_summary(
+    "results/gpt-4o-mini/similarities_rolebased_vs_assistant/bias_summary_rolebased_vs_assisstant.csv"
+)
+summary_native_vs_assistant = load_bias_summary(
+    "results/gpt-4o-mini/similarities_with_double_translation_native_vs_assistant/bias_summary_native_vs_assistant.csv"
+)
+
+# Put them in a dict
+series_dict = {
+    "Native vs Role": summary_native_vs_role,
+    "Role vs Assistant": summary_role_vs_assistant,
+    "Native vs Assistant": summary_native_vs_assistant,
+}
+
+# Multi-series radar
+fig, ax = make_country_radar_multi(
+    series_dict,
+    title="Mean Cosine Similarity – Multiple Comparisons (GPT-4o-mini)",
+    ylim=(0, 1),
+    radial_ticks=(0.5, 0.6, 0.7, 0.8, 0.9, 1.0),
+    save_path="results/gpt-4o-mini/radar_multi.png",
+)
